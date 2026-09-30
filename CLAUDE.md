@@ -1,33 +1,14 @@
-# Cómo trabajar en este repo
+# SportLab Universal — working contract
 
-## Formato de respuesta
+Use AGENTS.md as the primary operating specification.
 
-**Todo va en tabla.** Resultados de proyecciones, comparaciones, estados,
-listas de cualquier cosa: tabla, no párrafos sueltos. El análisis en prosa va
-*después* de la tabla, no en lugar de ella, y solo si agrega algo que la tabla
-no dice.
+This repository is no longer an MLB-only StrikeoutLab project. It is the shared SportLab Universal engine for multiple sports.
 
-Cuando se analiza una cartelera: **todos** los juegos en la tabla, incluidos
-los que dan NO CONVIENE y los que no se pudieron proyectar (con el motivo).
-Filtrar solo los ganadores esconde el tamaño real del filtro.
-
-## Sobre las apuestas
-
-- La cuota de referencia es **-130** (Star Sport / Lajara Sport). El equilibrio
-  está en **56.52%**, no en 50%.
-- Lo que se apuesta es la **confianza calibrada**, no la cruda. Si se muestra
-  la cruda, se muestra al lado la calibrada.
-- Un número positivo no es una recomendación. Antes de sugerir una apuesta:
-  buscarle el contraargumento (muestra chica, factor no modelado como el
-  parque, línea de la casa muy lejos del promedio reciente) y decirlo.
-- Nunca inventar un dato faltante. Un hueco explícito es mejor que un número
-  inventado.
-- No escribir en `picks` sin que el usuario lo pida: registrar un pick es dejar
-  constancia de lo que dijo el sistema, y es él quien decide.
-
-## Datos
-
-La base es la fuente de verdad; `supabase/migrations/` documenta qué se aplicó
-y por qué. Antes de confiar en un número recién cargado, cruzarlo contra
-`game_logs` (la API oficial de la MLB), como se hizo con la contaminación de
-`picks`.
+- Reuse existing modules instead of recreating formulas.
+- Neon SportLab is the primary dynamic database.
+- GitHub stores versioned code, methodology, tests, mappings, small reference data and legacy material.
+- A screenshot never limits analysis to the displayed pick.
+- Preserve temporal cutoffs and distinguish CONFIRMED / PROJECTED / UNAVAILABLE.
+- Run the real Monte Carlo engine when describing results as simulation.
+- Contradict the first hypothesis before recommending anything.
+- Never write secrets to the repository.

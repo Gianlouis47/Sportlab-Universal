@@ -1,0 +1,31 @@
+{
+  "event_id": 358,
+  "away": {
+    "code": "PHI",
+    "season_offense": 4.40,
+    "season_defense_allowed": 4.31,
+    "venue_offense": 4.05,
+    "venue_defense_allowed": 4.03,
+    "l10": {"games":10,"offense":3.2,"defense_allowed":5.3,"win_rate":0.30},
+    "l20": {"games":20,"offense":3.75,"defense_allowed":4.8,"win_rate":0.40},
+    "l30": {"games":30,"offense":3.8,"defense_allowed":3.93,"win_rate":0.50}
+  },
+  "home": {
+    "code": "ATL",
+    "season_offense": 4.54,
+    "season_defense_allowed": 3.82,
+    "venue_offense": 4.78,
+    "venue_defense_allowed": 3.90,
+    "l10": {"games":10,"offense":4.1,"defense_allowed":3.4,"win_rate":0.60},
+    "l20": {"games":20,"offense":4.1,"defense_allowed":4.2,"win_rate":0.50},
+    "l30": {"games":30,"offense":4.1,"defense_allowed":3.9,"win_rate":0.57}
+  },
+  "away_pitcher": {"name":"Cristopher Sanchez","season_era":2.85,"opponent_era":2.25,"season_k_per_9":9.6,"opponent_k_per_9":9.75,"expected_ip":6.0},
+  "home_pitcher": {"name":"Tyler Mahle","season_era":3.70,"opponent_era":0.69,"season_k_per_9":7.1,"opponent_k_per_9":4.15,"expected_ip":5.5},
+  "h2h": {"games":14,"away_runs_per_game":3.29,"home_runs_per_game":5.07},
+  "total_lines": [6.5,7.0,7.5,8.0],
+  "away_team_total_lines": [2.5,3.5,4.5],
+  "home_team_total_lines": [2.5,3.5,4.5],
+  "away_pitcher_k_lines": [5.5,6.0,6.5],
+  "home_pitcher_k_lines": [3.5,4.5,5.5]
+}

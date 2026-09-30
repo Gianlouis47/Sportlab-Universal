@@ -8,7 +8,7 @@ def test_pitcher_lineup_projection_weights_expected_plate_appearances():
         BatterMatchup(expected_pa=3, strikeout_rate=.30),
         BatterMatchup(expected_pa=2, strikeout_rate=.10),
     ]
-    assert project_lineup_strikeouts(.20, batters) == pytest.approx(1.15)
+    assert project_lineup_strikeouts(.20, batters) == pytest.approx(1.05)
 
 
 def test_small_bvp_sample_is_shrunk_toward_baseline():

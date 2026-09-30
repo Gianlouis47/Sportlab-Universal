@@ -1,0 +1,19 @@
+model_version: sportlab_mlb_v1
+simulations: 10000
+run_dispersion: 0.28
+recent_band_weights:
+  last10: 0.50
+  previous10: 0.30
+  third10: 0.20
+run_component_weights:
+  season: 0.30
+  recent: 0.30
+  venue: 0.15
+  h2h: 0.08
+  starter: 0.17
+strikeout_component_weights:
+  season: 0.35
+  recent: 0.20
+  opponent: 0.20
+  lineup_contact: 0.15
+  workload: 0.10

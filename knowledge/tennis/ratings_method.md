@@ -29,7 +29,11 @@ volley 6.5/6.5, consistency 7.5/5.5, and Tokyo hard-court adaptation 6.5/8.0
 These are editorial estimates, not calibrated measurements. The 2026 hard-court
 records cited in the October 1 review were 8–5 Munar and 14–8 Faria, across
 potentially different competition levels; Munar won their 2025 hard-court H2H.
-Return and recent form ratings are unavailable in the user-supplied assessment.
+The user subsequently supplied editorial return ratings of 8.0/6.0 and recent
+form ratings of 8.5/7.0 (Munar/Faria). They complete the eight display facets
+but remain uncalibrated opinions; no verified return-point or recent-match
+sample was provided with them. Fritz was world No. 12 at the Tokyo match,
+not world No. 10; he was the tournament's third seed.
 As of October 1 Munar beat Fritz 6-7, 6-4, 6-3 in Tokyo after qualifying;
 Faria beat Fery 6-4, 3-6, 6-4. These are observations, not 1–10 ratings.
 Store each dated player/surface observation in `tennis.player_snapshots` in Neon:

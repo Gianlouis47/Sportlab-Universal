@@ -30,6 +30,11 @@ GOAL → DATA → ANALYSIS → SIMULATION → CONTRADICTION → RECHECK → VALI
 - Cerrar con PRINCIPAL, SECUNDARIO o NO APUESTA y motivo concreto. Si faltan datos críticos o existe una contradicción sin resolver, no usar PRINCIPAL. Una captura de otro analista identifica juegos/mercados, pero jamás limita el universo de investigación ni valida sus picks.
 - Comunicar primero la decisión en una tabla compacta. Explicar después las 2–3 variables que más la sostienen o la pueden refutar. Corregir explícitamente cualquier resultado anterior afectado por datos nuevos.
 
+## Tenis
+
+- Presentar siempre ataque, defensa y consistencia de ambos jugadores en una tabla. Consultar `knowledge/tennis/ratings_method.md` y registrar superficie, fecha y fuente. Mostrar NO DISPONIBLE si una faceta no está medida.
+- Diferenciar calificaciones editoriales 1–10 de estadísticas observadas. No convertir la diferencia de notas en probabilidad ML, marcador 2–0, total de juegos ni selección apostable sin modelo de saque/devolución calibrado y datos actuales.
+
 ## Código y almacenamiento
 
 Neon es la fuente de registros dinámicos estructurados. GitHub es la fuente de código, modelos, pesos, pruebas, metodología y conocimiento durable. No guardar secretos, credenciales ni grandes dumps. Si una tarea modifica el motor, verificar pruebas y documentar limitaciones reales.

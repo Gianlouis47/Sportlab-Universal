@@ -22,6 +22,14 @@ recent nonoverlapping matches. Shrink small samples towards a surface-appropriat
 baseline. Judge a high-error attacking style alongside winners, rally length
 and opponent pressure; raw unforced-error counts are not a consistency score.
 
+For each requested match, independently search public ATP/tournament statistics:
+season and surface serve/return rates, match logs, nonoverlapping recent windows,
+opponent level and actual court conditions. Estimate each 1–10 facet only with
+documented source URL, as-of date, sample, peer baseline and conversion rule.
+Store measured rates separately from inferred ratings in the player snapshot.
+If comparable evidence is sparse, retain third-party editorial numbers with
+their provenance; do not present them as independently calculated measurements.
+
 For the 2026-10-01 Munar/Faria example, the Google editorial assessments supplied
 by the user are offense 5.5/7.5, defense 8.5/6.0, serve 6.0/7.5,
 volley 6.5/6.5, consistency 7.5/5.5, and Tokyo hard-court adaptation 6.5/8.0

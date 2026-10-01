@@ -20,6 +20,8 @@ def test_rejects_invalid_rating_and_cross_surface_comparison():
     today = date(2026, 10, 1)
     with pytest.raises(ValueError, match="between 1 and 10"):
         TennisRatings("A", today, "source", "hard", consistency=float("nan"))
+    with pytest.raises(ValueError, match="sample size"):
+        TennisRatings("A", today, "source", "hard", sample_size=-1)
     hard = TennisRatings("A", today, "source", "hard", offense=8)
     clay = TennisRatings("B", today, "source", "clay", defense=7)
     with pytest.raises(ValueError, match="same surface"):

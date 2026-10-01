@@ -11,6 +11,7 @@ class TennisRatings:
     as_of: date
     source: str
     surface: str
+    sample_size: int | None = None
     offense: float | None = None
     defense: float | None = None
     consistency: float | None = None
@@ -18,6 +19,8 @@ class TennisRatings:
     def __post_init__(self) -> None:
         if not self.player.strip() or not self.source.strip() or not self.surface.strip():
             raise ValueError("player, source and surface are required")
+        if self.sample_size is not None and self.sample_size < 0:
+            raise ValueError("sample size cannot be negative")
         for rating in (self.offense, self.defense, self.consistency):
             if rating is not None and (not isfinite(rating) or not 1 <= rating <= 10):
                 raise ValueError("ratings must be between 1 and 10")

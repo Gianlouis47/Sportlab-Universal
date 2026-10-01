@@ -44,7 +44,7 @@ the difference between a baseline and a complete, validated model.
 
 ## Other sports
 
-Tennis has a typed 1–10 offense/defense/serve/volley/consistency/surface-fit assessment and a side-by-side
+Tennis has a typed 1–10 offense/defense/serve/return/volley/consistency/recent-form/surface-fit assessment and a side-by-side
 comparison table; see `knowledge/tennis/ratings_method.md`. These editorial
 ratings do not yield match probabilities or picks. Next: source current
 surface-specific serve/return/variation metrics, calibrate against match logs,

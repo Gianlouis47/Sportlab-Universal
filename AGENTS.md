@@ -32,7 +32,7 @@ GOAL → DATA → ANALYSIS → SIMULATION → CONTRADICTION → RECHECK → VALI
 
 ## Tenis
 
-- Presentar siempre ataque, defensa, servicio, volea, consistencia y adaptación a la cancha de ambos jugadores en una tabla. Consultar `knowledge/tennis/ratings_method.md` y registrar superficie, fecha y fuente. Mostrar NO DISPONIBLE si una faceta no está medida; la cancha preferida es una categoría, no una nota 1–10.
+- Presentar siempre ataque, defensa, servicio, devolución, volea, consistencia, forma reciente y adaptación a la cancha de ambos jugadores en una tabla. Consultar `knowledge/tennis/ratings_method.md` y registrar superficie, fecha y fuente. Mostrar NO DISPONIBLE si una faceta no está medida; la cancha preferida es una categoría, no una nota 1–10.
 - Diferenciar calificaciones editoriales 1–10 de estadísticas observadas. No convertir la diferencia de notas en probabilidad ML, marcador 2–0, total de juegos ni selección apostable sin modelo de saque/devolución calibrado y datos actuales.
 
 ## Código y almacenamiento

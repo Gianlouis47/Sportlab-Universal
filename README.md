@@ -40,3 +40,20 @@ Do not store API keys, database passwords, authentication tokens, personal data 
 ## Legacy StrikeoutLab
 
 StrikeoutLab is retained only as legacy/reference material while useful logic is migrated into the universal engine. New development belongs in sportlab/.
+
+## 2026 MLB postseason research adapter
+
+`python -m sportlab.cli mlb-api --date 2026-10-03 --game-id 849835 --save outputs/mlb-2026-10-03.json`
+fetches a dated MLB Stats API snapshot and runs the existing MLB pipeline.
+Use `--snapshot outputs/mlb-2026-10-03.json` to reproduce it offline. Add exact
+market thresholds with `--total-lines`, `--away-k-lines`, and `--home-k-lines`.
+Raw snapshots and model output belong in `outputs/`, which is ignored by Git.
+
+This adapter marks starters **PROJECTED**, records the cutoff and sample sizes,
+and simulates strikeouts by resampling batters faced in starts and applying
+pitcher K/BF against the opposing lineup's team K/PA. A pitcher with fewer than
+ten starts, or an unavailable pitcher, gets no K estimate. Its run projections
+still use an exploratory league-average fallback and list that contradiction.
+The model is **not calibrated** for betting and its outputs cannot establish
+the 70% PRINCIPAL threshold. Confirm lineups, workloads, bullpen, park/weather,
+and the exact sportsbook rules before using it for a decision.

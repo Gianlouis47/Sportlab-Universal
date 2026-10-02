@@ -34,6 +34,11 @@ class PitcherProfile:
     expected_bf: float | None = None
     opponent_k_factor: float = 1.0
     workload_factor: float = 1.0
+    # Optional observed inputs for the BF-based strikeout simulation.
+    season_k_rate: float | None = None  # strikeouts / batters faced
+    opponent_k_rate: float | None = None  # opposing hitters' strikeouts / PA
+    league_k_rate: float | None = None
+    bf_samples: tuple[int, ...] = ()  # starts only, never relief appearances
 
 @dataclass(frozen=True)
 class H2HProfile:

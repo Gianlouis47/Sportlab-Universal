@@ -1,7 +1,7 @@
 from __future__ import annotations
 from sportlab.types import PitcherProfile
 
-def project_pitcher_k_mean(p: PitcherProfile) -> float:
+def project_pitcher_k_mean(p: PitcherProfile) -> float | None:
     components = []
     if p.season_k_per_9 is not None:
         components.append((p.season_k_per_9, 0.40))
@@ -10,7 +10,7 @@ def project_pitcher_k_mean(p: PitcherProfile) -> float:
     if p.opponent_k_per_9 is not None:
         components.append((p.opponent_k_per_9, 0.20))
     if not components:
-        k9 = 8.0
+        return None
     else:
         denom = sum(w for _, w in components)
         k9 = sum(v*w for v,w in components) / denom

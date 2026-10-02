@@ -1,0 +1,9 @@
+{
+  "source": "MLB Stats API 2026 regular-season hitter gameLog joined to team schedule by gamePk",
+  "as_of": "2026-10-02",
+  "event": "player at least one hit AND game total over 5.5 runs",
+  "players": {
+    "Jackson Chourio": {"appearances": 127, "hit_games": 94, "over_5_5_games": 97, "both": 74},
+    "Chandler Simpson": {"appearances": 151, "hit_games": 107, "over_5_5_games": 110, "both": 81}
+  }
+}

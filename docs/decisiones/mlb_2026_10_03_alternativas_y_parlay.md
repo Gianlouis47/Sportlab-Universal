@@ -146,6 +146,58 @@ precio decimal ≈2.104 y exige 475/1,000 para equilibrar. El replay produjo
 independencia entre ellos. **No se recomienda unirlos** antes de revisar
 posición de bateo y precio final.
 
+## Criba completa de mercados modelables y boleto de hasta 15
+
+Se aplicó el corte de 70 % a cada lado exacto de los ML, run lines, totales
+completos alternativos visibles, totales e hits de equipo, ponches e hits
+permitidos de abridor, 60 mercados sí/no hit y los mercados de bases totales
+de esos bateadores. La misma jugada «sí hit» y «más de 0.5 bases totales» se
+cuenta una sola vez si coinciden sus reglas de liquidación. Este es el
+**conjunto completo de selecciones distintas que superó 70 % en el modelo
+base**, no una lista de principales:
+
+| Selección | Cuota | Modelo base / 1,000 | Contradicción decisiva |
+| --- | ---: | ---: | --- |
+| CWS–CLE más de 5.5 carreras | −196 | 769 | Con medias −15 %: 664 |
+| NYY–TB más de 5.5 carreras | −205 | 716 | Con medias −15 %: 624 |
+| SD–MIL más de 5.5 carreras | −215 | 767 | Con medias −15 %: 671 |
+| Robbie Ray más de 3.5 hits permitidos | −120 | 705 | Cuatro BF menos: ≈557 |
+| Chase DeLauter sí hit | −190 | 711 | Histórico: 654; un AB menos: 593 |
+| Chase Meidroth sí hit | −170 | 702 | Histórico: 682; un AB menos: 583 |
+| Freddie Freeman sí hit | −220 | 706 | Histórico: 673; abridor ATL desconocido |
+| Michael Harris II sí hit / más de 0.5 bases | −180 | 703 | Histórico: 677; un AB menos: 586 |
+| Chandler Simpson sí hit | −224 | 731 | Histórico: 709; un AB menos: 618 |
+| Yandy Díaz sí hit | −238 | 745 | Histórico: 688; un AB menos: 642 |
+| Jackson Chourio sí hit | −220 | 747 | Histórico: 740; un AB menos: 641 |
+| Steven Kwan menos de 1.5 bases | −183 | 704 | Histórico: 642; rival Smith solo una apertura |
+| Manny Machado menos de 1.5 bases | −210 | 709 | Histórico: 646; modelo más alto que temporada |
+
+Para Kwan y Machado, un turno menos aumenta la frecuencia del **under**, pero
+su histórico de temporada no llega a 70 %. Ningún ML, run line, total de
+equipo, hit de equipo o ponche cruzó 70 % en su línea exacta. Los mercados de
+entradas, primeras cinco, impulsadas, H+R+RBI, bases robadas y otras
+proposiciones del texto que carecen de un modelo conjunto quedan
+`NO ESTIMABLE / NO APUESTA`; no se les asignó un porcentaje usando la cuota.
+
+Si se añadiesen a la combinada los tres overs alternativos de 5.5 a Simpson
+sí hit y Chourio sí hit, sería un boleto de **cinco**, dentro del máximo 15.
+La correlación entre hit y over del mismo partido se aproximó con los pares
+observados de 2026 (Chourio: 74 coincidencias de 127 juegos; Simpson: 81 de
+151), archivados en `hitter_total_historical_pairs.json`. Los partidos
+distintos se trataron como independientes. `python -m tools.replay_five_leg`
+reproduce 10,000 corridas de resultados conjuntos:
+
+| Boleto de cinco | Combinación completa / 10,000 | Por 1,000 |
+| --- | ---: | ---: |
+| Medias y turnos habituales | 2,417 | 242 |
+| 15 % menos carreras y un AB menos por bateador | 1,141 | 114 |
+
+Cuotas del snapshot: −196, −205, −215, −224 y −220; decimal combinado
+≈6.926, umbral de equilibrio ≈144/1,000. El escenario adverso queda bajo
+ese precio. **No es una combinada PRINCIPAL ni una recomendación de cinco
+selecciones**. Añadir más piernas para llegar a 15 reduciría todavía más la
+probabilidad de cobrar todas.
+
 ## Boleto de estudio, no selección recomendada
 
 Tres overs **visibles** de 5.5 carreras: CWS–CLE −196, NYY–TB −205 y

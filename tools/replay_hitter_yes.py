@@ -13,6 +13,8 @@ from pathlib import Path
 import numpy as np
 
 from sportlab.simulations.monte_carlo import hitter_hit_and_bases_counts
+from tools.fetch_hitter_yes_snapshots import normalized
+from tools.ingest_betcris_mlb import FILES, parse_source
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -55,6 +57,17 @@ def main() -> None:
         mlb = json.load(file)
     with gzip.open(MARKETS / "hitter_yes_inputs.json.gz", "rt", encoding="utf-8") as file:
         source = json.load(file)
+    base_quotes = {}
+    no_hit_odds = {}
+    for game_key, filename in FILES.items():
+        for block in parse_source((MARKETS / filename).read_text())["market_blocks"]:
+            if block["market"].endswith(": Bases Totales en el Partido"):
+                for quote in block["quotes"]:
+                    base_quotes.setdefault((game_key, normalized(quote["subject"])), []).append(quote)
+            elif block["market"].endswith(": Jugador Batea al menos un Hit"):
+                for quote in block["quotes"]:
+                    if quote["side"] == "no":
+                        no_hit_odds[(game_key, normalized(quote["subject"]))] = quote["american_odds"]
     players = []
     draws = {}
     short_draws = {}
@@ -64,10 +77,10 @@ def main() -> None:
             continue
         probs, pitcher_info = adjusted_probabilities(player, mlb)
         rng = np.random.default_rng(SEED + player["player_id"])
-        hits, _ = hitter_hit_and_bases_counts(rng, tuple(player["ab_samples"]), probs, RUNS)
+        hits, bases = hitter_hit_and_bases_counts(rng, tuple(player["ab_samples"]), probs, RUNS)
         rng_short = np.random.default_rng(SEED + player["player_id"] + 1)
         one_fewer_ab = tuple(max(0, ab - 1) for ab in player["ab_samples"])
-        short_hits, _ = hitter_hit_and_bases_counts(rng_short, one_fewer_ab, probs, RUNS)
+        short_hits, short_bases = hitter_hit_and_bases_counts(rng_short, one_fewer_ab, probs, RUNS)
         key = player["game"] + ":" + str(player["player_id"])
         draws[key] = hits >= 1
         short_draws[key] = short_hits >= 1
@@ -76,11 +89,22 @@ def main() -> None:
         best_odds = max(yes_odds, total_bases_odds) if total_bases_odds is not None else yes_odds
         rate = float(np.mean(hits >= 1))
         empirical = player["appearance_hit_yes_count"] / player["appearance_sample"]
+        market_key = (player["game"], normalized(player["betcris_name"]))
+        bases_markets = []
+        for quote in base_quotes.get(market_key, []):
+            side, line = quote["side"], quote["line"]
+            condition = (bases > line) if side == "over" else (bases < line)
+            short_condition = (short_bases > line) if side == "over" else (short_bases < line)
+            bases_markets.append({"side": side, "line": line, "american_odds": quote["american_odds"],
+                                  "model_probability": round(float(np.mean(condition)), 4),
+                                  "one_fewer_ab_probability": round(float(np.mean(short_condition)), 4),
+                                  "break_even": round(1 / odds_to_decimal(quote["american_odds"]), 4)})
         players.append({"game": player["game"], "name": player["mlb_name"], "player_id": player["player_id"],
                         "status": "PROJECTED_STARTER_NOT_OFFICIAL", "appearance_sample": player["appearance_sample"],
                         "empirical_hit_yes": round(empirical, 4), "model_hit_yes": round(rate, 4),
                         "one_fewer_ab_hit_yes": round(float(np.mean(short_hits >= 1)), 4),
                         "yes_hit_odds": yes_odds, "over_0_5_total_bases_odds": total_bases_odds,
+                        "no_hit_odds": no_hit_odds.get(market_key), "total_bases_markets": bases_markets,
                         "best_equivalent_odds": best_odds,
                         "best_equivalent_break_even": round(1 / odds_to_decimal(best_odds), 4),
                         "candidate_if_starts": bool(empirical >= .70 and rate >= .70),

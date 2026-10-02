@@ -99,12 +99,52 @@ tiene menos de diez aperturas en la muestra y Betcris no mostró un prop suyo.
 
 Los mercados de hit de bateador, bases totales, hits+carreras+impulsadas,
 primeras cinco entradas y entradas individuales se conservaron textualmente.
-Los hits y bases totales de un jugador requieren lineup confirmado para una
-probabilidad de partido; hits+carreras+impulsadas y parciales requieren un
-modelo conjunto que todavía no existe. Decisión: `NO ESTIMABLE / NO APUESTA`.
+Por instrucción del usuario, los bateadores habituales se tratan como
+**titulares proyectados** para la sección siguiente; la MLB aún no publicó el
+orden al bate. Hits+carreras+impulsadas y parciales requieren un modelo
+conjunto que todavía no existe: `NO ESTIMABLE / NO APUESTA`.
 Más de 0.5 bases totales implica al menos un hit, sujeto a las mismas reglas
 de elegibilidad de Betcris. No se presume que haya líneas alternativas de K:
 solo se usan las seis que figuran en los textos.
+
+## Bateadores habituales: principales proyectadas
+
+Se archivaron las 60 líneas de «al menos un hit» del texto Betcris y sus
+entradas de MLB en `hitter_yes_inputs.json.gz`; se reproducen con
+`python -m tools.replay_hitter_yes` en `hitter_yes_replay.json`. La simulación
+usa 10,000 corridas, semilla `20261002 + player_id`, distribución histórica
+de turnos al bate, frecuencia de tipos de hit, split por mano del abridor y
+un ajuste al hits/BF de ese abridor con prior de 200 BF. Se supone 60 % de
+turnos frente al abridor. Para Atlanta no hay abridor anunciado; para Hagen
+Smith, con menos de diez aperturas, se omite ese ajuste. Es un modelo
+exploratorio **sin calibración fuera de muestra**; las cifras suponen que el
+jugador comienza el partido.
+El roster `active` de MLB para el 3 de octubre incluye a Chourio y Simpson
+con estatus `A`; esto respalda su disponibilidad proyectada, pero el orden
+al bate de ambos juegos aún aparece vacío en el feed oficial.
+
+| Apuesta exacta | Cuota | Juegos con hit / apariciones 2026 | L10/L20/L30 con hit | Modelo / 1,000 | Si pierde un turno / 1,000 | Clasificación |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Jackson Chourio, sí hit vs Padres | −220 | 94/127 (74.0 %) | 7/10, 14/20, 22/30 | 747 | 641 | PRINCIPAL PROYECTADA, solo si inicia |
+| Chandler Simpson, sí hit vs Yankees | −224 | 107/151 (70.9 %) | 8/10, 14/20, 22/30 | 731 | 618 | PRINCIPAL PROYECTADA, solo si inicia |
+| Yandy Díaz, sí hit vs Yankees | −238 | 106/154 (68.8 %) | No usado | 745 | 642 | SECUNDARIA: temporada bajo 70 % |
+| Junior Caminero, sí hit vs Yankees | −235 | 119/162 (73.5 %) | No usado | 699 | 576 | SECUNDARIA: modelo bajo 70 % |
+| Fernando Tatis Jr., sí hit vs Brewers | −190 | 113/159 (71.1 %) | No usado | 665 | 551 | NO APUESTA: Misiorowski reduce el escenario |
+| Shohei Ohtani, sí hit vs Braves | −235 | 92/135 (68.1 %) | No usado | 696 | 580 | NO APUESTA: abridor ATL desconocido |
+
+El nombre famoso o la cuota negativa no sustituye el umbral. La posición en
+el orden puede cambiar los turnos: al restar uno a cada jugador, los dos
+principales proyectados bajan de 70 %. Son selecciones **individuales** bajo
+la hipótesis de turnos habituales, no una garantía de que jugarán o pegarán
+hit. Ninguna línea alternativa de más de 0.5 bases totales para esos dos
+apareció en los textos.
+
+Una combinada de Chourio sí hit y Simpson sí hit a las cuotas copiadas tendría
+precio decimal ≈2.104 y exige 475/1,000 para equilibrar. El replay produjo
+5,473/10,000 (547/1,000) con turnos habituales y 3,942/10,000
+(394/1,000) si ambos pierden un turno. Son partidos distintos y se supuso
+independencia entre ellos. **No se recomienda unirlos** antes de revisar
+posición de bateo y precio final.
 
 ## Boleto de estudio, no selección recomendada
 
@@ -124,8 +164,10 @@ mercados como si su probabilidad conjunta estuviera validada. Los 4,244 y
 2,801 son conteos realmente ejecutados, **no** garantía de cobro. La brecha
 entre escenarios supera ampliamente el error de muestreo de 10,000 corridas.
 
-**Decisión pregame:** cero selecciones `PRINCIPAL` con evidencia validada para
-el mercado exacto. El boleto de tres está en `NO APUESTA` hasta confirmar
-abridores, lineups, bullpen y cuotas, y hasta calibrar el modelo contra
-resultados fuera de muestra. Al inicio se sella este corte como pregame;
+**Decisión pregame:** Chourio sí hit y Simpson sí hit son las dos
+`PRINCIPALES PROYECTADAS` porque el histórico y el modelo de cada mercado
+superan 70 % bajo turnos habituales. No hay principal para ML, total del
+juego, total de equipo o ponches. Los dos boletos combinados ilustrados están
+en `NO APUESTA` por sensibilidad a turnos o carreras; las cuotas pueden
+cambiar. Al inicio se sella este corte como pregame;
 después se registran live y final por separado y se hace postmortem.

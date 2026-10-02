@@ -57,3 +57,20 @@ still use an exploratory league-average fallback and list that contradiction.
 The model is **not calibrated** for betting and its outputs cannot establish
 the 70% PRINCIPAL threshold. Confirm lineups, workloads, bullpen, park/weather,
 and the exact sportsbook rules before using it for a decision.
+
+For a Betcris parlay, save the exact event and selections in a JSON file:
+
+```json
+{"selections": [
+  {"event_id": 849835, "market": "home_ml"},
+  {"event_id": 849835, "market": "game_total", "side": "over", "line": 6.5},
+  {"event_id": 849835, "market": "home_pitcher_ks", "side": "over", "line": 4.5}
+]}
+```
+
+`python -m sportlab.cli mlb-parlay --snapshot outputs/mlb-2026-10-03.json --ticket ticket.json`
+reports each leg, full wins per 1,000, and pushes without losses from shared
+game draws. Run distributions report simulated min/max and p05–p95; those are
+**observed simulation values**, never guaranteed game bounds. Hitter hits are
+supported only after lineup confirmation; RBI remains unestimated until an
+opportunity model is implemented. See [the MLB parlay decision rules](docs/decisiones/mlb_parlays_2026_10_03.md).

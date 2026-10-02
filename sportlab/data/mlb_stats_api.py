@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 from statistics import mean
 
-from sportlab.types import MLBGameInput, PitcherProfile, TeamProfile, WindowForm
+from sportlab.types import HitterProfile, MLBGameInput, PitcherProfile, TeamProfile, WindowForm
 
 BASE = "https://statsapi.mlb.com/api/v1"
 
@@ -74,8 +74,9 @@ def fetch_snapshot(date: str) -> dict:
             if p and str(p["id"]) not in starters:
                 starters[str(p["id"])] = {"name": p["fullName"], **_pitcher(p["id"])}
     all_teams = _get("/teams", sportId=1, season=2026)["teams"]
-    hitting = [_stat(t["id"], "hitting") for t in all_teams]
-    hitting = [x for x in hitting if x and x.get("plateAppearances")]
+    league_teams = {str(t["id"]): {"name": t["abbreviation"], "hitting": _stat(t["id"], "hitting"),
+                                 "pitching": _stat(t["id"], "pitching")} for t in all_teams}
+    hitting = [x["hitting"] for x in league_teams.values() if x["hitting"] and x["hitting"].get("plateAppearances")]
     league_k_rate = sum(x["strikeOuts"] for x in hitting) / sum(x["plateAppearances"] for x in hitting)
     return {"source": BASE, "snapshot_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "date": date,
             "as_of": as_of, "team_status": "CONFIRMED_HISTORICAL", "starter_status": "PROJECTED",
@@ -83,7 +84,48 @@ def fetch_snapshot(date: str) -> dict:
                        "away": g["teams"]["away"]["team"]["id"], "home": g["teams"]["home"]["team"]["id"],
                        "away_starter": g["teams"]["away"].get("probablePitcher", {}).get("id"),
                        "home_starter": g["teams"]["home"].get("probablePitcher", {}).get("id")}
-                      for g in games], "teams": teams, "starters": starters, "league_k_rate": league_k_rate}
+                      for g in games], "teams": teams, "starters": starters,
+            "league_teams": league_teams, "league_k_rate": league_k_rate, "hitters": {}}
+
+
+def fetch_hitter_snapshot(player_id: int, team_id: int, as_of: str) -> dict:
+    """Fetch historical hits/AB; lineup status remains UNAVAILABLE until verified."""
+    season = _get(f"/people/{player_id}/stats", stats="season", group="hitting", season=2026, gameType="R")
+    logs = _get(f"/people/{player_id}/stats", stats="gameLog", group="hitting", season=2026, gameType="R")
+    rows = season["stats"][0]["splits"]
+    if not rows:
+        raise ValueError(f"no regular-season hitting data for {player_id}")
+    stat = rows[0]["stat"]
+    ab_samples = [x["stat"]["atBats"] for x in logs["stats"][0]["splits"] if x["date"] <= as_of]
+    if not ab_samples:
+        raise ValueError(f"no game AB samples for {player_id}")
+    person = _get(f"/people/{player_id}")["people"][0]
+    return {"player_id": player_id, "team_id": team_id, "name": person["fullName"],
+            "hits": stat["hits"], "at_bats": stat["atBats"], "ab_samples": ab_samples,
+            "lineup_status": "UNAVAILABLE", "source": BASE, "as_of": as_of}
+
+
+def team_facets(snapshot: dict, team_id: int) -> dict:
+    """Observed 1–10 league-relative notes; never interpret as win probability."""
+    league = snapshot.get("league_teams")
+    if not league or str(team_id) not in league:
+        raise ValueError("league-wide team stats unavailable in snapshot")
+    def metric(team, name):
+        h, p = team["hitting"], team["pitching"]
+        return {"attack": h["runs"] / h["gamesPlayed"],
+                "defense": p["runs"] / p["gamesPlayed"],
+                "power": h["homeRuns"] / h["gamesPlayed"],
+                "contact": h["strikeOuts"] / h["plateAppearances"],
+                "speed": h["stolenBases"] / h["gamesPlayed"]}[name]
+    notes = {}
+    for name in ("attack", "defense", "power", "contact", "speed"):
+        values = [metric(t, name) for t in league.values() if t["hitting"] and t["pitching"]]
+        value = metric(league[str(team_id)], name)
+        better = sum(x < value for x in values) if name in ("attack", "power", "speed") else sum(x > value for x in values)
+        notes[name] = {"observed": round(value, 3), "score_1_10": round(1 + 9 * better / max(1, len(values) - 1), 1)}
+    return {"team": league[str(team_id)]["name"], "as_of": snapshot["as_of"],
+            "scope": f"{len(league)} MLB teams, 2026 regular season", "facets": notes,
+            "outfield_range": "UNAVAILABLE", "overall_score_1_10": round(mean(x["score_1_10"] for x in notes.values()), 1)}
 
 
 def _window(rows: list[dict], n: int):
@@ -140,11 +182,15 @@ def game_input_from_snapshot(snapshot: dict, game_id: int, *, total_lines=(6.5, 
     sp = snapshot["starters"]
     away_sp = sp.get(str(game["away_starter"])) if game["away_starter"] else None
     home_sp = sp.get(str(game["home_starter"])) if game["home_starter"] else None
+    hitters = tuple(HitterProfile(player_id=p["player_id"], name=p["name"], hits=p["hits"],
+                                  at_bats=p["at_bats"], ab_samples=tuple(p["ab_samples"]),
+                                  lineup_status=p.get("lineup_status", "UNAVAILABLE"))
+                    for p in snapshot.get("hitters", {}).values() if p["team_id"] in (game["away"], game["home"]))
     return MLBGameInput(event_id=game_id, away=_team_profile(away), home=_team_profile(home),
                         away_pitcher=_pitcher_profile(away_sp, home, snapshot["league_k_rate"]),
                         home_pitcher=_pitcher_profile(home_sp, away, snapshot["league_k_rate"]),
                         total_lines=tuple(total_lines), away_pitcher_k_lines=tuple(away_pitcher_k_lines),
-                        home_pitcher_k_lines=tuple(home_pitcher_k_lines),
+                        home_pitcher_k_lines=tuple(home_pitcher_k_lines), hitters=hitters,
                         metadata={"source": snapshot["source"], "as_of": snapshot["as_of"],
                                   "snapshot_utc": snapshot["snapshot_utc"],
                                   "starter_status": snapshot["starter_status"],

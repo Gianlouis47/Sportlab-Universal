@@ -47,6 +47,15 @@ class H2HProfile:
     home_runs_per_game: float
 
 @dataclass(frozen=True)
+class HitterProfile:
+    player_id: int
+    name: str
+    hits: int
+    at_bats: int
+    ab_samples: tuple[int, ...]
+    lineup_status: str = "UNAVAILABLE"  # CONFIRMED / PROJECTED / UNAVAILABLE
+
+@dataclass(frozen=True)
 class MLBGameInput:
     event_id: int | None
     away: TeamProfile
@@ -59,6 +68,8 @@ class MLBGameInput:
     home_team_total_lines: tuple[float, ...] = (2.5, 3.5, 4.5)
     away_pitcher_k_lines: tuple[float, ...] = (4.5, 5.0, 5.5, 6.0, 6.5)
     home_pitcher_k_lines: tuple[float, ...] = (4.5, 5.0, 5.5, 6.0, 6.5)
+    hitters: tuple[HitterProfile, ...] = ()
+    hitter_hit_lines: dict[int, tuple[float, ...]] = field(default_factory=dict)
     metadata: dict[str, Any] = field(default_factory=dict)
 
 @dataclass
@@ -75,6 +86,8 @@ class SimulationResult:
     home_team_totals: dict[str, dict[str, float]]
     away_pitcher_ks: dict[str, dict[str, float]]
     home_pitcher_ks: dict[str, dict[str, float]]
+    distributions: dict[str, dict[str, float | int]] = field(default_factory=dict)
+    hitter_hits: dict[str, dict[str, dict[str, float]]] = field(default_factory=dict)
     contradictions: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:

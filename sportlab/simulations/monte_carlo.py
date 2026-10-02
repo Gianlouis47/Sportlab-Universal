@@ -38,6 +38,24 @@ def strikeout_counts_from_bf(
     bf = rng.choice(np.asarray(bf_samples, dtype=int), size=n)
     return rng.binomial(np.maximum(1, bf + bf_shift), adjusted)
 
+def hitter_hits_counts(rng: np.random.Generator, hits: int, at_bats: int,
+                       ab_samples: tuple[int, ...], n: int) -> np.ndarray:
+    """Exploratory hits model; requires separately confirmed lineup membership."""
+    if hits < 0 or at_bats <= 0 or hits > at_bats or not ab_samples or any(x < 0 for x in ab_samples):
+        raise ValueError("valid hits, at-bats and game AB samples are required")
+    attempts = rng.choice(np.asarray(ab_samples, dtype=int), size=n)
+    return rng.binomial(attempts, hits / at_bats)
+
+def count_distribution(values: np.ndarray) -> dict[str, float | int]:
+    """Observed Monte Carlo range and stable percentiles; no guaranteed bounds."""
+    if len(values) == 0:
+        raise ValueError("at least one draw is required")
+    out: dict[str, float | int] = {"sim_min": int(np.min(values)), "sim_max": int(np.max(values))}
+    for label, q in (("p05", .05), ("p10", .10), ("p25", .25), ("p50", .50),
+                     ("p75", .75), ("p90", .90), ("p95", .95)):
+        out[label] = float(np.quantile(values, q))
+    return out
+
 def line_probabilities(values: np.ndarray, lines: Iterable[float]) -> dict[str, dict[str, float]]:
     out = {}
     n = len(values)

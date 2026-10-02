@@ -20,6 +20,11 @@ def main() -> None:
     api.add_argument("--home-k-lines", type=float, nargs="+", default=[4.5, 5.5, 6.5])
     api.add_argument("--sims", type=int, default=10_000)
     api.add_argument("--seed", type=int, default=20261002)
+    parlay = sub.add_parser("mlb-parlay", help="simulate exact selections from one saved MLB snapshot")
+    parlay.add_argument("--snapshot", required=True)
+    parlay.add_argument("--ticket", required=True, help="JSON with a selections list")
+    parlay.add_argument("--sims", type=int, default=10_000)
+    parlay.add_argument("--seed", type=int, default=20261002)
     args = parser.parse_args()
     if args.command == "mlb":
         game = load_mlb_game(args.input)
@@ -39,6 +44,16 @@ def main() -> None:
         result = analyze_mlb_game(game, simulations=args.sims, seed=args.seed)
         print(json.dumps({"metadata": game.metadata, "status": "EXPLORATORY_UNCALIBRATED",
                           "result": result.to_dict()}, indent=2, sort_keys=True))
+    elif args.command == "mlb-parlay":
+        from pathlib import Path
+        from sportlab.data.mlb_stats_api import game_input_from_snapshot
+        from sportlab.pipelines.mlb_parlay import simulate_mlb_parlay
+        snapshot = json.loads(Path(args.snapshot).read_text())
+        ticket = json.loads(Path(args.ticket).read_text())
+        selections = ticket["selections"]
+        event_ids = sorted({x["event_id"] for x in selections})
+        games = [game_input_from_snapshot(snapshot, eid) for eid in event_ids]
+        print(json.dumps(simulate_mlb_parlay(games, selections, args.sims, args.seed), indent=2, sort_keys=True))
 
 if __name__ == "__main__":
     main()

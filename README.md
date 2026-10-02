@@ -72,5 +72,8 @@ For a Betcris parlay, save the exact event and selections in a JSON file:
 reports each leg, full wins per 1,000, and pushes without losses from shared
 game draws. Run distributions report simulated min/max and p05–p95; those are
 **observed simulation values**, never guaranteed game bounds. Hitter hits are
-supported only after lineup confirmation; RBI remains unestimated until an
-opportunity model is implemented. See [the MLB parlay decision rules](docs/decisiones/mlb_parlays_2026_10_03.md).
+supported only after lineup confirmation. Team hits, pitcher hits allowed and
+hitter total bases have exploratory distributions when their inputs exist;
+RBI and hits+runs+RBI remain unestimated until an opportunity model is implemented.
+See [the MLB parlay decision rules](docs/decisiones/mlb_parlays_2026_10_03.md)
+and the [archived Betcris Padres–Brewers lines](examples/betcris_padres_brewers_2026-10-03.json).

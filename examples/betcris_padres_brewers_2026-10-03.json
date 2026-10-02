@@ -1,0 +1,313 @@
+{
+  "source": "user-supplied Betcris text and screenshots in conversation",
+  "captured_at": "UNAVAILABLE",
+  "recorded_at_utc": "2026-10-02T22:03:03.655043+00:00",
+  "event_id_mlb": 849830,
+  "event": "San Diego Padres @ Milwaukee Brewers",
+  "scheduled_rd": "2026-10-03 20:30 America/Santo_Domingo",
+  "status": "PREGAME_SNAPSHOT",
+  "odds_format": "American",
+  "availability": "VISIBLE_IN_USER_SUPPLIED_BETCRIS_SNAPSHOT",
+  "game": {
+    "moneyline": {
+      "Padres": 182,
+      "Brewers": -208
+    },
+    "total_7": {
+      "over": -113,
+      "under": -104
+    }
+  },
+  "pitchers": {
+    "Robbie Ray": {
+      "strikeouts_over_4.5": -105,
+      "strikeouts_under_4.5": -125,
+      "hits_allowed_over_3.5": -120,
+      "hits_allowed_under_3.5": -110
+    },
+    "Jacob Misiorowski": {
+      "strikeouts_over_8.5": 120,
+      "strikeouts_under_8.5": -150,
+      "hits_allowed_over_3.5": -115,
+      "hits_allowed_under_3.5": -115
+    }
+  },
+  "game_hits": {
+    "Padres_over_6.5": -110,
+    "Padres_under_6.5": -120,
+    "Brewers_over_7.5": -130,
+    "Brewers_under_7.5": 100
+  },
+  "full_game_team_runs": {
+    "Padres_over_2.5": -116,
+    "Padres_under_2.5": -103,
+    "Brewers_over_4": -121,
+    "Brewers_under_4": 101
+  },
+  "first_five_team_runs": {
+    "Padres_over_1": -115,
+    "Padres_under_1": -106,
+    "Brewers_over_2.5": -113,
+    "Brewers_under_2.5": -108
+  },
+  "innings_over_under_0.5": {
+    "Padres": {
+      "1": [
+        403,
+        -562
+      ],
+      "2": [
+        443,
+        -635
+      ],
+      "3": [
+        415,
+        -585
+      ],
+      "4": [
+        390,
+        -541
+      ],
+      "5": [
+        390,
+        -541
+      ],
+      "6": [
+        346,
+        -468
+      ],
+      "7": [
+        327,
+        -438
+      ],
+      "8": [
+        318,
+        -424
+      ],
+      "9": [
+        310,
+        -410
+      ]
+    },
+    "Brewers": {
+      "1": [
+        191,
+        -238
+      ],
+      "2": [
+        224,
+        -283
+      ],
+      "3": [
+        199,
+        -250
+      ],
+      "4": [
+        213,
+        -269
+      ],
+      "5": [
+        229,
+        -291
+      ],
+      "6": [
+        246,
+        -315
+      ],
+      "7": [
+        294,
+        -385
+      ],
+      "8": [
+        318,
+        -424
+      ]
+    }
+  },
+  "players": {
+    "Brice Turang": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -190,
+      "hit_no": 150,
+      "tb1.5": {
+        "over": 140,
+        "under": -176
+      },
+      "hrr1.5": {
+        "over": -103,
+        "under": -127
+      }
+    },
+    "Christian Yelich": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -157,
+      "hit_no": 125,
+      "tb0.5": {
+        "over": -150,
+        "under": 120
+      },
+      "hrr1.5": {
+        "over": 107,
+        "under": -137
+      }
+    },
+    "Cooper Pratt": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -150,
+      "hit_no": 120,
+      "tb0.5": {
+        "over": -140,
+        "under": 110
+      },
+      "hrr1.5": {
+        "over": 115,
+        "under": -145
+      }
+    },
+    "Garrett Mitchell": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -130,
+      "hit_no": 100,
+      "tb0.5": {
+        "over": -150,
+        "under": 120
+      },
+      "hrr1.5": {
+        "over": 105,
+        "under": -135
+      }
+    },
+    "Jackson Chourio": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -220,
+      "hit_no": 172,
+      "tb1.5": {
+        "over": 125,
+        "under": -157
+      },
+      "hrr1.5": {
+        "over": -122,
+        "under": -108
+      }
+    },
+    "Jake Bauers": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -150,
+      "hit_no": 120,
+      "tb1.5": {
+        "over": 155,
+        "under": -197
+      },
+      "hrr1.5": {
+        "over": 105,
+        "under": -135
+      }
+    },
+    "Joey Ortiz": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -145,
+      "hit_no": 115,
+      "hrr1.5": {
+        "over": 122,
+        "under": -153
+      }
+    },
+    "William Contreras": {
+      "team": "Milwaukee Brewers",
+      "hit_yes": -197,
+      "hit_no": 155,
+      "tb1.5": {
+        "over": 140,
+        "under": -176
+      },
+      "hrr1.5": {
+        "over": -103,
+        "under": -127
+      }
+    },
+    "Fernando Tatis Jr.": {
+      "team": "San Diego Padres",
+      "hit_yes": -190,
+      "hit_no": 150,
+      "tb0.5": {
+        "over": -190,
+        "under": 150
+      },
+      "hrr1.5": {
+        "over": 111,
+        "under": -141
+      }
+    },
+    "Jackson Merrill": {
+      "team": "San Diego Padres",
+      "hit_yes": -125,
+      "hit_no": -105,
+      "tb0.5": {
+        "over": -140,
+        "under": 110
+      },
+      "hrr1.5": {
+        "over": 156,
+        "under": -198
+      }
+    },
+    "Jake Cronenworth": {
+      "team": "San Diego Padres",
+      "hit_yes": 105,
+      "hit_no": -135,
+      "tb0.5": {
+        "over": 128,
+        "under": -161
+      },
+      "hrr0.5": {
+        "over": -111,
+        "under": -119
+      }
+    },
+    "Manny Machado": {
+      "team": "San Diego Padres",
+      "hit_yes": -150,
+      "hit_no": 120,
+      "tb1.5": {
+        "over": 165,
+        "under": -210
+      },
+      "hrr1.5": {
+        "over": 139,
+        "under": -175
+      }
+    },
+    "Ty France": {
+      "team": "San Diego Padres",
+      "hit_yes": -157,
+      "hit_no": 125,
+      "tb0.5": {
+        "over": -145,
+        "under": 115
+      },
+      "hrr1.5": {
+        "over": 136,
+        "under": -171
+      }
+    },
+    "Xander Bogaerts": {
+      "team": "San Diego Padres",
+      "hit_yes": -125,
+      "hit_no": -105,
+      "tb0.5": {
+        "over": -135,
+        "under": 105
+      },
+      "hrr0.5": {
+        "over": -153,
+        "under": 122
+      }
+    }
+  },
+  "notes": [
+    "tb means total bases, not hits; over 0.5 TB equals at least one hit",
+    "hrr means hits plus runs plus RBI",
+    "integer team-run and game-total lines may push under Betcris rules",
+    "lineups and starters are projected, not confirmed"
+  ]
+}

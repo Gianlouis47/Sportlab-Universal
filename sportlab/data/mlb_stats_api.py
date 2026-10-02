@@ -41,6 +41,11 @@ def _team_games(tid: int, as_of: str):
     return sorted(rows, key=lambda x: x["date"])
 
 
+def _team_hit_games(tid: int, as_of: str):
+    rows = _get(f"/teams/{tid}/stats", stats="gameLog", group="hitting", season=2026, gameType="R")["stats"][0]["splits"]
+    return [x["stat"]["hits"] for x in rows if x["date"] <= as_of]
+
+
 def _pitcher(pid: int):
     season = _get(f"/people/{pid}/stats", stats="season", group="pitching", season=2026, gameType="R")
     logs = _get(f"/people/{pid}/stats", stats="gameLog", group="pitching", season=2026, gameType="R")
@@ -66,7 +71,7 @@ def fetch_snapshot(date: str) -> dict:
     teams = {str(tid): {"name": next(g["teams"][side]["team"]["abbreviation"] for g in games for side in ("away", "home")
                                      if g["teams"][side]["team"]["id"] == tid),
                         "hitting": _stat(tid, "hitting"), "pitching": _stat(tid, "pitching"),
-                        "games": _team_games(tid, as_of)} for tid in ids}
+                        "games": _team_games(tid, as_of), "hit_game_samples": _team_hit_games(tid, as_of)} for tid in ids}
     starters = {}
     for game in games:
         for side in ("away", "home"):
@@ -78,6 +83,7 @@ def fetch_snapshot(date: str) -> dict:
                                  "pitching": _stat(t["id"], "pitching")} for t in all_teams}
     hitting = [x["hitting"] for x in league_teams.values() if x["hitting"] and x["hitting"].get("plateAppearances")]
     league_k_rate = sum(x["strikeOuts"] for x in hitting) / sum(x["plateAppearances"] for x in hitting)
+    league_hit_rate = sum(x["hits"] for x in hitting) / sum(x["plateAppearances"] for x in hitting)
     return {"source": BASE, "snapshot_utc": dt.datetime.now(dt.timezone.utc).isoformat(), "date": date,
             "as_of": as_of, "team_status": "CONFIRMED_HISTORICAL", "starter_status": "PROJECTED",
             "games": [{"id": g["gamePk"], "start_utc": g["gameDate"], "status": g["status"]["detailedState"],
@@ -85,10 +91,11 @@ def fetch_snapshot(date: str) -> dict:
                        "away_starter": g["teams"]["away"].get("probablePitcher", {}).get("id"),
                        "home_starter": g["teams"]["home"].get("probablePitcher", {}).get("id")}
                       for g in games], "teams": teams, "starters": starters,
-            "league_teams": league_teams, "league_k_rate": league_k_rate, "hitters": {}}
+            "league_teams": league_teams, "league_k_rate": league_k_rate,
+            "league_hit_rate": league_hit_rate, "hitters": {}}
 
 
-def fetch_hitter_snapshot(player_id: int, team_id: int, as_of: str) -> dict:
+def fetch_hitter_snapshot(player_id: int, team_id: int, as_of: str, pitcher_hand: str | None = None) -> dict:
     """Fetch historical hits/AB; lineup status remains UNAVAILABLE until verified."""
     season = _get(f"/people/{player_id}/stats", stats="season", group="hitting", season=2026, gameType="R")
     logs = _get(f"/people/{player_id}/stats", stats="gameLog", group="hitting", season=2026, gameType="R")
@@ -100,9 +107,28 @@ def fetch_hitter_snapshot(player_id: int, team_id: int, as_of: str) -> dict:
     if not ab_samples:
         raise ValueError(f"no game AB samples for {player_id}")
     person = _get(f"/people/{player_id}")["people"][0]
+    def category(s):
+        ab = s["atBats"]
+        singles = s["hits"] - s["doubles"] - s["triples"] - s["homeRuns"]
+        return [(ab - s["hits"]) / ab, singles / ab, s["doubles"] / ab,
+                s["triples"] / ab, s["homeRuns"] / ab]
+    overall = category(stat)
+    probs = overall
+    if pitcher_hand in ("L", "R"):
+        code = "vl" if pitcher_hand == "L" else "vr"
+        splits = _get(f"/people/{player_id}/stats", stats="statSplits", group="hitting",
+                      season=2026, gameType="R", sitCodes=code)["stats"][0]["splits"]
+        if splits and splits[0]["stat"].get("atBats", 0) > 0:
+            split = splits[0]["stat"]
+            raw = category(split)
+            # 100 AB shrinkage and 60% expected starter exposure are scenarios.
+            shrunk = [(split["atBats"] * r + 100 * o) / (split["atBats"] + 100)
+                      for r, o in zip(raw, overall)]
+            probs = [.6 * x + .4 * o for x, o in zip(shrunk, overall)]
     return {"player_id": player_id, "team_id": team_id, "name": person["fullName"],
             "hits": stat["hits"], "at_bats": stat["atBats"], "ab_samples": ab_samples,
-            "lineup_status": "UNAVAILABLE", "source": BASE, "as_of": as_of}
+            "lineup_status": "UNAVAILABLE", "total_base_probs": probs,
+            "pitcher_hand_scenario": pitcher_hand, "source": BASE, "as_of": as_of}
 
 
 def team_facets(snapshot: dict, team_id: int) -> dict:
@@ -144,7 +170,10 @@ def _team_profile(team: dict):
     rows = team["games"]
     return TeamProfile(code=team["name"], season_offense=hit["runs"] / hit["gamesPlayed"],
                        season_defense_allowed=pitch["runs"] / pitch["gamesPlayed"],
-                       l5=_window(rows, 5), l10=_window(rows, 10), l20=_window(rows, 20), l30=_window(rows, 30))
+                       l5=_window(rows, 5), l10=_window(rows, 10), l20=_window(rows, 20), l30=_window(rows, 30),
+                       season_hits_for=hit["hits"] / hit["gamesPlayed"],
+                       season_hits_allowed=pitch["hits"] / pitch["gamesPlayed"],
+                       hit_game_samples=tuple(team.get("hit_game_samples", ())))
 
 
 def _innings(value: str) -> float:
@@ -152,7 +181,7 @@ def _innings(value: str) -> float:
     return int(whole) + int(outs) / 3
 
 
-def _pitcher_profile(entry: dict | None, opponent: dict, league_rate: float):
+def _pitcher_profile(entry: dict | None, opponent: dict, league_rate: float, league_hit_rate: float):
     if entry is None:
         return PitcherProfile(name="UNAVAILABLE")
     starts, season = entry["starts"], entry["season"]
@@ -168,11 +197,17 @@ def _pitcher_profile(entry: dict | None, opponent: dict, league_rate: float):
         opponent_k_rate=opp_hit["strikeOuts"] / opp_hit["plateAppearances"],
         league_k_rate=league_rate,
         bf_samples=tuple(x["bf"] for x in starts),
+        season_hits_per9=season["hits"] / _innings(season["inningsPitched"]) * 9,
+        season_hits_allowed_rate=season["hits"] / season["battersFaced"],
+        opponent_hit_rate=opp_hit["hits"] / opp_hit["plateAppearances"],
+        league_hit_rate=league_hit_rate,
     )
 
 
 def game_input_from_snapshot(snapshot: dict, game_id: int, *, total_lines=(6.5, 7.0, 8.5),
-                             away_pitcher_k_lines=(4.5, 5.5, 6.5), home_pitcher_k_lines=(4.5, 5.5, 6.5)):
+                             away_pitcher_k_lines=(4.5, 5.5, 6.5), home_pitcher_k_lines=(4.5, 5.5, 6.5),
+                             away_team_hit_lines=(), home_team_hit_lines=(),
+                             away_pitcher_hits_allowed_lines=(), home_pitcher_hits_allowed_lines=()):
     game = next((g for g in snapshot["games"] if g["id"] == game_id), None)
     if game is None:
         raise ValueError(f"game {game_id} absent from snapshot")
@@ -184,13 +219,21 @@ def game_input_from_snapshot(snapshot: dict, game_id: int, *, total_lines=(6.5, 
     home_sp = sp.get(str(game["home_starter"])) if game["home_starter"] else None
     hitters = tuple(HitterProfile(player_id=p["player_id"], name=p["name"], hits=p["hits"],
                                   at_bats=p["at_bats"], ab_samples=tuple(p["ab_samples"]),
-                                  lineup_status=p.get("lineup_status", "UNAVAILABLE"))
+                                  lineup_status=p.get("lineup_status", "UNAVAILABLE"),
+                                  total_base_probs=tuple(p.get("total_base_probs", ())))
                     for p in snapshot.get("hitters", {}).values() if p["team_id"] in (game["away"], game["home"]))
+    league_hit_rate = snapshot.get("league_hit_rate")
+    if league_hit_rate is None and snapshot.get("league_teams"):
+        totals = [x["hitting"] for x in snapshot["league_teams"].values() if x.get("hitting")]
+        league_hit_rate = sum(x["hits"] for x in totals) / sum(x["plateAppearances"] for x in totals)
     return MLBGameInput(event_id=game_id, away=_team_profile(away), home=_team_profile(home),
-                        away_pitcher=_pitcher_profile(away_sp, home, snapshot["league_k_rate"]),
-                        home_pitcher=_pitcher_profile(home_sp, away, snapshot["league_k_rate"]),
+                        away_pitcher=_pitcher_profile(away_sp, home, snapshot["league_k_rate"], league_hit_rate),
+                        home_pitcher=_pitcher_profile(home_sp, away, snapshot["league_k_rate"], league_hit_rate),
                         total_lines=tuple(total_lines), away_pitcher_k_lines=tuple(away_pitcher_k_lines),
                         home_pitcher_k_lines=tuple(home_pitcher_k_lines), hitters=hitters,
+                        away_team_hit_lines=tuple(away_team_hit_lines), home_team_hit_lines=tuple(home_team_hit_lines),
+                        away_pitcher_hits_allowed_lines=tuple(away_pitcher_hits_allowed_lines),
+                        home_pitcher_hits_allowed_lines=tuple(home_pitcher_hits_allowed_lines),
                         metadata={"source": snapshot["source"], "as_of": snapshot["as_of"],
                                   "snapshot_utc": snapshot["snapshot_utc"],
                                   "starter_status": snapshot["starter_status"],

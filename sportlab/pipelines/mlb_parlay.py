@@ -17,12 +17,15 @@ def _outcome(draws: dict, selection: dict) -> np.ndarray:
     source = {
         "game_total": "totals", "away_team_total": "away_runs", "home_team_total": "home_runs",
         "away_pitcher_ks": "away_ks", "home_pitcher_ks": "home_ks",
+        "away_team_hits": "away_team_hits", "home_team_hits": "home_team_hits",
+        "away_pitcher_hits_allowed": "away_pitcher_hits_allowed",
+        "home_pitcher_hits_allowed": "home_pitcher_hits_allowed",
     }
-    if market == "hitter_hits":
+    if market in ("hitter_hits", "hitter_total_bases"):
         player_id = str(selection["player_id"])
-        if player_id not in draws["hitter_hits"]:
-            raise ValueError(f"hitter {player_id} has no confirmed-lineup hits distribution")
-        values = draws["hitter_hits"][player_id]
+        if player_id not in draws[market]:
+            raise ValueError(f"hitter {player_id} has no confirmed-lineup {market} distribution")
+        values = draws[market][player_id]
     elif market in source:
         values = draws[source[market]]
         if values is None:
@@ -43,7 +46,7 @@ def simulate_mlb_parlay(games: list[MLBGameInput], selections: list[dict],
     """Report 13/13-style joint wins, pushes and each leg separately.
 
     Same-game side/team/game totals share their run draws. Pitcher K and hitter
-    hit draws are currently independent of scoring, and games are independent.
+    hit draws are currently independent of scoring and team hits, and games are independent.
     The returned rate is exploratory until those dependencies are calibrated.
     """
     if simulations < 1 or not selections:
@@ -72,5 +75,6 @@ def simulate_mlb_parlay(games: list[MLBGameInput], selections: list[dict],
                       "loss_pct": round(100 * float(np.mean(out == 0)), 2)}
                      for leg, out in zip(selections, legs)],
             "assumptions": ["same-game ML, team total and game total share run draws",
-                            "pitcher Ks and hitter hits independent of run scoring",
+                            "pitcher Ks, hits allowed, team hits and hitter outcomes independent of run scoring",
+                            "hitter hits and total bases for one player share at-bat outcomes",
                             "different games independent", "extra innings approximated"]}

@@ -18,6 +18,10 @@ def main() -> None:
     api.add_argument("--total-lines", type=float, nargs="+", default=[6.5, 7.0, 8.5])
     api.add_argument("--away-k-lines", type=float, nargs="+", default=[4.5, 5.5, 6.5])
     api.add_argument("--home-k-lines", type=float, nargs="+", default=[4.5, 5.5, 6.5])
+    api.add_argument("--away-hit-lines", type=float, nargs="+", default=[])
+    api.add_argument("--home-hit-lines", type=float, nargs="+", default=[])
+    api.add_argument("--away-pitcher-hits-allowed-lines", type=float, nargs="+", default=[])
+    api.add_argument("--home-pitcher-hits-allowed-lines", type=float, nargs="+", default=[])
     api.add_argument("--sims", type=int, default=10_000)
     api.add_argument("--seed", type=int, default=20261002)
     parlay = sub.add_parser("mlb-parlay", help="simulate exact selections from one saved MLB snapshot")
@@ -40,7 +44,11 @@ def main() -> None:
             Path(args.save).write_text(json.dumps(snapshot, indent=2))
         game = game_input_from_snapshot(snapshot, args.game_id, total_lines=args.total_lines,
                                         away_pitcher_k_lines=args.away_k_lines,
-                                        home_pitcher_k_lines=args.home_k_lines)
+                                        home_pitcher_k_lines=args.home_k_lines,
+                                        away_team_hit_lines=args.away_hit_lines,
+                                        home_team_hit_lines=args.home_hit_lines,
+                                        away_pitcher_hits_allowed_lines=args.away_pitcher_hits_allowed_lines,
+                                        home_pitcher_hits_allowed_lines=args.home_pitcher_hits_allowed_lines)
         result = analyze_mlb_game(game, simulations=args.sims, seed=args.seed)
         print(json.dumps({"metadata": game.metadata, "status": "EXPLORATORY_UNCALIBRATED",
                           "result": result.to_dict()}, indent=2, sort_keys=True))

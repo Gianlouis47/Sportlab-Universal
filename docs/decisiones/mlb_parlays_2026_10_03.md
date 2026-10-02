@@ -29,7 +29,10 @@ GOAL → DATA → ANALYSIS → SIMULATION → CONTRADICTION → RECHECK → VALI
 | Total de cada equipo | Distribución de carreras propia, líneas alternativas y push | Abridor rival, bullpen y producción tardía |
 | Ponches de ambos abridores | K/BF, K rival/PA, distribución BF por apertura, p10/p50/p90 K y línea exacta | Salida temprana como Hunter Brown ante CWS el 30/09: 9 BF, 2 K, 4 R |
 | Hits de bateador | Hits/AB, oportunidades de turno, orden y alineación confirmada | Si no está confirmado en lineup: `NO ESTIMABLE` |
+| Hits de equipo y hits permitidos por abridor | Hits/G, hits permitidos/G, hits/BF del abridor y BF por salida | Modelo exploratorio muy sensible a salida temprana |
+| Bases totales de bateador | Probabilidad de 0, sencillo, doble, triple o jonrón por turno | Línea 0.5 equivale a ≥1 hit; línea 1.5 requiere ≥2 bases |
 | Remolcadas de bateador | Turnos con corredores en posición de anotar, orden y lineup | Sin modelo de oportunidades: `NO ESTIMABLE` |
+| Hits+carreras+impulsadas | Oportunidades conjuntas, posición en lineup, compañeros | Sin modelo conjunto validado: `NO ESTIMABLE` |
 
 Para una combinada, tomar los resultados **conjuntos de cada corrida**. Reportar por separado
 probabilidad de cada selección, 13/13 (o N/N), pushes sin derrotas y escenarios perdedores.

@@ -46,6 +46,24 @@ def hitter_hits_counts(rng: np.random.Generator, hits: int, at_bats: int,
     attempts = rng.choice(np.asarray(ab_samples, dtype=int), size=n)
     return rng.binomial(attempts, hits / at_bats)
 
+def hitter_hit_and_bases_counts(rng: np.random.Generator, ab_samples: tuple[int, ...],
+                               total_base_probs: tuple[float, ...], n: int) -> tuple[np.ndarray, np.ndarray]:
+    """Draw hits and total bases from the same AB outcomes for one hitter."""
+    probs = np.asarray(total_base_probs, dtype=float)
+    if len(probs) != 5 or np.any(probs < 0) or not np.isclose(np.sum(probs), 1):
+        raise ValueError("five valid total-base outcome probabilities are required")
+    if not ab_samples or any(x < 0 for x in ab_samples):
+        raise ValueError("nonnegative game AB samples are required")
+    attempts = rng.choice(np.asarray(ab_samples, dtype=int), size=n)
+    hits = np.zeros(n, dtype=int)
+    bases = np.zeros(n, dtype=int)
+    for index in range(int(np.max(attempts))):
+        active = attempts > index
+        outcome = rng.choice(5, size=n, p=probs)
+        hits += (outcome > 0) & active
+        bases += outcome * active
+    return hits, bases
+
 def count_distribution(values: np.ndarray) -> dict[str, float | int]:
     """Observed Monte Carlo range and stable percentiles; no guaranteed bounds."""
     if len(values) == 0:

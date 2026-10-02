@@ -16,6 +16,24 @@
     "total_7": {
       "over": -113,
       "under": -104
+    },
+    "run_line_1.5": {
+      "Padres_plus_1.5": -120,
+      "Brewers_minus_1.5": 102
+    },
+    "alternative_totals_from_screenshot": {
+      "over_5.5": -215,
+      "under_5.5": 168,
+      "over_6": -186,
+      "under_6": 150,
+      "over_6.5": -145,
+      "under_6.5": 121,
+      "over_7.5": 114,
+      "under_7.5": -137,
+      "over_8": 135,
+      "under_8": -167,
+      "over_8.5": 155,
+      "under_8.5": -196
     }
   },
   "pitchers": {
@@ -309,5 +327,9 @@
     "hrr means hits plus runs plus RBI",
     "integer team-run and game-total lines may push under Betcris rules",
     "lineups and starters are projected, not confirmed"
-  ]
+  ],
+  "source_scope": {
+    "screenshots": "ML, full-game totals and run-line handicap",
+    "user_text": "team hits, pitcher strikeouts and hits allowed, hitter total bases and hit/H+R+RBI props, team runs, first-five and inning markets"
+  }
 }

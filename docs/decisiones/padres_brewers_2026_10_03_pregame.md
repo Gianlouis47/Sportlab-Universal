@@ -3,6 +3,9 @@
 Fecha RD: 3 de octubre de 2026, 8:30 p. m. Corte de datos: 2 de octubre,
 18:07 RD. Fuentes: MLB Stats API 2026 y líneas Betcris entregadas por el usuario,
 archivadas en `examples/betcris_padres_brewers_2026-10-03.json`.
+Las capturas muestran ML, totales del juego y hándicap; el texto del usuario
+aporta las líneas detalladas de hits, ponches, bateadores y totales por equipo,
+que son la prioridad al evaluar props. El archivo identifica ambos orígenes.
 Estado: `PREGAME`; Robbie Ray y Jacob Misiorowski son **probables**, no abridores
 confirmados. Alineaciones no confirmadas. Semilla 20261002, 10,000 corridas.
 Salidas `EXPLORATORY_UNCALIBRATED`; no son clasificación PRINCIPAL.

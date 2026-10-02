@@ -1,0 +1,48 @@
+{
+  "source": "Betcris screenshots supplied by the user in this chat; visible full-game total rows only",
+  "event_date_rd": "2026-10-03",
+  "timezone": "America/Santo_Domingo",
+  "captured_at": "UNAVAILABLE",
+  "notes": [
+    "These are historical quote snapshots and may change before first pitch.",
+    "Pitcher strikeout alternatives are not evidenced by these screenshots."
+  ],
+  "games": {
+    "cws_cle": [
+      {"line": 5.5, "over": -196, "under": 155},
+      {"line": 6, "over": -163, "under": 133},
+      {"line": 6.5, "over": -134, "under": 112},
+      {"line": 7, "over": 102, "under": -120},
+      {"line": 7.5, "over": 126, "under": -152},
+      {"line": 8, "over": 153, "under": -190},
+      {"line": 8.5, "over": 165, "under": -210}
+    ],
+    "atl_lad": [
+      {"line": 7, "over": -196, "under": 155},
+      {"line": 7.5, "over": -141, "under": 115},
+      {"line": 8, "over": -119, "under": -101},
+      {"line": 8.5, "over": 100, "under": -117},
+      {"line": 9, "over": 129, "under": -155},
+      {"line": 9.5, "over": 150, "under": -186},
+      {"line": 10, "over": 184, "under": -236}
+    ],
+    "nyy_tb": [
+      {"line": 5.5, "over": -205, "under": 161},
+      {"line": 6, "over": -178, "under": 144},
+      {"line": 6.5, "over": -140, "under": 116},
+      {"line": 7, "over": -108, "under": -108},
+      {"line": 7.5, "over": 119, "under": -142},
+      {"line": 8, "over": 144, "under": -178},
+      {"line": 8.5, "over": 161, "under": -205}
+    ],
+    "sd_mil": [
+      {"line": 5.5, "over": -215, "under": 168},
+      {"line": 6, "over": -186, "under": 150},
+      {"line": 6.5, "over": -145, "under": 121},
+      {"line": 7, "over": -113, "under": -104},
+      {"line": 7.5, "over": 114, "under": -137},
+      {"line": 8, "over": 135, "under": -167},
+      {"line": 8.5, "over": 155, "under": -196}
+    ]
+  }
+}

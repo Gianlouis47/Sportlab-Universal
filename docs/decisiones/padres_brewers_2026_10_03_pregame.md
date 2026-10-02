@@ -46,10 +46,32 @@ Misiorowski 5/8/12 K. Estos rangos no son límites garantizados.
 ## Bateadores y parciales
 
 La simulación condicional a **estar en la alineación** y a la mano del abridor
-produjo para Jackson Chourio ≥1 hit 772/1,000 y ≥2 bases totales 513/1,000;
-para Fernando Tatis Jr. ≥1 hit 719/1,000. Son escenarios proyectados, pues
+produjo para Jackson Chourio ≥1 hit 760/1,000 y ≥2 bases totales 507/1,000;
+para Fernando Tatis Jr. ≥1 hit 714/1,000. Son escenarios proyectados, pues
 el lineup todavía no está confirmado. Las líneas Sí hit de Betcris eran
 Chourio −220 y Tatis −190. No declararlas PRINCIPAL sin recheck y calibración.
+
+| Jugador | Equipo | ≥1 hit / 1,000 si inicia | ≥2 bases / 1,000 si inicia |
+| --- | --- | ---: | ---: |
+| Bauers | MIL | 619 | 389 |
+| Chourio | MIL | 760 | 507 |
+| Contreras | MIL | 686 | 398 |
+| Mitchell | MIL | 572 | 323 |
+| Ortiz | MIL | 511 | 259 |
+| Pratt | MIL | 593 | 265 |
+| Turang | MIL | 659 | 390 |
+| Yelich | MIL | 604 | 340 |
+| Bogaerts | SD | 570 | 286 |
+| Cronenworth | SD | 557 | 270 |
+| France | SD | 649 | 408 |
+| Machado | SD | 592 | 351 |
+| Merrill | SD | 663 | 406 |
+| Tatis Jr. | SD | 714 | 435 |
+
+Las 10,000 corridas usan frecuencias de sencillos/dobles/triples/HR,
+AB históricos y un escenario de exposición de 60 % al abridor. No modelan
+el orden al bate confirmado, cambios de bullpen, defensiva rival ni
+dependencia entre bateadores del mismo equipo.
 
 Histórico F5: Padres anotó ≥2 carreras en 593/1,000 juegos y Brewers ≥3
 en 488/1,000. No es predicción específica del matchup. Las líneas por

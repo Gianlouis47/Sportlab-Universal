@@ -99,7 +99,7 @@ de cobro, no a una recomendación.
 | CWS | 3 | −105 / 55.2% | 14.8% | −114 / 29.9% | Messick y bullpen de CLE limitan a 0–2; 3 devuelve |
 | CLE | 3.5 | −103 / 56.8% | 0% | −116 / 43.2% | Smith o relevos de CWS contienen a 0–3 |
 | ATL | 3 | −112 / 46.6% | 16.1% | −107 / 37.3% | Skubal y bullpen LAD contienen a 0–2; 3 devuelve |
-| LAD | 5 | +103 / 32.9% | 11.2% | −123 / 56.0% | El under falla con 6+ ante abridor ATL aún desconocido |
+| LAD | 5 | +103 / NO ESTIMABLE | NO ESTIMABLE | −123 / NO ESTIMABLE | El abridor ATL aún no está anunciado |
 | NYY | 3 | −121 / 52.0% | 14.5% | +101 / 33.5% | Rasmussen y relevo TB contienen a 0–2; 3 devuelve |
 | TB | 3.5 | −107 / 51.4% | 0% | −112 / 48.6% | Cole y bullpen NYY contienen a 0–3 |
 | SD | 2.5 | −116 / 67.6% | 0% | −103 / 32.4% | Misiorowski y bullpen MIL dejan a SD en 0–2 |

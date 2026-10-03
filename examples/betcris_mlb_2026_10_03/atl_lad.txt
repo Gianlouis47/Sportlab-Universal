@@ -1,0 +1,593 @@
+Game 1
+Fuera / En casa
+A ganar
+Total
+Handicap
+Los Angeles Dodgers
+Atlanta Braves
++12
+-223
++194
+Ov 8.5
++100
+Un 8.5
+-117
+-1.5
+-108
++1.5
+-108
+First Half
+Fuera / En casa
+A ganar
+Total
+Handicap
+Los Angeles Dodgers
+Atlanta Braves
++4
+-251
++208
+Ov 4.5
+-108
+Un 4.5
+-113
+-1
+-125
++1
++102
+SECOND HALF
+Fuera / En casa
+A ganar
+Total
+Handicap
+Los Angeles Dodgers
+Atlanta Braves
+-145
++121
+Ov 3
+-130
+Un 3
++106
+-0.5
++108
++0.5
+-133
+Braves vs Dodgers: Braves Total del Equipo
+Fuera / En casa
+A ganar
+Total
+Handicap
+Atlanta Braves
+Atlanta Braves
++2
+Ov 3
+-112
+Un 3
+-107
+Braves vs Dodgers: Dodgers Total del Equipo
+Fuera / En casa
+A ganar
+Total
+Handicap
+Los Angeles Dodgers
+Los Angeles Dodgers
++2
+Ov 5
++103
+Un 5
+-123
+Braves vs Dodgers: Braves Total del Equipo (1ras 5 Entradas)
+Atlanta Braves
+Ov 1.5
++106
+Atlanta Braves
+Un 1.5
+-130
+Braves vs Dodgers: Dodgers Total del Equipo (1ras 5 Entradas)
+Los Angeles Dodgers
+Ov 2.5
+-125
+Los Angeles Dodgers
+Un 2.5
++102
+Braves vs Dodgers: Primero en Anotar
+Los Angeles Dodgers
+-140
+Atlanta Braves
++110
+Braves vs Dodgers: Braves Anota en la 1era Entrada
+No
+-396
+Sí
++290
+Braves vs Dodgers: Dodgers Anota en la 1era Entrada
+No
+-164
+Sí
++130
+Braves vs Dodgers: Total de Hits+Carreras+Errores
+Over
+Ov 26.5
+-105
+Under
+Un 26.5
+-125
+Braves vs Dodgers: Total de Carreras (1ª Entrada)
+Menos de 1.5 Carreras
+-349
+Más de 1.5 Carreras
++260
+Braves vs Dodgers: Equipo con la Entrada con Más Carreras
+Los Angeles Dodgers
+-220
+Atlanta Braves
++172
+Braves vs Dodgers: Primero en Anotar Ganará el Partido
+No
++179
+Sí
+-230
+Braves vs Dodgers: Último en Anotar
+Los Angeles Dodgers
+-170
+Atlanta Braves
++135
+Braves vs Dodgers: Último en Anotar Ganará el Partido
+No
++204
+Sí
+-265
+Braves vs Dodgers: El Partido Tendrá Entradas Extra
+No
+-1329
+Sí
++700
+Braves vs Dodgers: Total de Hits en el Partido
+Over
+Ov 15.5
+-108
+Under
+Un 15.5
+-122
+Braves vs Dodgers: Braves Total de Hits
+Over
+Ov 7.5
++105
+Under
+Un 7.5
+-135
+Braves vs Dodgers: Dodgers Total de Hits
+Over
+Ov 8.5
++115
+Under
+Un 8.5
+-145
+Braves vs Dodgers: Total de Carreras (Par/Impar)
+Par
++134
+Impar
+-168
+Braves vs Dodgers: Braves Total de Carreras (Par/Impar)
+Par
+-126
+Impar
+-104
+Braves vs Dodgers: Dodgers Total de Carreras (Par/Impar)
+Par
+-115
+Impar
+-115
+Braves vs Dodgers: Cual Equipo Ganará más Entradas
+Los Angeles Dodgers
+-250
+Atlanta Braves
++194
+Braves vs Dodgers: Total de Bases Robadas
+Fuera / En casa
+A ganar
+Total
+Handicap
+Under
+Over
+Ov 0.5
+-225
+Un 0.5
++176
+Braves vs Dodgers: Total de Ponches
+Tarik Skubal
+Ov 6.5
+-119
+Tarik Skubal
+Un 6.5
+-111
+Braves vs Dodgers: Total de Hits Permitidos por el Pitcher
+Tarik Skubal
+Ov 4.5
+-126
+Tarik Skubal
+Un 4.5
+-104
+Braves vs Dodgers: Bases Totales en el Partido
+Austin Riley
+Ov 0.5
+-140
+Austin Riley
+Un 0.5
++110
+Braves vs Dodgers: Bases Totales en el Partido
+Drake Baldwin
+Ov 1.5
++130
+Drake Baldwin
+Un 1.5
+-163
+Braves vs Dodgers: Bases Totales en el Partido
+Matt Olson
+Ov 1.5
++140
+Matt Olson
+Un 1.5
+-176
+Braves vs Dodgers: Bases Totales en el Partido
+Mauricio Dubon
+Ov 0.5
+-190
+Mauricio Dubon
+Un 0.5
++150
+Braves vs Dodgers: Bases Totales en el Partido
+Michael Harris II
+Ov 0.5
+-180
+Michael Harris II
+Un 0.5
++143
+Braves vs Dodgers: Bases Totales en el Partido
+Ozzie Albies
+Ov 1.5
++160
+Ozzie Albies
+Un 1.5
+-203
+Braves vs Dodgers: Bases Totales en el Partido
+Ronald Acuna Jr.
+Ov 1.5
++135
+Ronald Acuna Jr.
+Un 1.5
+-170
+Braves vs Dodgers: Bases Totales en el Partido
+Freddie Freeman
+Ov 1.5
++125
+Freddie Freeman
+Un 1.5
+-157
+Braves vs Dodgers: Bases Totales en el Partido
+Kyle Tucker
+Ov 1.5
++136
+Kyle Tucker
+Un 1.5
+-171
+Braves vs Dodgers: Bases Totales en el Partido
+Max Muncy
+Ov 1.5
++155
+Max Muncy
+Un 1.5
+-197
+Braves vs Dodgers: Bases Totales en el Partido
+Mookie Betts
+Ov 1.5
++110
+Mookie Betts
+Un 1.5
+-140
+Braves vs Dodgers: Bases Totales en el Partido
+Shohei Ohtani
+Ov 1.5
+-110
+Shohei Ohtani
+Un 1.5
+-120
+Braves vs Dodgers: Bases Totales en el Partido
+Teoscar Hernandez
+Ov 1.5
++140
+Teoscar Hernandez
+Un 1.5
+-176
+Braves vs Dodgers: Bases Totales en el Partido
+Tommy Edman
+Ov 0.5
+-155
+Tommy Edman
+Un 0.5
++124
+Braves vs Dodgers: Más Bases Totales
+Freddie Freeman
+-118
+Drake Baldwin
+-112
+Braves vs Dodgers: Más Bases Totales
+Mookie Betts
+-133
+Matt Olson
++103
+Braves vs Dodgers: Más Bases Totales
+Teoscar Hernandez
+-125
+Ozzie Albies
+-105
+Braves vs Dodgers: Más Bases Totales
+Shohei Ohtani
+-144
+Ronald Acuna Jr.
++114
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Austin Riley - No
++103
+Austin Riley - Sí
+-133
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Drake Baldwin - No
++165
+Drake Baldwin - Sí
+-210
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Freddie Freeman - No
++172
+Freddie Freeman - Sí
+-220
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Kyle Tucker - No
++150
+Kyle Tucker - Sí
+-190
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Matt Olson - No
++135
+Matt Olson - Sí
+-170
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Mauricio Dubon - No
++158
+Mauricio Dubon - Sí
+-200
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Max Muncy - No
++120
+Max Muncy - Sí
+-150
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Michael Harris II - No
++143
+Michael Harris II - Sí
+-180
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Mookie Betts - No
++183
+Mookie Betts - Sí
+-235
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Ozzie Albies - No
++135
+Ozzie Albies - Sí
+-170
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Ronald Acuna Jr. - No
++135
+Ronald Acuna Jr. - Sí
+-170
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Shohei Ohtani - No
++183
+Shohei Ohtani - Sí
+-235
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Teoscar Hernandez - No
++135
+Teoscar Hernandez - Sí
+-170
+Braves vs Dodgers: Jugador Batea al menos un Hit
+Tommy Edman - No
++127
+Tommy Edman - Sí
+-160
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Austin Riley - No
+-741
+Austin Riley - Sí
++475
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Drake Baldwin - No
+-1038
+Drake Baldwin - Sí
++600
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Freddie Freeman - No
+-876
+Freddie Freeman - Sí
++535
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Kyle Tucker - No
+-699
+Kyle Tucker - Sí
++455
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Matt Olson - No
+-498
+Matt Olson - Sí
++350
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Mauricio Dubon - No
+-2560
+Mauricio Dubon - Sí
++980
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Max Muncy - No
+-682
+Max Muncy - Sí
++447
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Michael Harris II - No
+-1206
+Michael Harris II - Sí
++660
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Mookie Betts - No
+-689
+Mookie Betts - Sí
++450
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Ozzie Albies - No
+-1329
+Ozzie Albies - Sí
++700
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Ronald Acuna Jr. - No
+-609
+Ronald Acuna Jr. - Sí
++410
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Shohei Ohtani - No
+-446
+Shohei Ohtani - Sí
++320
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Teoscar Hernandez - No
+-689
+Teoscar Hernandez - Sí
++450
+Braves vs Dodgers: Jugador Conectará un Jonrón
+Tommy Edman - No
+-1394
+Tommy Edman - Sí
++720
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Austin Riley
+Ov 0.5
+-175
+Austin Riley
+Un 0.5
++139
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Drake Baldwin
+Ov 1.5
+-105
+Drake Baldwin
+Un 1.5
+-125
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Matt Olson
+Ov 1.5
++110
+Matt Olson
+Un 1.5
+-140
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Mauricio Dubon
+Ov 1.5
++125
+Mauricio Dubon
+Un 1.5
+-157
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Michael Harris II
+Ov 1.5
++130
+Michael Harris II
+Un 1.5
+-163
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Ozzie Albies
+Ov 1.5
++115
+Ozzie Albies
+Un 1.5
+-145
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Ronald Acuna Jr.
+Ov 1.5
+-105
+Ronald Acuna Jr.
+Un 1.5
+-125
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Freddie Freeman
+Ov 1.5
+-130
+Freddie Freeman
+Un 1.5
++100
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Kyle Tucker
+Ov 1.5
+-115
+Kyle Tucker
+Un 1.5
+-115
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Max Muncy
+Ov 1.5
++110
+Max Muncy
+Un 1.5
+-140
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Mookie Betts
+Ov 1.5
+-140
+Mookie Betts
+Un 1.5
++110
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Shohei Ohtani
+Ov 2.5
++110
+Shohei Ohtani
+Un 2.5
+-140
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Teoscar Hernandez
+Ov 1.5
+-110
+Teoscar Hernandez
+Un 1.5
+-120
+Braves vs Dodgers: Hits+Carreras+Carreras Impulsadas
+Tommy Edman
+Ov 1.5
++110
+Tommy Edman
+Un 1.5
+-140
+Braves vs Dodgers: Margen de Victoria
+Los Angeles Dodgers 4+ Runs
++205
+Los Angeles Dodgers 1 Run
++380
+Los Angeles Dodgers 2 Runs
++600
+Atlanta Braves 1 Run
++650
+Atlanta Braves 4+ Runs
++650
+Los Angeles Dodgers 3 Runs
++750
+Atlanta Braves 2 Runs
++900
+Atlanta Braves 3 Runs
++1400
+Braves vs Dodgers: Primer Jonrón del Partido Será
+Solo Home Run
+-170
+2-Run Home Run
++210
+3-Run Home Run
++600
+No Home Run Scored
++800
+Grand Slam
++2700

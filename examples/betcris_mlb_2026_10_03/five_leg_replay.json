@@ -1,0 +1,36 @@
+{
+  "status": "EXPLORATORY_UNCALIBRATED",
+  "runs": 10000,
+  "seed": 20261002,
+  "legs": [
+    "CWS-CLE over 5.5",
+    "NYY-TB over 5.5",
+    "SD-MIL over 5.5",
+    "Chandler Simpson yes hit",
+    "Jackson Chourio yes hit"
+  ],
+  "american_odds": [
+    -196,
+    -205,
+    -215,
+    -224,
+    -220
+  ],
+  "combined_decimal_odds": 6.9259,
+  "combined_break_even": 0.1444,
+  "same_game_pair_lifts": {
+    "Jackson Chourio": 1.0307,
+    "Chandler Simpson": 1.0392
+  },
+  "base": {
+    "full_win_count": 2417,
+    "win_per_1000": 241.7,
+    "assumption": "base run and hitter models"
+  },
+  "lower_scoring_and_fewer_ab": {
+    "full_win_count": 1141,
+    "win_per_1000": 114.1,
+    "assumption": "15% lower run means and one fewer AB per hitter"
+  },
+  "different_games_independent": true
+}

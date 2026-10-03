@@ -1,0 +1,877 @@
+NDLS Series Price
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-185
++158
+Game 1
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
++12
+-208
++182
+Ov 7
+-113
+Un 7
+-104
+-1.5
++102
++1.5
+-120
+First Half
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
++4
+-270
++223
+Ov 4
+-115
+Un 4
+-106
+-1.5
++106
++1.5
+-130
+SECOND HALF
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-105
+-114
+Ov 2.5
+-113
+Un 2.5
+-108
++0.5
+-178
+-0.5
++144
+INNING 1
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-232
++187
+Ov 0.5
++113
+Un 0.5
+-138
+-0.5
++218
++0.5
+-276
+INNING 2
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-212
++171
+Ov 0.5
++139
+Un 0.5
+-170
+-0.5
++258
++0.5
+-333
+INNING 3
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-222
++179
+Ov 0.5
++118
+Un 0.5
+-143
+-0.5
++229
++0.5
+-291
+INNING 4
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-202
++164
+Ov 0.5
++123
+Un 0.5
+-149
+-0.5
++246
++0.5
+-315
+INNING 5
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-185
++151
+Ov 0.5
++128
+Un 0.5
+-156
+-0.5
++265
++0.5
+-342
+INNING 6
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-153
++125
+Ov 0.5
++130
+Un 0.5
+-159
+-0.5
++302
++0.5
+-398
+INNING 7
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-122
++100
+Ov 0.5
++142
+Un 0.5
+-173
+-0.5
++357
++0.5
+-485
+INNING 8
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
+-108
+-112
+Ov 0.5
++148
+Un 0.5
+-181
++0.5
+-521
+-0.5
++378
+INNING 9
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+San Diego Padres
++265
+-342
+Ov 0.5
++229
+Un 0.5
+-291
++0.5
+-452
+-0.5
++337
+Padres vs Brewers: Padres Total del Equipo
+Fuera / En casa
+A ganar
+Total
+Handicap
+San Diego Padres
+San Diego Padres
++2
+Ov 2.5
+-116
+Un 2.5
+-103
+Padres vs Brewers: Brewers Total del Equipo
+Fuera / En casa
+A ganar
+Total
+Handicap
+Milwaukee Brewers
+Milwaukee Brewers
++2
+Ov 4
+-121
+Un 4
++101
+Padres vs Brewers: Padres Total del Equipo (1ras 5 Entradas)
+San Diego Padres
+Ov 1
+-115
+San Diego Padres
+Un 1
+-106
+Padres vs Brewers: Brewers Total del Equipo (1ras 5 Entradas)
+Milwaukee Brewers
+Ov 2.5
+-113
+Milwaukee Brewers
+Un 2.5
+-108
+Padres vs Brewers: Padres Total del Equipo 1ª Entrada
+San Diego Padres
+Ov 0.5
++403
+San Diego Padres
+Un 0.5
+-562
+Padres vs Brewers: Brewers Total del Equipo 1ª Entrada
+Milwaukee Brewers
+Ov 0.5
++191
+Milwaukee Brewers
+Un 0.5
+-238
+Padres vs Brewers: Padres Total del Equipo 2ª Entrada
+San Diego Padres
+Ov 0.5
++443
+San Diego Padres
+Un 0.5
+-635
+Padres vs Brewers: Brewers Total del Equipo 2ª Entrada
+Milwaukee Brewers
+Ov 0.5
++224
+Milwaukee Brewers
+Un 0.5
+-283
+Padres vs Brewers: Padres Total del Equipo 3ª Entrada
+San Diego Padres
+Ov 0.5
++415
+San Diego Padres
+Un 0.5
+-585
+Padres vs Brewers: Brewers Total del Equipo 3ª Entrada
+Milwaukee Brewers
+Ov 0.5
++199
+Milwaukee Brewers
+Un 0.5
+-250
+Padres vs Brewers: Padres Total del Equipo 4ª Entrada
+San Diego Padres
+Ov 0.5
++390
+San Diego Padres
+Un 0.5
+-541
+Padres vs Brewers: Brewers Total del Equipo 4ª Entrada
+Milwaukee Brewers
+Ov 0.5
++213
+Milwaukee Brewers
+Un 0.5
+-269
+Padres vs Brewers: Padres Total del Equipo 5ª Entrada
+San Diego Padres
+Ov 0.5
++390
+San Diego Padres
+Un 0.5
+-541
+Padres vs Brewers: Brewers Total del Equipo 5ª Entrada
+Milwaukee Brewers
+Ov 0.5
++229
+Milwaukee Brewers
+Un 0.5
+-291
+Padres vs Brewers: Padres Total del Equipo 6ª Entrada
+San Diego Padres
+Ov 0.5
++346
+San Diego Padres
+Un 0.5
+-468
+Padres vs Brewers: Brewers Total del Equipo 6ª Entrada
+Milwaukee Brewers
+Ov 0.5
++246
+Milwaukee Brewers
+Un 0.5
+-315
+Padres vs Brewers: Padres Total del Equipo 7ª Entrada
+San Diego Padres
+Ov 0.5
++327
+San Diego Padres
+Un 0.5
+-438
+Padres vs Brewers: Brewers Total del Equipo 7ª Entrada
+Milwaukee Brewers
+Ov 0.5
++294
+Milwaukee Brewers
+Un 0.5
+-385
+Padres vs Brewers: Padres Total del Equipo 8ª Entrada
+San Diego Padres
+Ov 0.5
++318
+San Diego Padres
+Un 0.5
+-424
+Padres vs Brewers: Brewers Total del Equipo 8ª Entrada
+Milwaukee Brewers
+Ov 0.5
++318
+Milwaukee Brewers
+Un 0.5
+-424
+Padres vs Brewers: Padres Total del Equipo 9ª Entrada
+San Diego Padres
+Ov 0.5
++310
+San Diego Padres
+Un 0.5
+-410
+Padres vs Brewers: Primero en Anotar
+Milwaukee Brewers
+-140
+San Diego Padres
++110
+Padres vs Brewers: Padres Anota en la 1era Entrada
+No
+-507
+Sí
++355
+Padres vs Brewers: Brewers Anota en la 1era Entrada
+No
+-252
+Sí
++195
+Padres vs Brewers: Total de Hits+Carreras+Errores
+Over
+Ov 23.5
+-105
+Under
+Un 23.5
+-125
+Padres vs Brewers: Total de Carreras (1ª Entrada)
+Menos de 1.5 Carreras
+-396
+Más de 1.5 Carreras
++290
+Padres vs Brewers: Equipo con la Entrada con Más Carreras
+Milwaukee Brewers
+-228
+San Diego Padres
++178
+Padres vs Brewers: Primero en Anotar Ganará el Partido
+No
++201
+Sí
+-260
+Padres vs Brewers: Último en Anotar
+Milwaukee Brewers
+-176
+San Diego Padres
++140
+Padres vs Brewers: Último en Anotar Ganará el Partido
+No
++214
+Sí
+-280
+Padres vs Brewers: El Partido Tendrá Entradas Extra
+No
+-1300
+Sí
++691
+Padres vs Brewers: Total de Hits en el Partido
+Over
+Ov 14.5
+-110
+Under
+Un 14.5
+-120
+Padres vs Brewers: Padres Total de Hits
+Over
+Ov 6.5
+-110
+Under
+Un 6.5
+-120
+Padres vs Brewers: Brewers Total de Hits
+Over
+Ov 7.5
+-130
+Under
+Un 7.5
++100
+Padres vs Brewers: Total de Carreras (Par/Impar)
+Par
++135
+Impar
+-170
+Padres vs Brewers: Padres Total de Carreras (Par/Impar)
+Par
+-135
+Impar
++105
+Padres vs Brewers: Brewers Total de Carreras (Par/Impar)
+Par
+-125
+Impar
+-105
+Padres vs Brewers: Cual Equipo Ganará más Entradas
+Milwaukee Brewers
+-265
+San Diego Padres
++204
+Padres vs Brewers: Total de Bases Robadas
+Over
+Ov 1.5
+-120
+Under
+Un 1.5
+-110
+Padres vs Brewers: Total de Ponches
+Robbie Ray
+Ov 4.5
++110
+Robbie Ray
+Un 4.5
+-140
+Padres vs Brewers: Total de Ponches
+Jacob Misiorowski
+Ov 8.5
++120
+Jacob Misiorowski
+Un 8.5
+-150
+Padres vs Brewers: Total de Hits Permitidos por el Pitcher
+Robbie Ray
+Ov 3.5
+-120
+Robbie Ray
+Un 3.5
+-110
+Padres vs Brewers: Total de Hits Permitidos por el Pitcher
+Jacob Misiorowski
+Ov 3.5
+-115
+Jacob Misiorowski
+Un 3.5
+-115
+Padres vs Brewers: Bases Totales en el Partido
+Fernando Tatis Jr
+Ov 0.5
+-190
+Fernando Tatis Jr
+Un 0.5
++150
+Padres vs Brewers: Bases Totales en el Partido
+Jackson Merrill
+Ov 0.5
+-140
+Jackson Merrill
+Un 0.5
++110
+Padres vs Brewers: Bases Totales en el Partido
+Jake Cronenworth
+Ov 0.5
++128
+Jake Cronenworth
+Un 0.5
+-161
+Padres vs Brewers: Bases Totales en el Partido
+Manny Machado
+Ov 1.5
++165
+Manny Machado
+Un 1.5
+-210
+Padres vs Brewers: Bases Totales en el Partido
+Ty France
+Ov 0.5
+-145
+Ty France
+Un 0.5
++115
+Padres vs Brewers: Bases Totales en el Partido
+Xander Bogaerts
+Ov 0.5
+-135
+Xander Bogaerts
+Un 0.5
++105
+Padres vs Brewers: Bases Totales en el Partido
+Brice Turang
+Ov 1.5
++140
+Brice Turang
+Un 1.5
+-176
+Padres vs Brewers: Bases Totales en el Partido
+Christian Yelich
+Ov 0.5
+-150
+Christian Yelich
+Un 0.5
++120
+Padres vs Brewers: Bases Totales en el Partido
+Cooper Pratt
+Ov 0.5
+-140
+Cooper Pratt
+Un 0.5
++110
+Padres vs Brewers: Bases Totales en el Partido
+Garrett Mitchell
+Ov 0.5
+-150
+Garrett Mitchell
+Un 0.5
++120
+Padres vs Brewers: Bases Totales en el Partido
+Jackson Chourio
+Ov 1.5
++125
+Jackson Chourio
+Un 1.5
+-157
+Padres vs Brewers: Bases Totales en el Partido
+Jake Bauers
+Ov 1.5
++155
+Jake Bauers
+Un 1.5
+-197
+Padres vs Brewers: Bases Totales en el Partido
+William Contreras
+Ov 1.5
++140
+William Contreras
+Un 1.5
+-176
+Padres vs Brewers: Más Bases Totales
+Brice Turang
+-122
+Fernando Tatis Jr
+-108
+Padres vs Brewers: Más Bases Totales
+Christian Yelich
+-120
+Jackson Merrill
+-110
+Padres vs Brewers: Más Bases Totales
+William Contreras
+-120
+Manny Machado
+-110
+Padres vs Brewers: Más Bases Totales
+Garrett Mitchell
+-115
+Ty France
+-115
+Padres vs Brewers: Jugador Batea al menos un Hit
+Brice Turang - No
++150
+Brice Turang - Sí
+-190
+Padres vs Brewers: Jugador Batea al menos un Hit
+Christian Yelich - No
++125
+Christian Yelich - Sí
+-157
+Padres vs Brewers: Jugador Batea al menos un Hit
+Cooper Pratt - No
++120
+Cooper Pratt - Yes
+-150
+Padres vs Brewers: Jugador Batea al menos un Hit
+Fernando Tatis Jr - No
++150
+Fernando Tatis Jr - Sí
+-190
+Padres vs Brewers: Jugador Batea al menos un Hit
+Garrett Mitchell - No
++100
+Garrett Mitchell - Sí
+-130
+Padres vs Brewers: Jugador Batea al menos un Hit
+Jackson Chourio - No
++172
+Jackson Chourio - Sí
+-220
+Padres vs Brewers: Jugador Batea al menos un Hit
+Jackson Merrill - No
+-105
+Jackson Merrill - Sí
+-125
+Padres vs Brewers: Jugador Batea al menos un Hit
+Jake Bauers - No
++120
+Jake Bauers - Sí
+-150
+Padres vs Brewers: Jugador Batea al menos un Hit
+Jake Cronenworth - No
+-135
+Jake Cronenworth - Sí
++105
+Padres vs Brewers: Jugador Batea al menos un Hit
+Joey Ortiz - No
++115
+Joey Ortiz - Sí
+-145
+Padres vs Brewers: Jugador Batea al menos un Hit
+Manny Machado - No
++120
+Manny Machado - Sí
+-150
+Padres vs Brewers: Jugador Batea al menos un Hit
+Ty France - No
++125
+Ty France - Sí
+-157
+Padres vs Brewers: Jugador Batea al menos un Hit
+William Contreras - No
++155
+William Contreras - Sí
+-197
+Padres vs Brewers: Jugador Batea al menos un Hit
+Xander Bogaerts - No
+-105
+Xander Bogaerts - Sí
+-125
+Padres vs Brewers: Jugador Conectará un Jonrón
+Brice Turang - No
+-1550
+Brice Turang - Sí
++765
+Padres vs Brewers: Jugador Conectará un Jonrón
+Christian Yelich - No
+-1890
+Christian Yelich - Sí
++850
+Padres vs Brewers: Jugador Conectará un Jonrón
+Cooper Pratt - No
+-2685
+Cooper Pratt - Yes
++1000
+Padres vs Brewers: Jugador Conectará un Jonrón
+Fernando Tatis Jr - No
+-773
+Fernando Tatis Jr - Sí
++490
+Padres vs Brewers: Jugador Conectará un Jonrón
+Garrett Mitchell - No
+-1605
+Garrett Mitchell - Sí
++780
+Padres vs Brewers: Jugador Conectará un Jonrón
+Jackson Chourio - No
+-818
+Jackson Chourio - Sí
++510
+Padres vs Brewers: Jugador Conectará un Jonrón
+Jackson Merrill - No
+-1106
+Jackson Merrill - Sí
++625
+Padres vs Brewers: Jugador Conectará un Jonrón
+Jake Bauers - No
+-628
+Jake Bauers - Sí
++420
+Padres vs Brewers: Jugador Conectará un Jonrón
+Jake Cronenworth - No
+-5143
+Jake Cronenworth - Sí
++1250
+Padres vs Brewers: Jugador Conectará un Jonrón
+Joey Ortiz - No
+-2250
+Joey Ortiz - Sí
++925
+Padres vs Brewers: Jugador Conectará un Jonrón
+Manny Machado - No
+-852
+Manny Machado - Sí
++525
+Padres vs Brewers: Jugador Conectará un Jonrón
+Ty France - No
+-1297
+Ty France - Sí
++690
+Padres vs Brewers: Jugador Conectará un Jonrón
+William Contreras - No
+-936
+William Contreras - Sí
++560
+Padres vs Brewers: Jugador Conectará un Jonrón
+Xander Bogaerts - No
+-1722
+Xander Bogaerts - Sí
++810
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Fernando Tatis Jr
+Ov 1.5
++110
+Fernando Tatis Jr
+Un 1.5
+-140
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Jackson Merrill
+Ov 1.5
++156
+Jackson Merrill
+Un 1.5
+-198
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Jake Cronenworth
+Ov 0.5
+-115
+Jake Cronenworth
+Un 0.5
+-115
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Manny Machado
+Ov 1.5
++131
+Manny Machado
+Un 1.5
+-165
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Ty France
+Ov 1.5
++131
+Ty France
+Un 1.5
+-165
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Xander Bogaerts
+Ov 0.5
+-157
+Xander Bogaerts
+Un 0.5
++125
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Brice Turang
+Ov 1.5
+-110
+Brice Turang
+Un 1.5
+-120
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Christian Yelich
+Ov 1.5
++107
+Christian Yelich
+Un 1.5
+-137
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Cooper Pratt
+Ov 1.5
++115
+Cooper Pratt
+Un 1.5
+-145
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Garrett Mitchell
+Ov 1.5
++115
+Garrett Mitchell
+Un 1.5
+-145
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Jackson Chourio
+Ov 1.5
+-130
+Jackson Chourio
+Un 1.5
++100
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Jake Bauers
+Ov 1.5
++105
+Jake Bauers
+Un 1.5
+-135
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+Joey Ortiz
+Ov 1.5
++122
+Joey Ortiz
+Un 1.5
+-153
+Padres vs Brewers: Hits+Carreras+Carreras Impulsadas
+William Contreras
+Ov 1.5
++100
+William Contreras
+Un 1.5
+-130
+Padres vs Brewers: Margen de Victoria
+Milwaukee Brewers 4+ Runs
++243
+Milwaukee Brewers 1 Run
++324
+Milwaukee Brewers 2 Runs
++556
+San Diego Padres 1 Run
++606
+Milwaukee Brewers 3 Runs
++640
+San Diego Padres 4+ Runs
++839
+San Diego Padres 2 Runs
++859
+San Diego Padres 3 Runs
++1313
+Padres vs Brewers: Primer Jonrón del Partido Será
+Solo Home Run
+-150
+2-Run Home Run
++240
+No Home Run Scored
++400
+3-Run Home Run
++700
+Grand Slam
++3500

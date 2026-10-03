@@ -1,0 +1,770 @@
+ALDS Series Price
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+-110
+-110
+Game 1
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
++12
+-130
++115
+Ov 7
+-108
+Un 7
+-108
+-1.5
++156
++1.5
+-186
+First Half
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
++4
+-144
++122
+Ov 3.5
+-125
+Un 3.5
++102
+-0.5
++100
++0.5
+-122
+SECOND HALF
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+-107
+-112
+Ov 3
++100
+Un 3
+-122
++0.5
+-167
+-0.5
++135
+INNING 1
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 2
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 3
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 4
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 5
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 6
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 7
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+INNING 8
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+New York Yankees
+Yankees vs Rays: Yankees Total del Equipo
+Fuera / En casa
+A ganar
+Total
+Handicap
+New York Yankees
+New York Yankees
++2
+Ov 3
+-121
+Un 3
++101
+Yankees vs Rays: Rays Total del Equipo
+Fuera / En casa
+A ganar
+Total
+Handicap
+Tampa Bay Rays
+Tampa Bay Rays
++2
+Ov 3.5
+-107
+Un 3.5
+-112
+Yankees vs Rays: Yankees Total del Equipo (1ras 5 Entradas)
+New York Yankees
+Ov 1.5
+-113
+New York Yankees
+Un 1.5
+-108
+Yankees vs Rays: Rays Total del Equipo (1ras 5 Entradas)
+Tampa Bay Rays
+Ov 2
++108
+Tampa Bay Rays
+Un 2
+-133
+Yankees vs Rays: Yankees Total del Equipo 1ª Entrada
+Yankees vs Rays: Rays Total del Equipo 1ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 2ª Entrada
+Yankees vs Rays: Rays Total del Equipo 2ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 3ª Entrada
+Yankees vs Rays: Rays Total del Equipo 3ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 4ª Entrada
+Yankees vs Rays: Rays Total del Equipo 4ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 5ª Entrada
+Yankees vs Rays: Rays Total del Equipo 5ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 6ª Entrada
+Yankees vs Rays: Rays Total del Equipo 6ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 7ª Entrada
+Yankees vs Rays: Rays Total del Equipo 7ª Entrada
+Yankees vs Rays: Yankees Total del Equipo 8ª Entrada
+Yankees vs Rays: Rays Total del Equipo 8ª Entrada
+Yankees vs Rays: Primero en Anotar
+Tampa Bay Rays
++105
+New York Yankees
+-135
+Yankees vs Rays: Yankees Anota en la 1era Entrada
+No
+-380
+Sí
++280
+Yankees vs Rays: Rays Anota en la 1era Entrada
+No
+-296
+Sí
++225
+Yankees vs Rays: Total de Hits+Carreras+Errores
+Over
+Ov 23.5
+-105
+Under
+Un 23.5
+-125
+Yankees vs Rays: Total de Carreras (1ª Entrada)
+Menos de 1.5 Carreras
+-413
+Más de 1.5 Carreras
++300
+Yankees vs Rays: Equipo con la Entrada con Más Carreras
+Tampa Bay Rays
+-135
+New York Yankees
++105
+Yankees vs Rays: Primero en Anotar Ganará el Partido
+No
++194
+Sí
+-250
+Yankees vs Rays: Último en Anotar
+Tampa Bay Rays
+-140
+New York Yankees
++110
+Yankees vs Rays: Último en Anotar Ganará el Partido
+No
++204
+Sí
+-265
+Yankees vs Rays: El Partido Tendrá Entradas Extra
+No
+-1100
+Sí
++623
+Yankees vs Rays: Total de Hits en el Partido
+Over
+Ov 14.5
+-120
+Under
+Un 14.5
+-110
+Yankees vs Rays: Yankees Total de Hits
+Over
+Ov 6.5
+-130
+Under
+Un 6.5
++100
+Yankees vs Rays: Rays Total de Hits
+Over
+Ov 7.5
+-130
+Under
+Un 7.5
++100
+Yankees vs Rays: Total de Carreras (Par/Impar)
+Par
++141
+Impar
+-178
+Yankees vs Rays: Yankees Total de Carreras (Par/Impar)
+Par
+-122
+Impar
+-108
+Yankees vs Rays: Rays Total de Carreras (Par/Impar)
+Par
+-120
+Impar
+-110
+Yankees vs Rays: Cual Equipo Ganará más Entradas
+Tampa Bay Rays
+-138
+New York Yankees
++108
+Yankees vs Rays: Total de Bases Robadas
+Over
+Ov 1.5
+-120
+Under
+Un 1.5
+-110
+Yankees vs Rays: Total de Ponches
+Gerrit Cole
+Ov 5.5
++134
+Gerrit Cole
+Un 5.5
+-168
+Yankees vs Rays: Total de Ponches
+Drew Rasmussen
+Ov 6.5
++121
+Drew Rasmussen
+Un 6.5
+-151
+Yankees vs Rays: Total de Hits Permitidos por el Pitcher
+Gerrit Cole
+Ov 4.5
+-159
+Gerrit Cole
+Un 4.5
++127
+Yankees vs Rays: Total de Hits Permitidos por el Pitcher
+Drew Rasmussen
+Ov 3.5
+-116
+Drew Rasmussen
+Un 3.5
+-114
+Yankees vs Rays: Bases Totales en el Partido
+Austin Wells
+Ov 0.5
+-110
+Austin Wells
+Un 0.5
+-120
+Yankees vs Rays: Bases Totales en el Partido
+Ben Rice
+Ov 1.5
++115
+Ben Rice
+Un 1.5
+-145
+Yankees vs Rays: Bases Totales en el Partido
+Cody Bellinger
+Ov 1.5
++150
+Cody Bellinger
+Un 1.5
+-190
+Yankees vs Rays: Bases Totales en el Partido
+George Lombard Jr
+Ov 0.5
+-150
+George Lombard Jr
+Un 0.5
++120
+Yankees vs Rays: Bases Totales en el Partido
+Jazz Chisholm Jr
+Ov 0.5
+-120
+Jazz Chisholm Jr
+Un 0.5
+-110
+Yankees vs Rays: Bases Totales en el Partido
+Luis Garcia Jr.
+Ov 1.5
++140
+Luis Garcia Jr.
+Un 1.5
+-176
+Yankees vs Rays: Bases Totales en el Partido
+Ryan McMahon
+Ov 0.5
++110
+Ryan McMahon
+Un 0.5
+-140
+Yankees vs Rays: Bases Totales en el Partido
+Spencer Jones
+Ov 0.5
+-135
+Spencer Jones
+Un 0.5
++105
+Yankees vs Rays: Bases Totales en el Partido
+Trent Grisham
+Ov 0.5
+-115
+Trent Grisham
+Un 0.5
+-115
+Yankees vs Rays: Bases Totales en el Partido
+Cedric Mullins
+Ov 0.5
+-105
+Cedric Mullins
+Un 0.5
+-125
+Yankees vs Rays: Bases Totales en el Partido
+Chandler Simpson
+Ov 1.5
++154
+Chandler Simpson
+Un 1.5
+-195
+Yankees vs Rays: Bases Totales en el Partido
+Jonathan Aranda
+Ov 1.5
++145
+Jonathan Aranda
+Un 1.5
+-183
+Yankees vs Rays: Bases Totales en el Partido
+Junior Caminero
+Ov 1.5
++110
+Junior Caminero
+Un 1.5
+-140
+Yankees vs Rays: Bases Totales en el Partido
+Liam Hicks
+Ov 0.5
+-170
+Liam Hicks
+Un 0.5
++135
+Yankees vs Rays: Bases Totales en el Partido
+Richie Palacios
+Ov 0.5
+-120
+Richie Palacios
+Un 0.5
+-110
+Yankees vs Rays: Bases Totales en el Partido
+Taylor Walls
+Ov 0.5
+-105
+Taylor Walls
+Un 0.5
+-125
+Yankees vs Rays: Bases Totales en el Partido
+Victor Mesa Jr
+Ov 1.5
++145
+Victor Mesa Jr
+Un 1.5
+-183
+Yankees vs Rays: Bases Totales en el Partido
+Yandy Diaz
+Ov 1.5
++135
+Yandy Diaz
+Un 1.5
+-170
+Yankees vs Rays: Más Bases Totales
+Cedric Mullins
+-109
+Austin Wells
+-121
+Yankees vs Rays: Más Bases Totales
+Victor Mesa Jr
+-118
+Cody Bellinger
+-112
+Yankees vs Rays: Más Bases Totales
+Liam Hicks
+-121
+George Lombard Jr
+-109
+Yankees vs Rays: Más Bases Totales
+Yandy Diaz
+-128
+Luis Garcia Jr.
+-102
+Yankees vs Rays: Jugador Batea al menos un Hit
+Austin Wells - No
+-125
+Austin Wells - Sí
+-105
+Yankees vs Rays: Jugador Batea al menos un Hit
+Ben Rice - No
++158
+Ben Rice - Sí
+-200
+Yankees vs Rays: Jugador Batea al menos un Hit
+Cedric Mullins - No
+-110
+Cedric Mullins - Sí
+-120
+Yankees vs Rays: Jugador Batea al menos un Hit
+Chandler Simpson - No
++175
+Chandler Simpson - Sí
+-224
+Yankees vs Rays: Jugador Batea al menos un Hit
+Cody Bellinger - No
++146
+Cody Bellinger - Sí
+-185
+Yankees vs Rays: Jugador Batea al menos un Hit
+George Lombard Jr - No
++116
+George Lombard Jr - Yes
+-146
+Yankees vs Rays: Jugador Batea al menos un Hit
+Jazz Chisholm Jr - No
++105
+Jazz Chisholm Jr - Sí
+-135
+Yankees vs Rays: Jugador Batea al menos un Hit
+Jonathan Aranda - No
++131
+Jonathan Aranda - Sí
+-165
+Yankees vs Rays: Jugador Batea al menos un Hit
+Junior Caminero - No
++183
+Junior Caminero - Sí
+-235
+Yankees vs Rays: Jugador Batea al menos un Hit
+Liam Hicks - No
++135
+Liam Hicks - Sí
+-170
+Yankees vs Rays: Jugador Batea al menos un Hit
+Luis Garcia Jr. - No
++150
+Luis Garcia Jr. - Yes
+-190
+Yankees vs Rays: Jugador Batea al menos un Hit
+Richie Palacios - No
++100
+Richie Palacios - Sí
+-130
+Yankees vs Rays: Jugador Batea al menos un Hit
+Ryan McMahon - No
+-140
+Ryan McMahon - Sí
++110
+Yankees vs Rays: Jugador Batea al menos un Hit
+Spencer Jones - No
++100
+Spencer Jones - Yes
+-130
+Yankees vs Rays: Jugador Batea al menos un Hit
+Taylor Walls - No
+-110
+Taylor Walls - Sí
+-120
+Yankees vs Rays: Jugador Batea al menos un Hit
+Trent Grisham - No
+-105
+Trent Grisham - Sí
+-125
+Yankees vs Rays: Jugador Batea al menos un Hit
+Victor Mesa Jr - No
++140
+Victor Mesa Jr - Yes
+-176
+Yankees vs Rays: Jugador Batea al menos un Hit
+Yandy Diaz - No
++185
+Yandy Diaz - Sí
+-238
+Yankees vs Rays: Jugador Conectará un Jonrón
+Austin Wells - No
+-2073
+Austin Wells - Sí
++890
+Yankees vs Rays: Jugador Conectará un Jonrón
+Ben Rice - No
+-413
+Ben Rice - Sí
++300
+Yankees vs Rays: Jugador Conectará un Jonrón
+Cedric Mullins - No
+-1605
+Cedric Mullins - Sí
++780
+Yankees vs Rays: Jugador Conectará un Jonrón
+Cody Bellinger - No
+-1394
+Cody Bellinger - Sí
++720
+Yankees vs Rays: Jugador Conectará un Jonrón
+George Lombard Jr - No
+-2122
+George Lombard Jr - Yes
++900
+Yankees vs Rays: Jugador Conectará un Jonrón
+Jazz Chisholm Jr - No
+-1568
+Jazz Chisholm Jr - Sí
++770
+Yankees vs Rays: Jugador Conectará un Jonrón
+Jonathan Aranda - No
+-1177
+Jonathan Aranda - Sí
++650
+Yankees vs Rays: Jugador Conectará un Jonrón
+Junior Caminero - No
+-571
+Junior Caminero - Sí
++390
+Yankees vs Rays: Jugador Conectará un Jonrón
+Liam Hicks - No
+-3429
+Liam Hicks - Sí
++1100
+Yankees vs Rays: Jugador Conectará un Jonrón
+Luis Garcia Jr. - No
+-752
+Luis Garcia Jr. - Yes
++480
+Yankees vs Rays: Jugador Conectará un Jonrón
+Richie Palacios - No
+-3429
+Richie Palacios - Sí
++1100
+Yankees vs Rays: Jugador Conectará un Jonrón
+Ryan McMahon - No
+-1846
+Ryan McMahon - Sí
++840
+Yankees vs Rays: Jugador Conectará un Jonrón
+Spencer Jones - No
+-936
+Spencer Jones - Yes
++560
+Yankees vs Rays: Jugador Conectará un Jonrón
+Trent Grisham - No
+-1329
+Trent Grisham - Sí
++700
+Yankees vs Rays: Jugador Conectará un Jonrón
+Victor Mesa Jr - No
+-1038
+Victor Mesa Jr - Yes
++600
+Yankees vs Rays: Jugador Conectará un Jonrón
+Yandy Diaz - No
+-1643
+Yandy Diaz - Sí
++790
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Austin Wells
+Ov 0.5
+-125
+Austin Wells
+Un 0.5
+-105
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Ben Rice
+Ov 1.5
+-105
+Ben Rice
+Un 1.5
+-125
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Cody Bellinger
+Ov 1.5
++115
+Cody Bellinger
+Un 1.5
+-145
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+George Lombard Jr
+Ov 1.5
++140
+George Lombard Jr
+Un 1.5
+-176
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Jazz Chisholm Jr
+Ov 0.5
+-157
+Jazz Chisholm Jr
+Un 0.5
++125
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Luis Garcia Jr.
+Ov 1.5
++120
+Luis Garcia Jr.
+Un 1.5
+-150
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Ryan McMahon
+Ov 0.5
+-105
+Ryan McMahon
+Un 0.5
+-125
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Spencer Jones
+Ov 0.5
+-155
+Spencer Jones
+Un 0.5
++124
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Trent Grisham
+Ov 0.5
+-150
+Trent Grisham
+Un 0.5
++120
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Cedric Mullins
+Ov 0.5
+-145
+Cedric Mullins
+Un 0.5
++115
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Chandler Simpson
+Ov 1.5
++100
+Chandler Simpson
+Un 1.5
+-130
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Jonathan Aranda
+Ov 1.5
++110
+Jonathan Aranda
+Un 1.5
+-140
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Junior Caminero
+Ov 1.5
+-135
+Junior Caminero
+Un 1.5
++105
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Liam Hicks
+Ov 1.5
++120
+Liam Hicks
+Un 1.5
+-150
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Richie Palacios
+Ov 0.5
+-157
+Richie Palacios
+Un 0.5
++125
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Taylor Walls
+Ov 0.5
+-140
+Taylor Walls
+Un 0.5
++110
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Victor Mesa Jr
+Ov 1.5
++105
+Victor Mesa Jr
+Un 1.5
+-135
+Yankees vs Rays: Hits+Carreras+Carreras Impulsadas
+Yandy Diaz
+Ov 1.5
+-120
+Yandy Diaz
+Un 1.5
+-110
+Yankees vs Rays: Margen de Victoria
+Tampa Bay Rays 1 Run
++310
+Tampa Bay Rays 4+ Runs
++400
+New York Yankees 4+ Runs
++450
+New York Yankees 1 Run
++500
+Tampa Bay Rays 2 Runs
++650
+New York Yankees 2 Runs
++700
+Tampa Bay Rays 3 Runs
++900
+New York Yankees 3 Runs
++950
+Yankees vs Rays: Primer Jonrón del Partido Será
+Solo Home Run
+-170
+2-Run Home Run
++250
+No Home Run Scored
++460
+3-Run Home Run
++750
+Grand Slam
++4000

@@ -1,7 +1,7 @@
 from __future__ import annotations
 import json
 from pathlib import Path
-from sportlab.types import H2HProfile, MLBGameInput, PitcherProfile, TeamProfile, WindowForm
+from sportlab.types import H2HProfile, HitterProfile, MLBGameInput, PitcherProfile, TeamProfile, WindowForm
 
 def _window(d):
     return WindowForm(**d) if d else None
@@ -29,5 +29,12 @@ def load_mlb_game(path: str | Path) -> MLBGameInput:
         home_team_total_lines=tuple(d.get("home_team_total_lines",[2.5,3.5,4.5])),
         away_pitcher_k_lines=tuple(d.get("away_pitcher_k_lines",[4.5,5,5.5,6,6.5])),
         home_pitcher_k_lines=tuple(d.get("home_pitcher_k_lines",[4.5,5,5.5,6,6.5])),
+        away_team_hit_lines=tuple(d.get("away_team_hit_lines", [])),
+        home_team_hit_lines=tuple(d.get("home_team_hit_lines", [])),
+        away_pitcher_hits_allowed_lines=tuple(d.get("away_pitcher_hits_allowed_lines", [])),
+        home_pitcher_hits_allowed_lines=tuple(d.get("home_pitcher_hits_allowed_lines", [])),
+        hitters=tuple(HitterProfile(**x) for x in d.get("hitters", [])),
+        hitter_hit_lines={int(k): tuple(v) for k, v in d.get("hitter_hit_lines", {}).items()},
+        hitter_total_base_lines={int(k): tuple(v) for k, v in d.get("hitter_total_base_lines", {}).items()},
         metadata=d.get("metadata",{}),
     )

@@ -1,0 +1,1554 @@
+{
+  "source_cutoff": "2026-10-02T22:07:35.568788+00:00",
+  "timezone": "America/Santo_Domingo",
+  "status": "EXPLORATORY_UNCALIBRATED",
+  "simulations": 10000,
+  "seed": 20261002,
+  "games": {
+    "cws_cle": {
+      "event_id": 849829,
+      "away": "CWS",
+      "home": "CLE",
+      "starter_status": "PROJECTED",
+      "model": {
+        "model_version": "sportlab_mlb_v1_bf_hitter_optional",
+        "simulations": 10000,
+        "seed": 20261002,
+        "expected_away_runs": 4.413,
+        "expected_home_runs": 4.5505,
+        "away_win": 0.4822,
+        "home_win": 0.5178,
+        "total_markets": {
+          "5.5": {
+            "over": 0.7693,
+            "under": 0.2307,
+            "push": 0.0
+          },
+          "6": {
+            "over": 0.6888,
+            "under": 0.2307,
+            "push": 0.0805
+          },
+          "6.5": {
+            "over": 0.6888,
+            "under": 0.3112,
+            "push": 0.0
+          },
+          "7": {
+            "over": 0.5757,
+            "under": 0.3112,
+            "push": 0.1131
+          },
+          "7.5": {
+            "over": 0.5757,
+            "under": 0.4243,
+            "push": 0.0
+          },
+          "8": {
+            "over": 0.4977,
+            "under": 0.4243,
+            "push": 0.078
+          },
+          "8.5": {
+            "over": 0.4977,
+            "under": 0.5023,
+            "push": 0.0
+          }
+        },
+        "away_team_totals": {
+          "3.0": {
+            "over": 0.5547,
+            "under": 0.2978,
+            "push": 0.1475
+          }
+        },
+        "home_team_totals": {
+          "3.5": {
+            "over": 0.5718,
+            "under": 0.4282,
+            "push": 0.0
+          }
+        },
+        "away_pitcher_ks": {},
+        "home_pitcher_ks": {
+          "6.5": {
+            "over": 0.4909,
+            "under": 0.5091,
+            "push": 0.0
+          }
+        },
+        "distributions": {
+          "away_runs": {
+            "sim_min": 0,
+            "sim_max": 29,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 10.0
+          },
+          "home_runs": {
+            "sim_min": 0,
+            "sim_max": 26,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 9.0,
+            "p95": 10.0
+          },
+          "total_runs": {
+            "sim_min": 1,
+            "sim_max": 38,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 11.0,
+            "p90": 15.0,
+            "p95": 17.0
+          },
+          "home_pitcher_ks": {
+            "sim_min": 0,
+            "sim_max": 18,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p50": 6.0,
+            "p75": 8.0,
+            "p90": 10.0,
+            "p95": 10.049999999999272
+          },
+          "away_team_hits": {
+            "sim_min": 0,
+            "sim_max": 24,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p50": 7.0,
+            "p75": 9.0,
+            "p90": 12.0,
+            "p95": 13.0
+          },
+          "home_team_hits": {
+            "sim_min": 0,
+            "sim_max": 25,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 10.0,
+            "p90": 12.0,
+            "p95": 14.0
+          },
+          "home_pitcher_hits_allowed": {
+            "sim_min": 0,
+            "sim_max": 16,
+            "p05": 2.0,
+            "p10": 2.0,
+            "p25": 3.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 7.0,
+            "p95": 8.0
+          }
+        },
+        "hitter_hits": {},
+        "hitter_total_bases": {},
+        "away_team_hits": {
+          "6.5": {
+            "over": 0.581,
+            "under": 0.419,
+            "push": 0.0
+          }
+        },
+        "home_team_hits": {
+          "7.5": {
+            "over": 0.5349,
+            "under": 0.4651,
+            "push": 0.0
+          }
+        },
+        "away_pitcher_hits_allowed": {},
+        "home_pitcher_hits_allowed": {
+          "4.5": {
+            "over": 0.4617,
+            "under": 0.5383,
+            "push": 0.0
+          }
+        },
+        "contradictions": [
+          "away starter has fewer than 10 starts; K market is not estimated"
+        ]
+      },
+      "quoted_game_1": [
+        "Game 1",
+        "Fuera / En casa",
+        "A ganar",
+        "Total",
+        "Handicap",
+        "Cleveland Guardians",
+        "Chicago White Sox",
+        "+12",
+        "-155",
+        "+137",
+        "Ov 7",
+        "+102",
+        "Un 7",
+        "-120",
+        "-1.5",
+        "+141",
+        "+1.5",
+        "-167"
+      ],
+      "quoted_relevant_markets": [
+        {
+          "market": "White Sox vs Guardians: White Sox Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 3.0,
+              "american_odds": -105
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 3.0,
+              "american_odds": -114
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: Guardians Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 3.5,
+              "american_odds": -103
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 3.5,
+              "american_odds": -116
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: Total de Hits+Carreras+Errores",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 23.5,
+              "american_odds": -105
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 23.5,
+              "american_odds": -125
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: Total de Hits en el Partido",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 14.5,
+              "american_odds": -125
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 14.5,
+              "american_odds": -105
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: White Sox Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 6.5,
+              "american_odds": -140
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 6.5,
+              "american_odds": 110
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: Guardians Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 7.5,
+              "american_odds": -130
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 7.5,
+              "american_odds": 100
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: Total de Ponches",
+          "quotes": [
+            {
+              "subject": "Parker Messick",
+              "side": "over",
+              "line": 6.5,
+              "american_odds": 110
+            },
+            {
+              "subject": "Parker Messick",
+              "side": "under",
+              "line": 6.5,
+              "american_odds": -140
+            }
+          ]
+        },
+        {
+          "market": "White Sox vs Guardians: Total de Hits Permitidos por el Pitcher",
+          "quotes": [
+            {
+              "subject": "Parker Messick",
+              "side": "over",
+              "line": 4.5,
+              "american_odds": 110
+            },
+            {
+              "subject": "Parker Messick",
+              "side": "under",
+              "line": 4.5,
+              "american_odds": -140
+            }
+          ]
+        }
+      ]
+    },
+    "atl_lad": {
+      "event_id": 849828,
+      "away": "ATL",
+      "home": "LAD",
+      "starter_status": "PROJECTED",
+      "model": {
+        "model_version": "sportlab_mlb_v1_bf_hitter_optional",
+        "simulations": 10000,
+        "seed": 20261002,
+        "expected_away_runs": 3.7671,
+        "expected_home_runs": 4.5829,
+        "away_win": 0.4281,
+        "home_win": 0.5719,
+        "total_markets": {
+          "7": {
+            "over": 0.5235,
+            "under": 0.3626,
+            "push": 0.1139
+          },
+          "7.5": {
+            "over": 0.5235,
+            "under": 0.4765,
+            "push": 0.0
+          },
+          "8": {
+            "over": 0.4427,
+            "under": 0.4765,
+            "push": 0.0808
+          },
+          "8.5": {
+            "over": 0.4427,
+            "under": 0.5573,
+            "push": 0.0
+          },
+          "9": {
+            "over": 0.3424,
+            "under": 0.5573,
+            "push": 0.1003
+          },
+          "9.5": {
+            "over": 0.3424,
+            "under": 0.6576,
+            "push": 0.0
+          },
+          "10": {
+            "over": 0.2773,
+            "under": 0.6576,
+            "push": 0.0651
+          }
+        },
+        "away_team_totals": {
+          "3.0": {
+            "over": 0.469,
+            "under": 0.3738,
+            "push": 0.1572
+          }
+        },
+        "home_team_totals": {
+          "5.0": {
+            "over": 0.3307,
+            "under": 0.5574,
+            "push": 0.1119
+          }
+        },
+        "away_pitcher_ks": {},
+        "home_pitcher_ks": {
+          "6.5": {
+            "over": 0.5702,
+            "under": 0.4298,
+            "push": 0.0
+          }
+        },
+        "distributions": {
+          "away_runs": {
+            "sim_min": 0,
+            "sim_max": 20,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 3.0,
+            "p75": 5.0,
+            "p90": 7.0,
+            "p95": 9.0
+          },
+          "home_runs": {
+            "sim_min": 0,
+            "sim_max": 35,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 9.0,
+            "p95": 11.0
+          },
+          "total_runs": {
+            "sim_min": 1,
+            "sim_max": 38,
+            "p05": 3.0,
+            "p10": 3.0,
+            "p25": 5.0,
+            "p50": 8.0,
+            "p75": 11.0,
+            "p90": 14.0,
+            "p95": 16.0
+          },
+          "home_pitcher_ks": {
+            "sim_min": 0,
+            "sim_max": 18,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p50": 7.0,
+            "p75": 9.0,
+            "p90": 10.0,
+            "p95": 11.0
+          },
+          "away_team_hits": {
+            "sim_min": 0,
+            "sim_max": 22,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p50": 7.0,
+            "p75": 10.0,
+            "p90": 12.0,
+            "p95": 13.0
+          },
+          "home_team_hits": {
+            "sim_min": 0,
+            "sim_max": 24,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 10.0,
+            "p90": 13.0,
+            "p95": 14.0
+          },
+          "home_pitcher_hits_allowed": {
+            "sim_min": 0,
+            "sim_max": 13,
+            "p05": 2.0,
+            "p10": 2.0,
+            "p25": 4.0,
+            "p50": 5.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 8.0
+          }
+        },
+        "hitter_hits": {},
+        "hitter_total_bases": {},
+        "away_team_hits": {
+          "7.5": {
+            "over": 0.4946,
+            "under": 0.5054,
+            "push": 0.0
+          }
+        },
+        "home_team_hits": {
+          "8.5": {
+            "over": 0.43,
+            "under": 0.57,
+            "push": 0.0
+          }
+        },
+        "away_pitcher_hits_allowed": {},
+        "home_pitcher_hits_allowed": {
+          "4.5": {
+            "over": 0.5673,
+            "under": 0.4327,
+            "push": 0.0
+          }
+        },
+        "contradictions": [
+          "away starter unavailable; run model uses league-average fallback"
+        ]
+      },
+      "quoted_game_1": [
+        "Game 1",
+        "Fuera / En casa",
+        "A ganar",
+        "Total",
+        "Handicap",
+        "Los Angeles Dodgers",
+        "Atlanta Braves",
+        "+12",
+        "-223",
+        "+194",
+        "Ov 8.5",
+        "+100",
+        "Un 8.5",
+        "-117",
+        "-1.5",
+        "-108",
+        "+1.5",
+        "-108"
+      ],
+      "quoted_relevant_markets": [
+        {
+          "market": "Braves vs Dodgers: Braves Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 3.0,
+              "american_odds": -112
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 3.0,
+              "american_odds": -107
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Dodgers Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 5.0,
+              "american_odds": 103
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 5.0,
+              "american_odds": -123
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Total de Hits+Carreras+Errores",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 26.5,
+              "american_odds": -105
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 26.5,
+              "american_odds": -125
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Total de Hits en el Partido",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 15.5,
+              "american_odds": -108
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 15.5,
+              "american_odds": -122
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Braves Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 7.5,
+              "american_odds": 105
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 7.5,
+              "american_odds": -135
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Dodgers Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 8.5,
+              "american_odds": 115
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 8.5,
+              "american_odds": -145
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Total de Ponches",
+          "quotes": [
+            {
+              "subject": "Tarik Skubal",
+              "side": "over",
+              "line": 6.5,
+              "american_odds": -119
+            },
+            {
+              "subject": "Tarik Skubal",
+              "side": "under",
+              "line": 6.5,
+              "american_odds": -111
+            }
+          ]
+        },
+        {
+          "market": "Braves vs Dodgers: Total de Hits Permitidos por el Pitcher",
+          "quotes": [
+            {
+              "subject": "Tarik Skubal",
+              "side": "over",
+              "line": 4.5,
+              "american_odds": -126
+            },
+            {
+              "subject": "Tarik Skubal",
+              "side": "under",
+              "line": 4.5,
+              "american_odds": -104
+            }
+          ]
+        }
+      ]
+    },
+    "nyy_tb": {
+      "event_id": 849835,
+      "away": "NYY",
+      "home": "TB",
+      "starter_status": "PROJECTED",
+      "model": {
+        "model_version": "sportlab_mlb_v1_bf_hitter_optional",
+        "simulations": 10000,
+        "seed": 20261002,
+        "expected_away_runs": 4.0874,
+        "expected_home_runs": 4.1289,
+        "away_win": 0.4952,
+        "home_win": 0.5048,
+        "total_markets": {
+          "5.5": {
+            "over": 0.7158,
+            "under": 0.2842,
+            "push": 0.0
+          },
+          "6": {
+            "over": 0.628,
+            "under": 0.2842,
+            "push": 0.0878
+          },
+          "6.5": {
+            "over": 0.628,
+            "under": 0.372,
+            "push": 0.0
+          },
+          "7": {
+            "over": 0.5074,
+            "under": 0.372,
+            "push": 0.1206
+          },
+          "7.5": {
+            "over": 0.5074,
+            "under": 0.4926,
+            "push": 0.0
+          },
+          "8": {
+            "over": 0.4244,
+            "under": 0.4926,
+            "push": 0.083
+          },
+          "8.5": {
+            "over": 0.4244,
+            "under": 0.5756,
+            "push": 0.0
+          }
+        },
+        "away_team_totals": {
+          "3.0": {
+            "over": 0.5131,
+            "under": 0.3366,
+            "push": 0.1503
+          }
+        },
+        "home_team_totals": {
+          "3.5": {
+            "over": 0.5199,
+            "under": 0.4801,
+            "push": 0.0
+          }
+        },
+        "away_pitcher_ks": {
+          "5.5": {
+            "over": 0.4004,
+            "under": 0.5996,
+            "push": 0.0
+          }
+        },
+        "home_pitcher_ks": {
+          "6.5": {
+            "over": 0.4795,
+            "under": 0.5205,
+            "push": 0.0
+          }
+        },
+        "distributions": {
+          "away_runs": {
+            "sim_min": 0,
+            "sim_max": 28,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 10.0
+          },
+          "home_runs": {
+            "sim_min": 0,
+            "sim_max": 23,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 10.0
+          },
+          "total_runs": {
+            "sim_min": 1,
+            "sim_max": 32,
+            "p05": 3.0,
+            "p10": 3.0,
+            "p25": 5.0,
+            "p50": 8.0,
+            "p75": 11.0,
+            "p90": 14.0,
+            "p95": 16.0
+          },
+          "away_pitcher_ks": {
+            "sim_min": 0,
+            "sim_max": 15,
+            "p05": 2.0,
+            "p10": 3.0,
+            "p25": 4.0,
+            "p50": 5.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 9.0
+          },
+          "home_pitcher_ks": {
+            "sim_min": 0,
+            "sim_max": 16,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p50": 6.0,
+            "p75": 8.0,
+            "p90": 9.0,
+            "p95": 10.0
+          },
+          "away_team_hits": {
+            "sim_min": 0,
+            "sim_max": 23,
+            "p05": 2.0,
+            "p10": 3.0,
+            "p25": 5.0,
+            "p50": 7.0,
+            "p75": 9.0,
+            "p90": 11.0,
+            "p95": 12.0
+          },
+          "home_team_hits": {
+            "sim_min": 0,
+            "sim_max": 28,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 11.0,
+            "p90": 13.0,
+            "p95": 15.0
+          },
+          "away_pitcher_hits_allowed": {
+            "sim_min": 0,
+            "sim_max": 14,
+            "p05": 2.0,
+            "p10": 3.0,
+            "p25": 4.0,
+            "p50": 5.0,
+            "p75": 7.0,
+            "p90": 8.0,
+            "p95": 9.0
+          },
+          "home_pitcher_hits_allowed": {
+            "sim_min": 0,
+            "sim_max": 13,
+            "p05": 1.0,
+            "p10": 2.0,
+            "p25": 3.0,
+            "p50": 4.0,
+            "p75": 5.0,
+            "p90": 6.0,
+            "p95": 7.0
+          }
+        },
+        "hitter_hits": {},
+        "hitter_total_bases": {},
+        "away_team_hits": {
+          "6.5": {
+            "over": 0.5263,
+            "under": 0.4737,
+            "push": 0.0
+          }
+        },
+        "home_team_hits": {
+          "7.5": {
+            "over": 0.5802,
+            "under": 0.4198,
+            "push": 0.0
+          }
+        },
+        "away_pitcher_hits_allowed": {
+          "4.5": {
+            "over": 0.6791,
+            "under": 0.3209,
+            "push": 0.0
+          }
+        },
+        "home_pitcher_hits_allowed": {
+          "3.5": {
+            "over": 0.5794,
+            "under": 0.4206,
+            "push": 0.0
+          }
+        },
+        "contradictions": []
+      },
+      "quoted_game_1": [
+        "Game 1",
+        "Fuera / En casa",
+        "A ganar",
+        "Total",
+        "Handicap",
+        "Tampa Bay Rays",
+        "New York Yankees",
+        "+12",
+        "-130",
+        "+115",
+        "Ov 7",
+        "-108",
+        "Un 7",
+        "-108",
+        "-1.5",
+        "+156",
+        "+1.5",
+        "-186"
+      ],
+      "quoted_relevant_markets": [
+        {
+          "market": "Yankees vs Rays: Yankees Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 3.0,
+              "american_odds": -121
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 3.0,
+              "american_odds": 101
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Rays Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 3.5,
+              "american_odds": -107
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 3.5,
+              "american_odds": -112
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Total de Hits+Carreras+Errores",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 23.5,
+              "american_odds": -105
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 23.5,
+              "american_odds": -125
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Total de Hits en el Partido",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 14.5,
+              "american_odds": -120
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 14.5,
+              "american_odds": -110
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Yankees Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 6.5,
+              "american_odds": -130
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 6.5,
+              "american_odds": 100
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Rays Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 7.5,
+              "american_odds": -130
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 7.5,
+              "american_odds": 100
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Total de Ponches",
+          "quotes": [
+            {
+              "subject": "Gerrit Cole",
+              "side": "over",
+              "line": 5.5,
+              "american_odds": 134
+            },
+            {
+              "subject": "Gerrit Cole",
+              "side": "under",
+              "line": 5.5,
+              "american_odds": -168
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Total de Ponches",
+          "quotes": [
+            {
+              "subject": "Drew Rasmussen",
+              "side": "over",
+              "line": 6.5,
+              "american_odds": 121
+            },
+            {
+              "subject": "Drew Rasmussen",
+              "side": "under",
+              "line": 6.5,
+              "american_odds": -151
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Total de Hits Permitidos por el Pitcher",
+          "quotes": [
+            {
+              "subject": "Gerrit Cole",
+              "side": "over",
+              "line": 4.5,
+              "american_odds": -159
+            },
+            {
+              "subject": "Gerrit Cole",
+              "side": "under",
+              "line": 4.5,
+              "american_odds": 127
+            }
+          ]
+        },
+        {
+          "market": "Yankees vs Rays: Total de Hits Permitidos por el Pitcher",
+          "quotes": [
+            {
+              "subject": "Drew Rasmussen",
+              "side": "over",
+              "line": 3.5,
+              "american_odds": -116
+            },
+            {
+              "subject": "Drew Rasmussen",
+              "side": "under",
+              "line": 3.5,
+              "american_odds": -114
+            }
+          ]
+        }
+      ]
+    },
+    "sd_mil": {
+      "event_id": 849830,
+      "away": "SD",
+      "home": "MIL",
+      "starter_status": "PROJECTED",
+      "model": {
+        "model_version": "sportlab_mlb_v1_bf_hitter_optional",
+        "simulations": 10000,
+        "seed": 20261002,
+        "expected_away_runs": 4.2028,
+        "expected_home_runs": 4.792,
+        "away_win": 0.4432,
+        "home_win": 0.5568,
+        "total_markets": {
+          "5.5": {
+            "over": 0.7667,
+            "under": 0.2333,
+            "push": 0.0
+          },
+          "6": {
+            "over": 0.6884,
+            "under": 0.2333,
+            "push": 0.0783
+          },
+          "6.5": {
+            "over": 0.6884,
+            "under": 0.3116,
+            "push": 0.0
+          },
+          "7": {
+            "over": 0.5809,
+            "under": 0.3116,
+            "push": 0.1075
+          },
+          "7.5": {
+            "over": 0.5809,
+            "under": 0.4191,
+            "push": 0.0
+          },
+          "8": {
+            "over": 0.4999,
+            "under": 0.4191,
+            "push": 0.081
+          },
+          "8.5": {
+            "over": 0.4999,
+            "under": 0.5001,
+            "push": 0.0
+          }
+        },
+        "away_team_totals": {
+          "2.5": {
+            "over": 0.6737,
+            "under": 0.3263,
+            "push": 0.0
+          }
+        },
+        "home_team_totals": {
+          "4.0": {
+            "over": 0.4659,
+            "under": 0.4013,
+            "push": 0.1328
+          }
+        },
+        "away_pitcher_ks": {
+          "4.5": {
+            "over": 0.4633,
+            "under": 0.5367,
+            "push": 0.0
+          }
+        },
+        "home_pitcher_ks": {
+          "8.5": {
+            "over": 0.4568,
+            "under": 0.5432,
+            "push": 0.0
+          }
+        },
+        "distributions": {
+          "away_runs": {
+            "sim_min": 0,
+            "sim_max": 24,
+            "p05": 0.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 8.0,
+            "p95": 10.0
+          },
+          "home_runs": {
+            "sim_min": 0,
+            "sim_max": 26,
+            "p05": 1.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 4.0,
+            "p75": 7.0,
+            "p90": 9.0,
+            "p95": 11.0
+          },
+          "total_runs": {
+            "sim_min": 1,
+            "sim_max": 35,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 12.0,
+            "p90": 15.0,
+            "p95": 17.0
+          },
+          "away_pitcher_ks": {
+            "sim_min": 0,
+            "sim_max": 13,
+            "p05": 1.0,
+            "p10": 2.0,
+            "p25": 3.0,
+            "p50": 4.0,
+            "p75": 6.0,
+            "p90": 7.0,
+            "p95": 8.0
+          },
+          "home_pitcher_ks": {
+            "sim_min": 0,
+            "sim_max": 20,
+            "p05": 4.0,
+            "p10": 5.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 10.0,
+            "p90": 12.0,
+            "p95": 13.0
+          },
+          "away_team_hits": {
+            "sim_min": 0,
+            "sim_max": 21,
+            "p05": 2.0,
+            "p10": 3.0,
+            "p25": 4.0,
+            "p50": 6.0,
+            "p75": 8.0,
+            "p90": 10.0,
+            "p95": 11.0
+          },
+          "home_team_hits": {
+            "sim_min": 0,
+            "sim_max": 25,
+            "p05": 3.0,
+            "p10": 4.0,
+            "p25": 6.0,
+            "p50": 8.0,
+            "p75": 10.0,
+            "p90": 13.0,
+            "p95": 14.0
+          },
+          "away_pitcher_hits_allowed": {
+            "sim_min": 0,
+            "sim_max": 16,
+            "p05": 2.0,
+            "p10": 2.0,
+            "p25": 3.0,
+            "p50": 5.0,
+            "p75": 6.0,
+            "p90": 7.0,
+            "p95": 8.0
+          },
+          "home_pitcher_hits_allowed": {
+            "sim_min": 0,
+            "sim_max": 11,
+            "p05": 1.0,
+            "p10": 1.0,
+            "p25": 2.0,
+            "p50": 3.0,
+            "p75": 4.0,
+            "p90": 5.0,
+            "p95": 6.0
+          }
+        },
+        "hitter_hits": {},
+        "hitter_total_bases": {},
+        "away_team_hits": {
+          "6.5": {
+            "over": 0.3887,
+            "under": 0.6113,
+            "push": 0.0
+          }
+        },
+        "home_team_hits": {
+          "7.5": {
+            "over": 0.5282,
+            "under": 0.4718,
+            "push": 0.0
+          }
+        },
+        "away_pitcher_hits_allowed": {
+          "3.5": {
+            "over": 0.7051,
+            "under": 0.2949,
+            "push": 0.0
+          }
+        },
+        "home_pitcher_hits_allowed": {
+          "3.5": {
+            "over": 0.3972,
+            "under": 0.6028,
+            "push": 0.0
+          }
+        },
+        "contradictions": []
+      },
+      "quoted_game_1": [
+        "Game 1",
+        "Fuera / En casa",
+        "A ganar",
+        "Total",
+        "Handicap",
+        "Milwaukee Brewers",
+        "San Diego Padres",
+        "+12",
+        "-208",
+        "+182",
+        "Ov 7",
+        "-113",
+        "Un 7",
+        "-104",
+        "-1.5",
+        "+102",
+        "+1.5",
+        "-120"
+      ],
+      "quoted_relevant_markets": [
+        {
+          "market": "Padres vs Brewers: Padres Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 2.5,
+              "american_odds": -116
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 2.5,
+              "american_odds": -103
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Brewers Total del Equipo",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 4.0,
+              "american_odds": -121
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 4.0,
+              "american_odds": 101
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Total de Hits+Carreras+Errores",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 23.5,
+              "american_odds": -105
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 23.5,
+              "american_odds": -125
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Total de Hits en el Partido",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 14.5,
+              "american_odds": -110
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 14.5,
+              "american_odds": -120
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Padres Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 6.5,
+              "american_odds": -110
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 6.5,
+              "american_odds": -120
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Brewers Total de Hits",
+          "quotes": [
+            {
+              "subject": null,
+              "side": "over",
+              "line": 7.5,
+              "american_odds": -130
+            },
+            {
+              "subject": null,
+              "side": "under",
+              "line": 7.5,
+              "american_odds": 100
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Total de Ponches",
+          "quotes": [
+            {
+              "subject": "Robbie Ray",
+              "side": "over",
+              "line": 4.5,
+              "american_odds": 110
+            },
+            {
+              "subject": "Robbie Ray",
+              "side": "under",
+              "line": 4.5,
+              "american_odds": -140
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Total de Ponches",
+          "quotes": [
+            {
+              "subject": "Jacob Misiorowski",
+              "side": "over",
+              "line": 8.5,
+              "american_odds": 120
+            },
+            {
+              "subject": "Jacob Misiorowski",
+              "side": "under",
+              "line": 8.5,
+              "american_odds": -150
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Total de Hits Permitidos por el Pitcher",
+          "quotes": [
+            {
+              "subject": "Robbie Ray",
+              "side": "over",
+              "line": 3.5,
+              "american_odds": -120
+            },
+            {
+              "subject": "Robbie Ray",
+              "side": "under",
+              "line": 3.5,
+              "american_odds": -110
+            }
+          ]
+        },
+        {
+          "market": "Padres vs Brewers: Total de Hits Permitidos por el Pitcher",
+          "quotes": [
+            {
+              "subject": "Jacob Misiorowski",
+              "side": "over",
+              "line": 3.5,
+              "american_odds": -115
+            },
+            {
+              "subject": "Jacob Misiorowski",
+              "side": "under",
+              "line": 3.5,
+              "american_odds": -115
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "example_three_game_total_parlay": {
+    "model_status": "EXPLORATORY_UNCALIBRATED",
+    "simulations": 10000,
+    "seed": 20261002,
+    "full_win_count": 4244,
+    "full_win_per_1000": 424.4,
+    "push_no_loss_count": 0,
+    "at_least_one_loss_count": 5756,
+    "legs": [
+      {
+        "selection": {
+          "event_id": 849829,
+          "market": "game_total",
+          "side": "over",
+          "line": 5.5
+        },
+        "win_pct": 76.93,
+        "push_pct": 0.0,
+        "loss_pct": 23.07
+      },
+      {
+        "selection": {
+          "event_id": 849835,
+          "market": "game_total",
+          "side": "over",
+          "line": 5.5
+        },
+        "win_pct": 71.58,
+        "push_pct": 0.0,
+        "loss_pct": 28.42
+      },
+      {
+        "selection": {
+          "event_id": 849830,
+          "market": "game_total",
+          "side": "over",
+          "line": 5.5
+        },
+        "win_pct": 76.67,
+        "push_pct": 0.0,
+        "loss_pct": 23.33
+      }
+    ],
+    "assumptions": [
+      "same-game ML, team total and game total share run draws",
+      "pitcher Ks, hits allowed, team hits and hitter outcomes independent of run scoring",
+      "hitter hits and total bases for one player share at-bat outcomes",
+      "different games independent",
+      "extra innings approximated"
+    ]
+  },
+  "example_three_game_total_parlay_lower_scoring": {
+    "factor": 0.85,
+    "simulations": 10000,
+    "leg_win_counts": [
+      6637,
+      6243,
+      6713
+    ],
+    "full_win_count": 2801
+  }
+}

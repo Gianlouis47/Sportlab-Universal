@@ -1,0 +1,2154 @@
+{
+  "source_as_of": "2026-10-02",
+  "lineup_status": "PROJECTED",
+  "model_status": "EXPLORATORY_UNCALIBRATED",
+  "seed": 20261002,
+  "simulations": 10000,
+  "assumptions": [
+    "historical AB sample from 2026 appearances",
+    "batter hit-type rates adjusted to pitcher hand",
+    "pitcher hits/BF shrunk with 200 BF prior",
+    "60% of AB assumed against probable starter",
+    "pitcher adjustment omitted when fewer than 10 starts",
+    "one fewer AB sensitivity for lineup-order changes"
+  ],
+  "players": [
+    {
+      "game": "cws_cle",
+      "name": "Braden Montgomery",
+      "player_id": 695731,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 93,
+      "empirical_hit_yes": 0.5806,
+      "model_hit_yes": 0.515,
+      "one_fewer_ab_hit_yes": 0.3922,
+      "yes_hit_odds": -120,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": -110,
+      "total_bases_markets": [],
+      "best_equivalent_odds": -120,
+      "best_equivalent_break_even": 0.5455,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2031,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Brayan Rocchio",
+      "player_id": 677587,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 153,
+      "empirical_hit_yes": 0.6144,
+      "model_hit_yes": 0.5973,
+      "one_fewer_ab_hit_yes": 0.4829,
+      "yes_hit_odds": -145,
+      "over_0_5_total_bases_odds": -145,
+      "no_hit_odds": 115,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -145,
+          "model_probability": 0.5973,
+          "one_fewer_ab_probability": 0.4829,
+          "break_even": 0.5918
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 115,
+          "model_probability": 0.4027,
+          "one_fewer_ab_probability": 0.5171,
+          "break_even": 0.4651
+        }
+      ],
+      "best_equivalent_odds": -145,
+      "best_equivalent_break_even": 0.5918,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Chase DeLauter",
+      "player_id": 800050,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 133,
+      "empirical_hit_yes": 0.6541,
+      "model_hit_yes": 0.7113,
+      "one_fewer_ab_hit_yes": 0.5926,
+      "yes_hit_odds": -190,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 150,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 146,
+          "model_probability": 0.4385,
+          "one_fewer_ab_probability": 0.3309,
+          "break_even": 0.4065
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -185,
+          "model_probability": 0.5615,
+          "one_fewer_ab_probability": 0.6691,
+          "break_even": 0.6491
+        }
+      ],
+      "best_equivalent_odds": -190,
+      "best_equivalent_break_even": 0.6552,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Chase Meidroth",
+      "player_id": 805367,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 154,
+      "empirical_hit_yes": 0.6818,
+      "model_hit_yes": 0.7017,
+      "one_fewer_ab_hit_yes": 0.583,
+      "yes_hit_odds": -170,
+      "over_0_5_total_bases_odds": -176,
+      "no_hit_odds": 135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -176,
+          "model_probability": 0.7017,
+          "one_fewer_ab_probability": 0.583,
+          "break_even": 0.6377
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 140,
+          "model_probability": 0.2983,
+          "one_fewer_ab_probability": 0.417,
+          "break_even": 0.4167
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2031,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Colson Montgomery",
+      "player_id": 695657,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 153,
+      "empirical_hit_yes": 0.5163,
+      "model_hit_yes": 0.5653,
+      "one_fewer_ab_hit_yes": 0.45,
+      "yes_hit_odds": -110,
+      "over_0_5_total_bases_odds": -110,
+      "no_hit_odds": -120,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -110,
+          "model_probability": 0.5653,
+          "one_fewer_ab_probability": 0.45,
+          "break_even": 0.5238
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -120,
+          "model_probability": 0.4347,
+          "one_fewer_ab_probability": 0.55,
+          "break_even": 0.5455
+        }
+      ],
+      "best_equivalent_odds": -110,
+      "best_equivalent_break_even": 0.5238,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2031,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Jo Adell",
+      "player_id": 666176,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 159,
+      "empirical_hit_yes": 0.5975,
+      "model_hit_yes": 0.6734,
+      "one_fewer_ab_hit_yes": 0.5565,
+      "yes_hit_odds": -176,
+      "over_0_5_total_bases_odds": -170,
+      "no_hit_odds": 140,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -170,
+          "model_probability": 0.6734,
+          "one_fewer_ab_probability": 0.5565,
+          "break_even": 0.6296
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 135,
+          "model_probability": 0.3266,
+          "one_fewer_ab_probability": 0.4435,
+          "break_even": 0.4255
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "José Ramírez",
+      "player_id": 608070,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 125,
+      "empirical_hit_yes": 0.616,
+      "model_hit_yes": 0.6567,
+      "one_fewer_ab_hit_yes": 0.5377,
+      "yes_hit_odds": -217,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 170,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 135,
+          "model_probability": 0.3968,
+          "one_fewer_ab_probability": 0.293,
+          "break_even": 0.4255
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -170,
+          "model_probability": 0.6032,
+          "one_fewer_ab_probability": 0.707,
+          "break_even": 0.6296
+        }
+      ],
+      "best_equivalent_odds": -217,
+      "best_equivalent_break_even": 0.6845,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Miguel Vargas",
+      "player_id": 678246,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 159,
+      "empirical_hit_yes": 0.673,
+      "model_hit_yes": 0.6321,
+      "one_fewer_ab_hit_yes": 0.5167,
+      "yes_hit_odds": -176,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 140,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 139,
+          "model_probability": 0.4054,
+          "one_fewer_ab_probability": 0.3023,
+          "break_even": 0.4184
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -175,
+          "model_probability": 0.5946,
+          "one_fewer_ab_probability": 0.6977,
+          "break_even": 0.6364
+        }
+      ],
+      "best_equivalent_odds": -176,
+      "best_equivalent_break_even": 0.6377,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2031,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Munetaka Murakami",
+      "player_id": 808959,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 127,
+      "empirical_hit_yes": 0.5827,
+      "model_hit_yes": 0.5184,
+      "one_fewer_ab_hit_yes": 0.4016,
+      "yes_hit_odds": -130,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 100,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 174,
+          "model_probability": 0.3422,
+          "one_fewer_ab_probability": 0.2526,
+          "break_even": 0.365
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -224,
+          "model_probability": 0.6578,
+          "one_fewer_ab_probability": 0.7474,
+          "break_even": 0.6914
+        }
+      ],
+      "best_equivalent_odds": -130,
+      "best_equivalent_break_even": 0.5652,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2031,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Nathaniel Lowe",
+      "player_id": 663993,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 126,
+      "empirical_hit_yes": 0.5397,
+      "model_hit_yes": 0.5328,
+      "one_fewer_ab_hit_yes": 0.3995,
+      "yes_hit_odds": -145,
+      "over_0_5_total_bases_odds": -135,
+      "no_hit_odds": 115,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -135,
+          "model_probability": 0.5328,
+          "one_fewer_ab_probability": 0.3995,
+          "break_even": 0.5745
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 105,
+          "model_probability": 0.4672,
+          "one_fewer_ab_probability": 0.6005,
+          "break_even": 0.4878
+        }
+      ],
+      "best_equivalent_odds": -135,
+      "best_equivalent_break_even": 0.5745,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Patrick Bailey",
+      "player_id": 672275,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 112,
+      "empirical_hit_yes": 0.4375,
+      "model_hit_yes": 0.4355,
+      "one_fewer_ab_hit_yes": 0.3153,
+      "yes_hit_odds": -125,
+      "over_0_5_total_bases_odds": -130,
+      "no_hit_odds": -105,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -130,
+          "model_probability": 0.4355,
+          "one_fewer_ab_probability": 0.3153,
+          "break_even": 0.5652
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 100,
+          "model_probability": 0.5645,
+          "one_fewer_ab_probability": 0.6847,
+          "break_even": 0.5
+        }
+      ],
+      "best_equivalent_odds": -125,
+      "best_equivalent_break_even": 0.5556,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Randal Grichuk",
+      "player_id": 545341,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 117,
+      "empirical_hit_yes": 0.4957,
+      "model_hit_yes": 0.4962,
+      "one_fewer_ab_hit_yes": 0.3157,
+      "yes_hit_odds": -160,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 127,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 165,
+          "model_probability": 0.3396,
+          "one_fewer_ab_probability": 0.2046,
+          "break_even": 0.3774
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -210,
+          "model_probability": 0.6604,
+          "one_fewer_ab_probability": 0.7954,
+          "break_even": 0.6774
+        }
+      ],
+      "best_equivalent_odds": -160,
+      "best_equivalent_break_even": 0.6154,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2031,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Steven Kwan",
+      "player_id": 680757,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 151,
+      "empirical_hit_yes": 0.6424,
+      "model_hit_yes": 0.641,
+      "one_fewer_ab_hit_yes": 0.5272,
+      "yes_hit_odds": -235,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 183,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 145,
+          "model_probability": 0.2957,
+          "one_fewer_ab_probability": 0.2059,
+          "break_even": 0.4082
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -183,
+          "model_probability": 0.7043,
+          "one_fewer_ab_probability": 0.7941,
+          "break_even": 0.6466
+        }
+      ],
+      "best_equivalent_odds": -235,
+      "best_equivalent_break_even": 0.7015,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "cws_cle",
+      "name": "Travis Bazzana",
+      "player_id": 683953,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 124,
+      "empirical_hit_yes": 0.5806,
+      "model_hit_yes": 0.5867,
+      "one_fewer_ab_hit_yes": 0.4822,
+      "yes_hit_odds": -150,
+      "over_0_5_total_bases_odds": -170,
+      "no_hit_odds": 120,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -170,
+          "model_probability": 0.5867,
+          "one_fewer_ab_probability": 0.4822,
+          "break_even": 0.6296
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 135,
+          "model_probability": 0.4133,
+          "one_fewer_ab_probability": 0.5178,
+          "break_even": 0.4255
+        }
+      ],
+      "best_equivalent_odds": -150,
+      "best_equivalent_break_even": 0.6,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Austin Riley",
+      "player_id": 663586,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 159,
+      "empirical_hit_yes": 0.5346,
+      "model_hit_yes": 0.5756,
+      "one_fewer_ab_hit_yes": 0.4472,
+      "yes_hit_odds": -133,
+      "over_0_5_total_bases_odds": -140,
+      "no_hit_odds": 103,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -140,
+          "model_probability": 0.5756,
+          "one_fewer_ab_probability": 0.4472,
+          "break_even": 0.5833
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 110,
+          "model_probability": 0.4244,
+          "one_fewer_ab_probability": 0.5528,
+          "break_even": 0.4762
+        }
+      ],
+      "best_equivalent_odds": -133,
+      "best_equivalent_break_even": 0.5708,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Drake Baldwin",
+      "player_id": 686948,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 138,
+      "empirical_hit_yes": 0.7101,
+      "model_hit_yes": 0.6905,
+      "one_fewer_ab_hit_yes": 0.5713,
+      "yes_hit_odds": -210,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 165,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 130,
+          "model_probability": 0.4004,
+          "one_fewer_ab_probability": 0.285,
+          "break_even": 0.4348
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -163,
+          "model_probability": 0.5996,
+          "one_fewer_ab_probability": 0.715,
+          "break_even": 0.6198
+        }
+      ],
+      "best_equivalent_odds": -210,
+      "best_equivalent_break_even": 0.6774,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Freddie Freeman",
+      "player_id": 518692,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 153,
+      "empirical_hit_yes": 0.6732,
+      "model_hit_yes": 0.7062,
+      "one_fewer_ab_hit_yes": 0.591,
+      "yes_hit_odds": -220,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 172,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 125,
+          "model_probability": 0.4119,
+          "one_fewer_ab_probability": 0.2962,
+          "break_even": 0.4444
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -157,
+          "model_probability": 0.5881,
+          "one_fewer_ab_probability": 0.7038,
+          "break_even": 0.6109
+        }
+      ],
+      "best_equivalent_odds": -220,
+      "best_equivalent_break_even": 0.6875,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Kyle Tucker",
+      "player_id": 663656,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 154,
+      "empirical_hit_yes": 0.5714,
+      "model_hit_yes": 0.5855,
+      "one_fewer_ab_hit_yes": 0.4717,
+      "yes_hit_odds": -190,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 150,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 136,
+          "model_probability": 0.3296,
+          "one_fewer_ab_probability": 0.2349,
+          "break_even": 0.4237
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -171,
+          "model_probability": 0.6704,
+          "one_fewer_ab_probability": 0.7651,
+          "break_even": 0.631
+        }
+      ],
+      "best_equivalent_odds": -190,
+      "best_equivalent_break_even": 0.6552,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Matt Olson",
+      "player_id": 621566,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 162,
+      "empirical_hit_yes": 0.6852,
+      "model_hit_yes": 0.6668,
+      "one_fewer_ab_hit_yes": 0.552,
+      "yes_hit_odds": -170,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 140,
+          "model_probability": 0.4517,
+          "one_fewer_ab_probability": 0.3395,
+          "break_even": 0.4167
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -176,
+          "model_probability": 0.5483,
+          "one_fewer_ab_probability": 0.6605,
+          "break_even": 0.6377
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Mauricio Dubón",
+      "player_id": 643289,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 153,
+      "empirical_hit_yes": 0.6928,
+      "model_hit_yes": 0.6742,
+      "one_fewer_ab_hit_yes": 0.5553,
+      "yes_hit_odds": -200,
+      "over_0_5_total_bases_odds": -190,
+      "no_hit_odds": 158,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -190,
+          "model_probability": 0.6742,
+          "one_fewer_ab_probability": 0.5553,
+          "break_even": 0.6552
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 150,
+          "model_probability": 0.3258,
+          "one_fewer_ab_probability": 0.4447,
+          "break_even": 0.4
+        }
+      ],
+      "best_equivalent_odds": -190,
+      "best_equivalent_break_even": 0.6552,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Max Muncy",
+      "player_id": 571970,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 149,
+      "empirical_hit_yes": 0.5436,
+      "model_hit_yes": 0.5918,
+      "one_fewer_ab_hit_yes": 0.4589,
+      "yes_hit_odds": -150,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 120,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 155,
+          "model_probability": 0.38,
+          "one_fewer_ab_probability": 0.2627,
+          "break_even": 0.3922
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -197,
+          "model_probability": 0.62,
+          "one_fewer_ab_probability": 0.7373,
+          "break_even": 0.6633
+        }
+      ],
+      "best_equivalent_odds": -150,
+      "best_equivalent_break_even": 0.6,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Michael Harris II",
+      "player_id": 671739,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 155,
+      "empirical_hit_yes": 0.6774,
+      "model_hit_yes": 0.7027,
+      "one_fewer_ab_hit_yes": 0.5858,
+      "yes_hit_odds": -180,
+      "over_0_5_total_bases_odds": -180,
+      "no_hit_odds": 143,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -180,
+          "model_probability": 0.7027,
+          "one_fewer_ab_probability": 0.5858,
+          "break_even": 0.6429
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 143,
+          "model_probability": 0.2973,
+          "one_fewer_ab_probability": 0.4142,
+          "break_even": 0.4115
+        }
+      ],
+      "best_equivalent_odds": -180,
+      "best_equivalent_break_even": 0.6429,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Mookie Betts",
+      "player_id": 605141,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 123,
+      "empirical_hit_yes": 0.6016,
+      "model_hit_yes": 0.6724,
+      "one_fewer_ab_hit_yes": 0.564,
+      "yes_hit_odds": -235,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 183,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 110,
+          "model_probability": 0.4206,
+          "one_fewer_ab_probability": 0.3178,
+          "break_even": 0.4762
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -140,
+          "model_probability": 0.5794,
+          "one_fewer_ab_probability": 0.6822,
+          "break_even": 0.5833
+        }
+      ],
+      "best_equivalent_odds": -235,
+      "best_equivalent_break_even": 0.7015,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Ozzie Albies",
+      "player_id": 645277,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 162,
+      "empirical_hit_yes": 0.642,
+      "model_hit_yes": 0.6459,
+      "one_fewer_ab_hit_yes": 0.541,
+      "yes_hit_odds": -170,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 160,
+          "model_probability": 0.3816,
+          "one_fewer_ab_probability": 0.2819,
+          "break_even": 0.3846
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -203,
+          "model_probability": 0.6184,
+          "one_fewer_ab_probability": 0.7181,
+          "break_even": 0.67
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Ronald Acuña Jr.",
+      "player_id": 660670,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 107,
+      "empirical_hit_yes": 0.6636,
+      "model_hit_yes": 0.6325,
+      "one_fewer_ab_hit_yes": 0.5133,
+      "yes_hit_odds": -170,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 135,
+          "model_probability": 0.3826,
+          "one_fewer_ab_probability": 0.2808,
+          "break_even": 0.4255
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -170,
+          "model_probability": 0.6174,
+          "one_fewer_ab_probability": 0.7192,
+          "break_even": 0.6296
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2065,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Shohei Ohtani",
+      "player_id": 660271,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 135,
+      "empirical_hit_yes": 0.6815,
+      "model_hit_yes": 0.6959,
+      "one_fewer_ab_hit_yes": 0.5803,
+      "yes_hit_odds": -235,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 183,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": -110,
+          "model_probability": 0.4481,
+          "one_fewer_ab_probability": 0.3395,
+          "break_even": 0.5238
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -120,
+          "model_probability": 0.5519,
+          "one_fewer_ab_probability": 0.6605,
+          "break_even": 0.5455
+        }
+      ],
+      "best_equivalent_odds": -235,
+      "best_equivalent_break_even": 0.7015,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Teoscar Hernández",
+      "player_id": 606192,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 125,
+      "empirical_hit_yes": 0.64,
+      "model_hit_yes": 0.643,
+      "one_fewer_ab_hit_yes": 0.534,
+      "yes_hit_odds": -170,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 140,
+          "model_probability": 0.3599,
+          "one_fewer_ab_probability": 0.2506,
+          "break_even": 0.4167
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -176,
+          "model_probability": 0.6401,
+          "one_fewer_ab_probability": 0.7494,
+          "break_even": 0.6377
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "atl_lad",
+      "name": "Tommy Edman",
+      "player_id": 669242,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 84,
+      "empirical_hit_yes": 0.5238,
+      "model_hit_yes": 0.6067,
+      "one_fewer_ab_hit_yes": 0.4901,
+      "yes_hit_odds": -160,
+      "over_0_5_total_bases_odds": -155,
+      "no_hit_odds": 127,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -155,
+          "model_probability": 0.6067,
+          "one_fewer_ab_probability": 0.4901,
+          "break_even": 0.6078
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 124,
+          "model_probability": 0.3933,
+          "one_fewer_ab_probability": 0.5099,
+          "break_even": 0.4464
+        }
+      ],
+      "best_equivalent_odds": -155,
+      "best_equivalent_break_even": 0.6078,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": null,
+      "pitcher_adjustment": "UNAVAILABLE_OR_FEWER_THAN_10_STARTS"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Austin Wells",
+      "player_id": 669224,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 122,
+      "empirical_hit_yes": 0.418,
+      "model_hit_yes": 0.4092,
+      "one_fewer_ab_hit_yes": 0.2843,
+      "yes_hit_odds": -105,
+      "over_0_5_total_bases_odds": -110,
+      "no_hit_odds": -125,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -110,
+          "model_probability": 0.4092,
+          "one_fewer_ab_probability": 0.2843,
+          "break_even": 0.5238
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -120,
+          "model_probability": 0.5908,
+          "one_fewer_ab_probability": 0.7157,
+          "break_even": 0.5455
+        }
+      ],
+      "best_equivalent_odds": -105,
+      "best_equivalent_break_even": 0.5122,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Ben Rice",
+      "player_id": 700250,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 154,
+      "empirical_hit_yes": 0.6364,
+      "model_hit_yes": 0.6587,
+      "one_fewer_ab_hit_yes": 0.5254,
+      "yes_hit_odds": -200,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 158,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 115,
+          "model_probability": 0.4408,
+          "one_fewer_ab_probability": 0.3252,
+          "break_even": 0.4651
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -145,
+          "model_probability": 0.5592,
+          "one_fewer_ab_probability": 0.6748,
+          "break_even": 0.5918
+        }
+      ],
+      "best_equivalent_odds": -200,
+      "best_equivalent_break_even": 0.6667,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Cedric Mullins",
+      "player_id": 656775,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 137,
+      "empirical_hit_yes": 0.5474,
+      "model_hit_yes": 0.5081,
+      "one_fewer_ab_hit_yes": 0.3767,
+      "yes_hit_odds": -120,
+      "over_0_5_total_bases_odds": -105,
+      "no_hit_odds": -110,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -105,
+          "model_probability": 0.5081,
+          "one_fewer_ab_probability": 0.3767,
+          "break_even": 0.5122
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -125,
+          "model_probability": 0.4919,
+          "one_fewer_ab_probability": 0.6233,
+          "break_even": 0.5556
+        }
+      ],
+      "best_equivalent_odds": -105,
+      "best_equivalent_break_even": 0.5122,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Chandler Simpson",
+      "player_id": 802415,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 151,
+      "empirical_hit_yes": 0.7086,
+      "model_hit_yes": 0.7311,
+      "one_fewer_ab_hit_yes": 0.6184,
+      "yes_hit_odds": -224,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 175,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 154,
+          "model_probability": 0.3882,
+          "one_fewer_ab_probability": 0.2597,
+          "break_even": 0.3937
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -195,
+          "model_probability": 0.6118,
+          "one_fewer_ab_probability": 0.7403,
+          "break_even": 0.661
+        }
+      ],
+      "best_equivalent_odds": -224,
+      "best_equivalent_break_even": 0.6914,
+      "candidate_if_starts": true,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Cody Bellinger",
+      "player_id": 641355,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 132,
+      "empirical_hit_yes": 0.6742,
+      "model_hit_yes": 0.6465,
+      "one_fewer_ab_hit_yes": 0.5323,
+      "yes_hit_odds": -185,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 146,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 150,
+          "model_probability": 0.368,
+          "one_fewer_ab_probability": 0.2716,
+          "break_even": 0.4
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -190,
+          "model_probability": 0.632,
+          "one_fewer_ab_probability": 0.7284,
+          "break_even": 0.6552
+        }
+      ],
+      "best_equivalent_odds": -185,
+      "best_equivalent_break_even": 0.6491,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "George Lombard Jr.",
+      "player_id": 806146,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 42,
+      "empirical_hit_yes": 0.6429,
+      "model_hit_yes": 0.5854,
+      "one_fewer_ab_hit_yes": 0.4663,
+      "yes_hit_odds": -146,
+      "over_0_5_total_bases_odds": -150,
+      "no_hit_odds": 116,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -150,
+          "model_probability": 0.5854,
+          "one_fewer_ab_probability": 0.4663,
+          "break_even": 0.6
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 120,
+          "model_probability": 0.4146,
+          "one_fewer_ab_probability": 0.5337,
+          "break_even": 0.4545
+        }
+      ],
+      "best_equivalent_odds": -146,
+      "best_equivalent_break_even": 0.5935,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Jazz Chisholm Jr.",
+      "player_id": 665862,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 137,
+      "empirical_hit_yes": 0.6058,
+      "model_hit_yes": 0.5635,
+      "one_fewer_ab_hit_yes": 0.4325,
+      "yes_hit_odds": -135,
+      "over_0_5_total_bases_odds": -120,
+      "no_hit_odds": 105,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -120,
+          "model_probability": 0.5635,
+          "one_fewer_ab_probability": 0.4325,
+          "break_even": 0.5455
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -110,
+          "model_probability": 0.4365,
+          "one_fewer_ab_probability": 0.5675,
+          "break_even": 0.5238
+        }
+      ],
+      "best_equivalent_odds": -120,
+      "best_equivalent_break_even": 0.5455,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Jonathan Aranda",
+      "player_id": 666018,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 155,
+      "empirical_hit_yes": 0.6903,
+      "model_hit_yes": 0.6892,
+      "one_fewer_ab_hit_yes": 0.57,
+      "yes_hit_odds": -165,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 131,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 145,
+          "model_probability": 0.4166,
+          "one_fewer_ab_probability": 0.306,
+          "break_even": 0.4082
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -183,
+          "model_probability": 0.5834,
+          "one_fewer_ab_probability": 0.694,
+          "break_even": 0.6466
+        }
+      ],
+      "best_equivalent_odds": -165,
+      "best_equivalent_break_even": 0.6226,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Junior Caminero",
+      "player_id": 691406,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 162,
+      "empirical_hit_yes": 0.7346,
+      "model_hit_yes": 0.6991,
+      "one_fewer_ab_hit_yes": 0.576,
+      "yes_hit_odds": -235,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 183,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 110,
+          "model_probability": 0.4533,
+          "one_fewer_ab_probability": 0.3404,
+          "break_even": 0.4762
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -140,
+          "model_probability": 0.5467,
+          "one_fewer_ab_probability": 0.6596,
+          "break_even": 0.5833
+        }
+      ],
+      "best_equivalent_odds": -235,
+      "best_equivalent_break_even": 0.7015,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Liam Hicks",
+      "player_id": 689414,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 142,
+      "empirical_hit_yes": 0.6197,
+      "model_hit_yes": 0.6656,
+      "one_fewer_ab_hit_yes": 0.5259,
+      "yes_hit_odds": -170,
+      "over_0_5_total_bases_odds": -170,
+      "no_hit_odds": 135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -170,
+          "model_probability": 0.6656,
+          "one_fewer_ab_probability": 0.5259,
+          "break_even": 0.6296
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 135,
+          "model_probability": 0.3344,
+          "one_fewer_ab_probability": 0.4741,
+          "break_even": 0.4255
+        }
+      ],
+      "best_equivalent_odds": -170,
+      "best_equivalent_break_even": 0.6296,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Luis García Jr.",
+      "player_id": 671277,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 147,
+      "empirical_hit_yes": 0.5986,
+      "model_hit_yes": 0.6492,
+      "one_fewer_ab_hit_yes": 0.5156,
+      "yes_hit_odds": -190,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 150,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 140,
+          "model_probability": 0.431,
+          "one_fewer_ab_probability": 0.3126,
+          "break_even": 0.4167
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -176,
+          "model_probability": 0.569,
+          "one_fewer_ab_probability": 0.6874,
+          "break_even": 0.6377
+        }
+      ],
+      "best_equivalent_odds": -190,
+      "best_equivalent_break_even": 0.6552,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Richie Palacios",
+      "player_id": 680700,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 124,
+      "empirical_hit_yes": 0.5,
+      "model_hit_yes": 0.5152,
+      "one_fewer_ab_hit_yes": 0.3677,
+      "yes_hit_odds": -130,
+      "over_0_5_total_bases_odds": -120,
+      "no_hit_odds": 100,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -120,
+          "model_probability": 0.5152,
+          "one_fewer_ab_probability": 0.3677,
+          "break_even": 0.5455
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -110,
+          "model_probability": 0.4848,
+          "one_fewer_ab_probability": 0.6323,
+          "break_even": 0.5238
+        }
+      ],
+      "best_equivalent_odds": -120,
+      "best_equivalent_break_even": 0.5455,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Ryan McMahon",
+      "player_id": 641857,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 124,
+      "empirical_hit_yes": 0.4435,
+      "model_hit_yes": 0.426,
+      "one_fewer_ab_hit_yes": 0.2958,
+      "yes_hit_odds": 110,
+      "over_0_5_total_bases_odds": 110,
+      "no_hit_odds": -140,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": 110,
+          "model_probability": 0.426,
+          "one_fewer_ab_probability": 0.2958,
+          "break_even": 0.4762
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -140,
+          "model_probability": 0.574,
+          "one_fewer_ab_probability": 0.7042,
+          "break_even": 0.5833
+        }
+      ],
+      "best_equivalent_odds": 110,
+      "best_equivalent_break_even": 0.4762,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Spencer Jones",
+      "player_id": 682987,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 86,
+      "empirical_hit_yes": 0.5349,
+      "model_hit_yes": 0.4903,
+      "one_fewer_ab_hit_yes": 0.3768,
+      "yes_hit_odds": -130,
+      "over_0_5_total_bases_odds": -135,
+      "no_hit_odds": 100,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -135,
+          "model_probability": 0.4903,
+          "one_fewer_ab_probability": 0.3768,
+          "break_even": 0.5745
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 105,
+          "model_probability": 0.5097,
+          "one_fewer_ab_probability": 0.6232,
+          "break_even": 0.4878
+        }
+      ],
+      "best_equivalent_odds": -130,
+      "best_equivalent_break_even": 0.5652,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Taylor Walls",
+      "player_id": 670764,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 124,
+      "empirical_hit_yes": 0.5323,
+      "model_hit_yes": 0.5182,
+      "one_fewer_ab_hit_yes": 0.3911,
+      "yes_hit_odds": -120,
+      "over_0_5_total_bases_odds": -105,
+      "no_hit_odds": -110,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -105,
+          "model_probability": 0.5182,
+          "one_fewer_ab_probability": 0.3911,
+          "break_even": 0.5122
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -125,
+          "model_probability": 0.4818,
+          "one_fewer_ab_probability": 0.6089,
+          "break_even": 0.5556
+        }
+      ],
+      "best_equivalent_odds": -105,
+      "best_equivalent_break_even": 0.5122,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Trent Grisham",
+      "player_id": 663757,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 121,
+      "empirical_hit_yes": 0.4876,
+      "model_hit_yes": 0.5042,
+      "one_fewer_ab_hit_yes": 0.3999,
+      "yes_hit_odds": -125,
+      "over_0_5_total_bases_odds": -115,
+      "no_hit_odds": -105,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -115,
+          "model_probability": 0.5042,
+          "one_fewer_ab_probability": 0.3999,
+          "break_even": 0.5349
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -115,
+          "model_probability": 0.4958,
+          "one_fewer_ab_probability": 0.6001,
+          "break_even": 0.5349
+        }
+      ],
+      "best_equivalent_odds": -115,
+      "best_equivalent_break_even": 0.5349,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1937,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Victor Mesa Jr.",
+      "player_id": 683748,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 79,
+      "empirical_hit_yes": 0.519,
+      "model_hit_yes": 0.5425,
+      "one_fewer_ab_hit_yes": 0.4227,
+      "yes_hit_odds": -176,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 140,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 145,
+          "model_probability": 0.3309,
+          "one_fewer_ab_probability": 0.2444,
+          "break_even": 0.4082
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -183,
+          "model_probability": 0.6691,
+          "one_fewer_ab_probability": 0.7556,
+          "break_even": 0.6466
+        }
+      ],
+      "best_equivalent_odds": -176,
+      "best_equivalent_break_even": 0.6377,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "nyy_tb",
+      "name": "Yandy Díaz",
+      "player_id": 650490,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 154,
+      "empirical_hit_yes": 0.6883,
+      "model_hit_yes": 0.7454,
+      "one_fewer_ab_hit_yes": 0.6422,
+      "yes_hit_odds": -238,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 185,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 135,
+          "model_probability": 0.4515,
+          "one_fewer_ab_probability": 0.3343,
+          "break_even": 0.4255
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -170,
+          "model_probability": 0.5485,
+          "one_fewer_ab_probability": 0.6657,
+          "break_even": 0.6296
+        }
+      ],
+      "best_equivalent_odds": -238,
+      "best_equivalent_break_even": 0.7041,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2202,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Brice Turang",
+      "player_id": 668930,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 151,
+      "empirical_hit_yes": 0.6623,
+      "model_hit_yes": 0.638,
+      "one_fewer_ab_hit_yes": 0.5371,
+      "yes_hit_odds": -190,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 150,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 140,
+          "model_probability": 0.3737,
+          "one_fewer_ab_probability": 0.2777,
+          "break_even": 0.4167
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -176,
+          "model_probability": 0.6263,
+          "one_fewer_ab_probability": 0.7223,
+          "break_even": 0.6377
+        }
+      ],
+      "best_equivalent_odds": -190,
+      "best_equivalent_break_even": 0.6552,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Christian Yelich",
+      "player_id": 592885,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 118,
+      "empirical_hit_yes": 0.6017,
+      "model_hit_yes": 0.5844,
+      "one_fewer_ab_hit_yes": 0.4759,
+      "yes_hit_odds": -157,
+      "over_0_5_total_bases_odds": -150,
+      "no_hit_odds": 125,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -150,
+          "model_probability": 0.5844,
+          "one_fewer_ab_probability": 0.4759,
+          "break_even": 0.6
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 120,
+          "model_probability": 0.4156,
+          "one_fewer_ab_probability": 0.5241,
+          "break_even": 0.4545
+        }
+      ],
+      "best_equivalent_odds": -150,
+      "best_equivalent_break_even": 0.6,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Cooper Pratt",
+      "player_id": 806198,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 74,
+      "empirical_hit_yes": 0.5946,
+      "model_hit_yes": 0.5881,
+      "one_fewer_ab_hit_yes": 0.4452,
+      "yes_hit_odds": -150,
+      "over_0_5_total_bases_odds": -140,
+      "no_hit_odds": 120,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -140,
+          "model_probability": 0.5881,
+          "one_fewer_ab_probability": 0.4452,
+          "break_even": 0.5833
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 110,
+          "model_probability": 0.4119,
+          "one_fewer_ab_probability": 0.5548,
+          "break_even": 0.4762
+        }
+      ],
+      "best_equivalent_odds": -140,
+      "best_equivalent_break_even": 0.5833,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Fernando Tatis Jr.",
+      "player_id": 665487,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 159,
+      "empirical_hit_yes": 0.7107,
+      "model_hit_yes": 0.6645,
+      "one_fewer_ab_hit_yes": 0.5513,
+      "yes_hit_odds": -190,
+      "over_0_5_total_bases_odds": -190,
+      "no_hit_odds": 150,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -190,
+          "model_probability": 0.6645,
+          "one_fewer_ab_probability": 0.5513,
+          "break_even": 0.6552
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 150,
+          "model_probability": 0.3355,
+          "one_fewer_ab_probability": 0.4487,
+          "break_even": 0.4
+        }
+      ],
+      "best_equivalent_odds": -190,
+      "best_equivalent_break_even": 0.6552,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1611,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Garrett Mitchell",
+      "player_id": 669003,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 145,
+      "empirical_hit_yes": 0.5379,
+      "model_hit_yes": 0.5459,
+      "one_fewer_ab_hit_yes": 0.4287,
+      "yes_hit_odds": -130,
+      "over_0_5_total_bases_odds": -150,
+      "no_hit_odds": 100,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -150,
+          "model_probability": 0.5459,
+          "one_fewer_ab_probability": 0.4287,
+          "break_even": 0.6
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 120,
+          "model_probability": 0.4541,
+          "one_fewer_ab_probability": 0.5713,
+          "break_even": 0.4545
+        }
+      ],
+      "best_equivalent_odds": -130,
+      "best_equivalent_break_even": 0.5652,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Jackson Chourio",
+      "player_id": 694192,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 127,
+      "empirical_hit_yes": 0.7402,
+      "model_hit_yes": 0.7471,
+      "one_fewer_ab_hit_yes": 0.6414,
+      "yes_hit_odds": -220,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 172,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 125,
+          "model_probability": 0.4954,
+          "one_fewer_ab_probability": 0.3827,
+          "break_even": 0.4444
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -157,
+          "model_probability": 0.5046,
+          "one_fewer_ab_probability": 0.6173,
+          "break_even": 0.6109
+        }
+      ],
+      "best_equivalent_odds": -220,
+      "best_equivalent_break_even": 0.6875,
+      "candidate_if_starts": true,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Jackson Merrill",
+      "player_id": 701538,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 158,
+      "empirical_hit_yes": 0.6013,
+      "model_hit_yes": 0.5949,
+      "one_fewer_ab_hit_yes": 0.4982,
+      "yes_hit_odds": -125,
+      "over_0_5_total_bases_odds": -140,
+      "no_hit_odds": -105,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -140,
+          "model_probability": 0.5949,
+          "one_fewer_ab_probability": 0.4982,
+          "break_even": 0.5833
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 110,
+          "model_probability": 0.4051,
+          "one_fewer_ab_probability": 0.5018,
+          "break_even": 0.4762
+        }
+      ],
+      "best_equivalent_odds": -125,
+      "best_equivalent_break_even": 0.5556,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1611,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Jake Bauers",
+      "player_id": 641343,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 144,
+      "empirical_hit_yes": 0.6111,
+      "model_hit_yes": 0.5993,
+      "one_fewer_ab_hit_yes": 0.4704,
+      "yes_hit_odds": -150,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 120,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 155,
+          "model_probability": 0.3766,
+          "one_fewer_ab_probability": 0.269,
+          "break_even": 0.3922
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -197,
+          "model_probability": 0.6234,
+          "one_fewer_ab_probability": 0.731,
+          "break_even": 0.6633
+        }
+      ],
+      "best_equivalent_odds": -150,
+      "best_equivalent_break_even": 0.6,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Jake Cronenworth",
+      "player_id": 630105,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 109,
+      "empirical_hit_yes": 0.5321,
+      "model_hit_yes": 0.506,
+      "one_fewer_ab_hit_yes": 0.3804,
+      "yes_hit_odds": 105,
+      "over_0_5_total_bases_odds": 128,
+      "no_hit_odds": -135,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": 128,
+          "model_probability": 0.506,
+          "one_fewer_ab_probability": 0.3804,
+          "break_even": 0.4386
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": -161,
+          "model_probability": 0.494,
+          "one_fewer_ab_probability": 0.6196,
+          "break_even": 0.6169
+        }
+      ],
+      "best_equivalent_odds": 128,
+      "best_equivalent_break_even": 0.4386,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1611,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Joey Ortiz",
+      "player_id": 687401,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 134,
+      "empirical_hit_yes": 0.5224,
+      "model_hit_yes": 0.5107,
+      "one_fewer_ab_hit_yes": 0.388,
+      "yes_hit_odds": -145,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 115,
+      "total_bases_markets": [],
+      "best_equivalent_odds": -145,
+      "best_equivalent_break_even": 0.5918,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Manny Machado",
+      "player_id": 592518,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 158,
+      "empirical_hit_yes": 0.5506,
+      "model_hit_yes": 0.5187,
+      "one_fewer_ab_hit_yes": 0.4149,
+      "yes_hit_odds": -150,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 120,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 165,
+          "model_probability": 0.2915,
+          "one_fewer_ab_probability": 0.2111,
+          "break_even": 0.3774
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -210,
+          "model_probability": 0.7085,
+          "one_fewer_ab_probability": 0.7889,
+          "break_even": 0.6774
+        }
+      ],
+      "best_equivalent_odds": -150,
+      "best_equivalent_break_even": 0.6,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1611,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Ty France",
+      "player_id": 664034,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 133,
+      "empirical_hit_yes": 0.5865,
+      "model_hit_yes": 0.5913,
+      "one_fewer_ab_hit_yes": 0.4694,
+      "yes_hit_odds": -157,
+      "over_0_5_total_bases_odds": -145,
+      "no_hit_odds": 125,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -145,
+          "model_probability": 0.5913,
+          "one_fewer_ab_probability": 0.4694,
+          "break_even": 0.5918
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 115,
+          "model_probability": 0.4087,
+          "one_fewer_ab_probability": 0.5306,
+          "break_even": 0.4651
+        }
+      ],
+      "best_equivalent_odds": -145,
+      "best_equivalent_break_even": 0.5918,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1611,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "William Contreras",
+      "player_id": 661388,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 147,
+      "empirical_hit_yes": 0.6531,
+      "model_hit_yes": 0.6708,
+      "one_fewer_ab_hit_yes": 0.5598,
+      "yes_hit_odds": -197,
+      "over_0_5_total_bases_odds": null,
+      "no_hit_odds": 155,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 1.5,
+          "american_odds": 140,
+          "model_probability": 0.3829,
+          "one_fewer_ab_probability": 0.2794,
+          "break_even": 0.4167
+        },
+        {
+          "side": "under",
+          "line": 1.5,
+          "american_odds": -176,
+          "model_probability": 0.6171,
+          "one_fewer_ab_probability": 0.7206,
+          "break_even": 0.6377
+        }
+      ],
+      "best_equivalent_odds": -197,
+      "best_equivalent_break_even": 0.6633,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.2033,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    },
+    {
+      "game": "sd_mil",
+      "name": "Xander Bogaerts",
+      "player_id": 593428,
+      "status": "PROJECTED_STARTER_NOT_OFFICIAL",
+      "appearance_sample": 153,
+      "empirical_hit_yes": 0.5686,
+      "model_hit_yes": 0.5157,
+      "one_fewer_ab_hit_yes": 0.3815,
+      "yes_hit_odds": -125,
+      "over_0_5_total_bases_odds": -135,
+      "no_hit_odds": -105,
+      "total_bases_markets": [
+        {
+          "side": "over",
+          "line": 0.5,
+          "american_odds": -135,
+          "model_probability": 0.5157,
+          "one_fewer_ab_probability": 0.3815,
+          "break_even": 0.5745
+        },
+        {
+          "side": "under",
+          "line": 0.5,
+          "american_odds": 105,
+          "model_probability": 0.4843,
+          "one_fewer_ab_probability": 0.6185,
+          "break_even": 0.4878
+        }
+      ],
+      "best_equivalent_odds": -125,
+      "best_equivalent_break_even": 0.5556,
+      "candidate_if_starts": false,
+      "pitcher_hit_rate": 0.1611,
+      "pitcher_adjustment": "200_BF_SHRINKAGE_60_PERCENT_EXPOSURE"
+    }
+  ],
+  "example_two_hit_parlay": {
+    "selections": [
+      "Jackson Chourio",
+      "Chandler Simpson"
+    ],
+    "independence_between_games": true,
+    "full_win_count": 5473,
+    "one_fewer_ab_each_full_win_count": 3942,
+    "decimal_odds": 2.1039,
+    "break_even": 0.4753
+  }
+}

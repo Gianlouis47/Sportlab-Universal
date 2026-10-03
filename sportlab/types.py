@@ -20,6 +20,9 @@ class TeamProfile:
     l10: WindowForm | None = None
     l20: WindowForm | None = None
     l30: WindowForm | None = None
+    season_hits_for: float | None = None
+    season_hits_allowed: float | None = None
+    hit_game_samples: tuple[int, ...] = ()
 
 @dataclass(frozen=True)
 class PitcherProfile:
@@ -34,12 +37,31 @@ class PitcherProfile:
     expected_bf: float | None = None
     opponent_k_factor: float = 1.0
     workload_factor: float = 1.0
+    # Optional observed inputs for the BF-based strikeout simulation.
+    season_k_rate: float | None = None  # strikeouts / batters faced
+    opponent_k_rate: float | None = None  # opposing hitters' strikeouts / PA
+    league_k_rate: float | None = None
+    bf_samples: tuple[int, ...] = ()  # starts only, never relief appearances
+    season_hits_per9: float | None = None
+    season_hits_allowed_rate: float | None = None  # hits allowed / BF
+    opponent_hit_rate: float | None = None  # opposing hitters' hits / PA
+    league_hit_rate: float | None = None
 
 @dataclass(frozen=True)
 class H2HProfile:
     games: int
     away_runs_per_game: float
     home_runs_per_game: float
+
+@dataclass(frozen=True)
+class HitterProfile:
+    player_id: int
+    name: str
+    hits: int
+    at_bats: int
+    ab_samples: tuple[int, ...]
+    lineup_status: str = "UNAVAILABLE"  # CONFIRMED / PROJECTED / UNAVAILABLE
+    total_base_probs: tuple[float, ...] = ()  # per-AB outcomes: 0, single, double, triple, HR
 
 @dataclass(frozen=True)
 class MLBGameInput:
@@ -54,6 +76,13 @@ class MLBGameInput:
     home_team_total_lines: tuple[float, ...] = (2.5, 3.5, 4.5)
     away_pitcher_k_lines: tuple[float, ...] = (4.5, 5.0, 5.5, 6.0, 6.5)
     home_pitcher_k_lines: tuple[float, ...] = (4.5, 5.0, 5.5, 6.0, 6.5)
+    away_team_hit_lines: tuple[float, ...] = ()
+    home_team_hit_lines: tuple[float, ...] = ()
+    away_pitcher_hits_allowed_lines: tuple[float, ...] = ()
+    home_pitcher_hits_allowed_lines: tuple[float, ...] = ()
+    hitters: tuple[HitterProfile, ...] = ()
+    hitter_hit_lines: dict[int, tuple[float, ...]] = field(default_factory=dict)
+    hitter_total_base_lines: dict[int, tuple[float, ...]] = field(default_factory=dict)
     metadata: dict[str, Any] = field(default_factory=dict)
 
 @dataclass
@@ -70,6 +99,13 @@ class SimulationResult:
     home_team_totals: dict[str, dict[str, float]]
     away_pitcher_ks: dict[str, dict[str, float]]
     home_pitcher_ks: dict[str, dict[str, float]]
+    distributions: dict[str, dict[str, float | int]] = field(default_factory=dict)
+    hitter_hits: dict[str, dict[str, dict[str, float]]] = field(default_factory=dict)
+    hitter_total_bases: dict[str, dict[str, dict[str, float]]] = field(default_factory=dict)
+    away_team_hits: dict[str, dict[str, float]] = field(default_factory=dict)
+    home_team_hits: dict[str, dict[str, float]] = field(default_factory=dict)
+    away_pitcher_hits_allowed: dict[str, dict[str, float]] = field(default_factory=dict)
+    home_pitcher_hits_allowed: dict[str, dict[str, float]] = field(default_factory=dict)
     contradictions: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:

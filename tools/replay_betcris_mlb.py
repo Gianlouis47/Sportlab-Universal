@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import gzip
+import argparse
 from dataclasses import replace
 from pathlib import Path
 import numpy as np
@@ -61,13 +62,16 @@ def lower_scoring_ticket(games: list, factor: float = .85) -> dict:
             home[ties] += rng.random(np.count_nonzero(ties)) < .5
             away[away == home] += 1
         legs.append(away + home > 5.5)
-    return {"factor": factor, "simulations": RUNS,
+    return {"factor": factor, "simulations": RUNS, "seed": SEED,
             "leg_win_counts": [int(np.sum(x)) for x in legs],
             "full_win_count": int(np.sum(np.logical_and.reduce(legs)))}
 
 
 def main() -> None:
-    with gzip.open(SNAPSHOT, "rt", encoding="utf-8") as file:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--snapshot", type=Path, default=SNAPSHOT)
+    args = parser.parse_args()
+    with gzip.open(args.snapshot, "rt", encoding="utf-8") as file:
         snapshot = json.load(file)
     alternatives = json.loads((MARKETS / "full_game_alternatives_from_screenshots.json").read_text())
     results = {}
@@ -93,9 +97,18 @@ def main() -> None:
         home_name = snapshot["teams"][str(row["home"])]["name"]
         game = replace(game, away_team_total_lines=lines_for(blocks, f"{away_label} Total del Equipo"),
                        home_team_total_lines=lines_for(blocks, f"{home_label} Total del Equipo"))
+        # An announced nine-player lineup refines the opposing starter's K/PA input.
+        rates = snapshot.get("confirmed_lineup_k_rates", {}).get(str(GAME_IDS[key]), {})
+        if "away" in rates:
+            game = replace(game, home_pitcher=replace(game.home_pitcher,
+                opponent_k_rate=rates["away"]["season_pa_weighted_k_rate"]))
+        if "home" in rates:
+            game = replace(game, away_pitcher=replace(game.away_pitcher,
+                opponent_k_rate=rates["home"]["season_pa_weighted_k_rate"]))
         result = analyze_mlb_game(game, RUNS, SEED)
         results[key] = {"event_id": GAME_IDS[key], "away": away_name, "home": home_name,
                         "starter_status": snapshot["starter_status"], "model": result.to_dict(),
+                        "announced_lineup_k_rate": rates,
                         "quoted_game_1": market["game_1_tokens"],
                         "quoted_relevant_markets": [b for b in blocks if any(word in b["market"] for word in
                             ("Total de Ponches", "Total de Hits Permitidos", "Total de Hits", "Total del Equipo"))
@@ -108,7 +121,8 @@ def main() -> None:
     print(json.dumps({"source_cutoff": snapshot["snapshot_utc"], "timezone": "America/Santo_Domingo",
                       "status": "EXPLORATORY_UNCALIBRATED", "simulations": RUNS, "seed": SEED,
                       "games": results, "example_three_game_total_parlay": parlay,
-                      "example_three_game_total_parlay_lower_scoring": lower_scoring_ticket(ticket_games)},
+                      "example_three_game_total_parlay_lower_scoring": lower_scoring_ticket(ticket_games),
+                      "example_three_game_total_parlay_higher_scoring": lower_scoring_ticket(ticket_games, 1.15)},
                      ensure_ascii=False, indent=2))
 
 

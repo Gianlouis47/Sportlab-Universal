@@ -1,0 +1,181 @@
+{
+  "sport": "NFL",
+  "date_rd": "2026-10-04",
+  "source": "ESPN public NFL scoreboard",
+  "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261004&limit=100",
+  "captured_at_utc": "2026-10-04T21:42:31.390531+00:00",
+  "captured_at_rd": "2026-10-04T17:42:31.390531-04:00",
+  "scope": "Only games FINAL at capture time; pregame comparisons are analyses from this chat, not confirmed wagers.",
+  "final_games": [
+    {
+      "espn_event_id": 401872965,
+      "start_rd": "2026-10-04T09:30:00-04:00",
+      "away_team": "IND",
+      "home_team": "WSH",
+      "away_score": 30,
+      "home_score": 13,
+      "winner": "IND",
+      "phase": "FINAL"
+    },
+    {
+      "espn_event_id": 401872971,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "NE",
+      "home_team": "BUF",
+      "away_score": 29,
+      "home_score": 26,
+      "winner": "NE",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "NE",
+        "market": "over",
+        "line": 18.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 6560,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 29,
+        "outcome": "WIN"
+      }
+    },
+    {
+      "espn_event_id": 401872972,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "NYJ",
+      "home_team": "CHI",
+      "away_score": 12,
+      "home_score": 23,
+      "winner": "CHI",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "CHI",
+        "market": "over",
+        "line": 21.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 7769,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 23,
+        "outcome": "WIN"
+      }
+    },
+    {
+      "espn_event_id": 401872969,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "JAX",
+      "home_team": "CIN",
+      "away_score": 22,
+      "home_score": 17,
+      "winner": "JAX",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "JAX",
+        "market": "over",
+        "line": 22.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 7771,
+        "pregame_decision": "SECUNDARIA",
+        "team_points_final": 22,
+        "outcome": "LOSS"
+      }
+    },
+    {
+      "espn_event_id": 401872966,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "ARI",
+      "home_team": "NYG",
+      "away_score": 24,
+      "home_score": 36,
+      "winner": "NYG",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "NYG",
+        "market": "over",
+        "line": 19.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 6827,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 36,
+        "outcome": "WIN"
+      }
+    },
+    {
+      "espn_event_id": 401872970,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "LAR",
+      "home_team": "PHI",
+      "away_score": 24,
+      "home_score": 20,
+      "winner": "LAR",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "LAR",
+        "market": "over",
+        "line": 21.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 5980,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 24,
+        "outcome": "WIN"
+      }
+    },
+    {
+      "espn_event_id": 401872968,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "GB",
+      "home_team": "TB",
+      "away_score": 17,
+      "home_score": 14,
+      "winner": "GB",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "TB",
+        "market": "over",
+        "line": 15.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 7658,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 14,
+        "outcome": "LOSS"
+      }
+    },
+    {
+      "espn_event_id": 401872973,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "TEN",
+      "home_team": "BAL",
+      "away_score": 18,
+      "home_score": 24,
+      "winner": "BAL",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "TEN",
+        "market": "over",
+        "line": 13.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 5955,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 18,
+        "outcome": "WIN"
+      }
+    },
+    {
+      "espn_event_id": 401872967,
+      "start_rd": "2026-10-04T13:00:00-04:00",
+      "away_team": "DAL",
+      "home_team": "HOU",
+      "away_score": 34,
+      "home_score": 30,
+      "winner": "DAL",
+      "phase": "FINAL",
+      "pregame_team_total_comparison": {
+        "team": "DAL",
+        "market": "over",
+        "line": 21.5,
+        "public_appuesta_snapshot_not_user_wager": true,
+        "pregame_model_wins_in_10000": 6485,
+        "pregame_decision": "NO APUESTA",
+        "team_points_final": 34,
+        "outcome": "WIN"
+      }
+    }
+  ]
+}

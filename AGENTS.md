@@ -12,6 +12,7 @@ GOAL → DATA → ANALYSIS → SIMULATION → CONTRADICTION → RECHECK → VALI
 2. Leer primero la metodología versionada y la configuración activa: `knowledge/mlb/methods/mlb_notebook_method.md`, `config/defaults.yaml`, `sportlab/models/recent_form.py`, `sportlab/sports/mlb/runs.py`, `sportlab/sports/mlb/strikeouts.py` y el motor de simulación. Consultar la configuración y los snapshots de Neon. No elegir pesos de memoria ni inventar otra fórmula.
 3. Buscar autónomamente en fuentes públicas actuales los datos que falten: calendario oficial, titulares, alineaciones, lesiones, descanso y uso del bullpen, datos de temporada y forma reciente, casa/visita, rival, parque/clima y líneas disponibles. Contrastar fuentes y fecha de corte. No pedir al usuario estadísticas públicas que se puedan consultar; las capturas sirven para reconocer mercados y cuotas observadas.
 4. Etiquetar cada variable crítica CONFIRMADA, PROYECTADA o NO DISPONIBLE. Distinguir una cuota de captura de una cuota vigente. No convertir NULL en cero ni reutilizar estadísticas antiguas como si fueran actuales.
+5. Para totales, hándicaps y props, aplicar `knowledge/markets/threshold_frequency.md`: comprobar en fuentes oficiales la frecuencia reciente **del evento exacto** en ambos lados del enfrentamiento, con denominador, fecha y split pertinente. Usarla como contraste de la proyección, nunca como probabilidad futura directa ni evidencia suficiente para declarar PRINCIPAL.
 
 ## Método de la libreta y MLB
 

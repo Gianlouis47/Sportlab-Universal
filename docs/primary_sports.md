@@ -6,6 +6,12 @@ feature is implemented or that a data provider currently supplies it.
 
 ## Common contract
 
+For every total, handicap or player prop, apply the event-specific historical
+threshold checklist in `knowledge/markets/threshold_frequency.md`. Count
+eligible hits and sample sizes for both sides of the matchup, validate the
+exact settlement event, and treat observed frequency as evidence rather than
+an uncalibrated future probability.
+
 For each game preserve `sport`, league, season, event ID, timezone-aware
 start, away/home, as-of timestamp, source, sample size and status
 (CONFIRMED / PROJECTED / UNAVAILABLE). Compute scoring for and allowed in the

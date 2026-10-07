@@ -5,6 +5,7 @@ Store here durable, versioned knowledge that should not be high-frequency relati
 Structure:
 
 - `mlb/`: MLB frameworks, notebook method, pitcher profiles and sportsbook notes;
+- `markets/threshold_frequency.md`: método transversal para investigar frecuencias históricas de líneas y props sin confundirlas con probabilidades futuras;
 - future sport folders follow the same pattern;
 - cross-sport architecture remains in `docs/`.
 

@@ -58,3 +58,4 @@ Do not store API keys, database passwords, authentication tokens, personal data 
 - Search for credible routes of failure before classification.
 - Persist model version, seed, inputs, outputs, contradictions and postmortem.
 - Historical information is context, not automatic prediction.
+- For every market, apply the [attack/defense and exact-threshold review protocol](knowledge/markets/market_review_protocol.md), including alternative lines, settlement rules, and the opponent's allowed-event frequency.

@@ -2,12 +2,16 @@ from __future__ import annotations
 from dataclasses import dataclass, field, asdict
 from typing import Any
 
+from sportlab.sports.mlb.matchups import BatterMatchup
+
+
 @dataclass(frozen=True)
 class WindowForm:
     games: int
     offense: float
     defense_allowed: float
     win_rate: float | None = None
+
 
 @dataclass(frozen=True)
 class TeamProfile:
@@ -20,6 +24,7 @@ class TeamProfile:
     l10: WindowForm | None = None
     l20: WindowForm | None = None
     l30: WindowForm | None = None
+
 
 @dataclass(frozen=True)
 class PitcherProfile:
@@ -34,12 +39,15 @@ class PitcherProfile:
     expected_bf: float | None = None
     opponent_k_factor: float = 1.0
     workload_factor: float = 1.0
+    pitcher_k_rate: float | None = None
+
 
 @dataclass(frozen=True)
 class H2HProfile:
     games: int
     away_runs_per_game: float
     home_runs_per_game: float
+
 
 @dataclass(frozen=True)
 class MLBGameInput:
@@ -54,7 +62,10 @@ class MLBGameInput:
     home_team_total_lines: tuple[float, ...] = (2.5, 3.5, 4.5)
     away_pitcher_k_lines: tuple[float, ...] = (4.5, 5.0, 5.5, 6.0, 6.5)
     home_pitcher_k_lines: tuple[float, ...] = (4.5, 5.0, 5.5, 6.0, 6.5)
+    away_lineup: tuple[BatterMatchup, ...] = ()
+    home_lineup: tuple[BatterMatchup, ...] = ()
     metadata: dict[str, Any] = field(default_factory=dict)
+
 
 @dataclass
 class SimulationResult:

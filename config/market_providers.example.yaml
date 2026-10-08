@@ -1,0 +1,13 @@
+providers:
+  star_sport:
+    mode: screenshot_or_manual
+    alternate_pitcher_k_lines: unknown
+    notes: "Read exact lines from current ticket/screenshot."
+  superbets:
+    mode: screenshot_or_manual
+    alternate_pitcher_k_lines: unknown
+    notes: "Do not assume over/under availability; validate current market."
+  betcris:
+    mode: screenshot_or_manual
+    alternate_pitcher_k_lines: unknown
+    notes: "Validate current main and alternate lines before decision."

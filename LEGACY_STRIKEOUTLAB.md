@@ -1,12 +1,18 @@
 # Legacy StrikeoutLab material
 
-The existing packages/ and supabase/ directories come from the original MLB-only StrikeoutLab project.
+The original MLB-only StrikeoutLab assets are archived under `legacy/strikeoutlab/`.
 
-They are retained temporarily because they contain useful tested strikeout/calibration logic, SQL migrations and source-history needed for audit and migration.
+Preserved material includes:
+
+- the tested TypeScript strikeout, calibration, backtest and decision logic;
+- historical Supabase Edge Functions;
+- historical Supabase migrations and schema evolution.
 
 Rules:
-- no new universal features should be added there;
-- migrate useful logic into sportlab/ with tests;
+
+- do not add new universal features there;
+- migrate useful logic into `sportlab/` with parity tests;
 - Neon SportLab is the primary dynamic database;
 - Supabase StrikeoutLab is historical/auxiliary only;
-- once migrated and validated, legacy files may be archived or removed in a later cleanup commit.
+- do not execute old migrations against Neon;
+- do not remove legacy assets until their useful behavior has been migrated and validated.

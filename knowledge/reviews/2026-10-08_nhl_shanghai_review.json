@@ -1,0 +1,1466 @@
+{
+  "date": "2026-10-08",
+  "timezone": "America/Santo_Domingo",
+  "source": "StatsHawk regular games plus RotoWire goalie/injury verification; Shanghai official schedule; current previews",
+  "nhl": [
+    {
+      "away": "Vancouver Canucks",
+      "home": "Carolina Hurricanes",
+      "direction": "over",
+      "line": 4.5,
+      "frequency_away": "4/4",
+      "frequency_home": "3/4",
+      "away_attack_defense": [
+        9.4,
+        1.6
+      ],
+      "home_attack_defense": [
+        4.3,
+        5.5
+      ],
+      "expected_away": 3.625,
+      "expected_home": 3.5,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611080,
+      "simulated_total_mean": 7.3235,
+      "model_probability": 0.8722,
+      "sensitivity_20pct_total_rate": [
+        0.7359,
+        0.9412
+      ],
+      "ml_away": 0.5252,
+      "ml_home": 0.4748,
+      "all_lines": {
+        "3.5": {
+          "over": 0.9274,
+          "under": 0.0726,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.8722,
+          "under": 0.1278,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.7155,
+          "under": 0.2845,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.6233,
+          "under": 0.3767,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.4264,
+          "under": 0.5736,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.3281,
+          "under": 0.6719,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Philadelphia Flyers",
+      "home": "Ottawa Senators",
+      "direction": "under",
+      "line": 7.5,
+      "frequency_away": "4/4",
+      "frequency_home": "2/3",
+      "away_attack_defense": [
+        1.3,
+        3.2
+      ],
+      "home_attack_defense": [
+        7.1,
+        6.8
+      ],
+      "expected_away": 1.9583333333333333,
+      "expected_home": 3.541666666666667,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611081,
+      "simulated_total_mean": 5.6236,
+      "model_probability": 0.8069,
+      "sensitivity_20pct_total_rate": [
+        0.6619,
+        0.9191
+      ],
+      "ml_away": 0.2561,
+      "ml_home": 0.7439,
+      "all_lines": {
+        "3.5": {
+          "over": 0.7932,
+          "under": 0.2068,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.6834,
+          "under": 0.3166,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.4666,
+          "under": 0.5334,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.3494,
+          "under": 0.6506,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.1931,
+          "under": 0.8069,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.1232,
+          "under": 0.8768,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Utah Mammoth",
+      "home": "Boston Bruins",
+      "direction": "over",
+      "line": 3.5,
+      "frequency_away": "4/4",
+      "frequency_home": "3/4",
+      "away_attack_defense": [
+        8.8,
+        9
+      ],
+      "home_attack_defense": [
+        2.3,
+        5.5
+      ],
+      "expected_away": 3.5,
+      "expected_home": 2,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611082,
+      "simulated_total_mean": 5.6198,
+      "model_probability": 0.7965,
+      "sensitivity_20pct_total_rate": [
+        0.6374,
+        0.8913
+      ],
+      "ml_away": 0.7341,
+      "ml_home": 0.2659,
+      "all_lines": {
+        "3.5": {
+          "over": 0.7965,
+          "under": 0.2035,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.6904,
+          "under": 0.3096,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.4682,
+          "under": 0.5318,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.3469,
+          "under": 0.6531,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.1861,
+          "under": 0.8139,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.1218,
+          "under": 0.8782,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Nashville Predators",
+      "home": "Montreal Canadiens",
+      "direction": "over",
+      "line": 3.5,
+      "frequency_away": "2/3",
+      "frequency_home": "3/3",
+      "away_attack_defense": [
+        3.5,
+        6.8
+      ],
+      "home_attack_defense": [
+        8.3,
+        2
+      ],
+      "expected_away": 3.333333333333333,
+      "expected_home": 3.333333333333333,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611083,
+      "simulated_total_mean": 6.8558,
+      "model_probability": 0.899,
+      "sensitivity_20pct_total_rate": [
+        0.7744,
+        0.9569
+      ],
+      "ml_away": 0.4976,
+      "ml_home": 0.5024,
+      "all_lines": {
+        "3.5": {
+          "over": 0.899,
+          "under": 0.101,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.8381,
+          "under": 0.1619,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.6585,
+          "under": 0.3415,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.5553,
+          "under": 0.4447,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.3579,
+          "under": 0.6421,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.266,
+          "under": 0.734,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Dallas Stars",
+      "home": "Buffalo Sabres",
+      "direction": "under",
+      "line": 7.5,
+      "frequency_away": "3/3",
+      "frequency_home": "2/3",
+      "away_attack_defense": [
+        2.3,
+        9
+      ],
+      "home_attack_defense": [
+        5.9,
+        3.6
+      ],
+      "expected_away": 2.833333333333333,
+      "expected_home": 2.5,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611084,
+      "simulated_total_mean": 5.5205,
+      "model_probability": 0.8286,
+      "sensitivity_20pct_total_rate": [
+        0.6914,
+        0.9254
+      ],
+      "ml_away": 0.5573,
+      "ml_home": 0.4427,
+      "all_lines": {
+        "3.5": {
+          "over": 0.7795,
+          "under": 0.2205,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.6729,
+          "under": 0.3271,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.4437,
+          "under": 0.5563,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.3351,
+          "under": 0.6649,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.1714,
+          "under": 0.8286,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.1161,
+          "under": 0.8839,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Minnesota Wild",
+      "home": "Tampa Bay Lightning",
+      "direction": "under",
+      "line": 7.5,
+      "frequency_away": "3/3",
+      "frequency_home": "3/3",
+      "away_attack_defense": [
+        5.9,
+        10
+      ],
+      "home_attack_defense": [
+        4.9,
+        8.1
+      ],
+      "expected_away": 2.666666666666667,
+      "expected_home": 2,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611085,
+      "simulated_total_mean": 4.8419,
+      "model_probability": 0.9009,
+      "sensitivity_20pct_total_rate": [
+        0.7991,
+        0.9647
+      ],
+      "ml_away": 0.6109,
+      "ml_home": 0.3891,
+      "all_lines": {
+        "3.5": {
+          "over": 0.6818,
+          "under": 0.3182,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.5633,
+          "under": 0.4367,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.3231,
+          "under": 0.6769,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.227,
+          "under": 0.773,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.0991,
+          "under": 0.9009,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.0616,
+          "under": 0.9384,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Chicago Blackhawks",
+      "home": "New York Islanders",
+      "direction": "over",
+      "line": 3.5,
+      "frequency_away": "4/4",
+      "frequency_home": "2/3",
+      "away_attack_defense": [
+        2.7,
+        2.5
+      ],
+      "home_attack_defense": [
+        5.9,
+        8.1
+      ],
+      "expected_away": 2.291666666666667,
+      "expected_home": 3.625,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611086,
+      "simulated_total_mean": 6.0702,
+      "model_probability": 0.8456,
+      "sensitivity_20pct_total_rate": [
+        0.7049,
+        0.9289
+      ],
+      "ml_away": 0.3024,
+      "ml_home": 0.6976,
+      "all_lines": {
+        "3.5": {
+          "over": 0.8456,
+          "under": 0.1544,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.7481,
+          "under": 0.2519,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.5415,
+          "under": 0.4585,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.4224,
+          "under": 0.5776,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.2468,
+          "under": 0.7532,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.1692,
+          "under": 0.8308,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "San Jose Sharks",
+      "home": "St. Louis Blues",
+      "direction": "under",
+      "line": 8.5,
+      "frequency_away": "2/3",
+      "frequency_home": "3/3",
+      "away_attack_defense": [
+        3.5,
+        2.7
+      ],
+      "home_attack_defense": [
+        3.5,
+        4.3
+      ],
+      "expected_away": 2.8333333333333335,
+      "expected_home": 3.166666666666667,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611087,
+      "simulated_total_mean": 6.1879,
+      "model_probability": 0.8189,
+      "sensitivity_20pct_total_rate": [
+        0.6634,
+        0.9307
+      ],
+      "ml_away": 0.4495,
+      "ml_home": 0.5505,
+      "all_lines": {
+        "3.5": {
+          "over": 0.8542,
+          "under": 0.1458,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.7687,
+          "under": 0.2313,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.5604,
+          "under": 0.4396,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.4459,
+          "under": 0.5541,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.251,
+          "under": 0.749,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.1811,
+          "under": 0.8189,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Colorado Avalanche",
+      "home": "Calgary Flames",
+      "direction": "over",
+      "line": 3.5,
+      "frequency_away": "3/3",
+      "frequency_home": "3/3",
+      "away_attack_defense": [
+        9.7,
+        6.8
+      ],
+      "home_attack_defense": [
+        1,
+        1
+      ],
+      "expected_away": 5.333333333333333,
+      "expected_home": 1.8333333333333333,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611088,
+      "simulated_total_mean": 7.2234,
+      "model_probability": 0.9248,
+      "sensitivity_20pct_total_rate": [
+        0.8175,
+        0.9713
+      ],
+      "ml_away": 0.906,
+      "ml_home": 0.094,
+      "all_lines": {
+        "3.5": {
+          "over": 0.9248,
+          "under": 0.0752,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.8619,
+          "under": 0.1381,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.72,
+          "under": 0.28,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.592,
+          "under": 0.408,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.4236,
+          "under": 0.5764,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.3074,
+          "under": 0.6926,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    },
+    {
+      "away": "Toronto Maple Leafs",
+      "home": "Vegas Golden Knights",
+      "direction": "over",
+      "line": 3.5,
+      "frequency_away": "3/4",
+      "frequency_home": "4/4",
+      "away_attack_defense": [
+        4.3,
+        5.5
+      ],
+      "home_attack_defense": [
+        8.8,
+        7.7
+      ],
+      "expected_away": 2.5,
+      "expected_home": 3.5,
+      "model": "repository NHL notebook + independent Poisson; exploratory uncalibrated",
+      "runs": 10000,
+      "seed": 202611089,
+      "simulated_total_mean": 6.1549,
+      "model_probability": 0.8516,
+      "sensitivity_20pct_total_rate": [
+        0.7085,
+        0.9254
+      ],
+      "ml_away": 0.3423,
+      "ml_home": 0.6577,
+      "all_lines": {
+        "3.5": {
+          "over": 0.8516,
+          "under": 0.1484,
+          "push": 0
+        },
+        "4.5": {
+          "over": 0.7664,
+          "under": 0.2336,
+          "push": 0
+        },
+        "5.5": {
+          "over": 0.5517,
+          "under": 0.4483,
+          "push": 0
+        },
+        "6.5": {
+          "over": 0.4381,
+          "under": 0.5619,
+          "push": 0
+        },
+        "7.5": {
+          "over": 0.2569,
+          "under": 0.7431,
+          "push": 0
+        },
+        "8.5": {
+          "over": 0.1763,
+          "under": 0.8237,
+          "push": 0
+        }
+      },
+      "status": "PROVISIONAL",
+      "limitations": [
+        "3-4 games per team",
+        "regulation inferred from goalie TOI, not period score feed",
+        "no fitted goalie/xG/PP/PK/rest adjustment",
+        "independence/Poisson not calibrated for NHL",
+        "OT tie win assigned 50/50",
+        "OT/SO total goal simplified; goalie adjustments not fitted"
+      ],
+      "settlement": "full-game total: one OT/SO goal added to simulated regulation ties; verify bookmaker settlement"
+    }
+  ],
+  "tennis": [
+    {
+      "players": [
+        "Shelton",
+        "Altmaier"
+      ],
+      "winner_reading": "Shelton",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Zverev",
+        "Wu"
+      ],
+      "winner_reading": "Zverev",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Djokovic",
+        "Hurkacz"
+      ],
+      "winner_reading": "Djokovic",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Zhou",
+        "Musetti"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "recent injury, physical status unresolved",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Mannarino",
+        "Cobolli"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Hanfmann",
+        "Tiafoe"
+      ],
+      "winner_reading": "Tiafoe",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "De Miñaur",
+        "Molcan"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "recent injury, physical status unresolved",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Bublik",
+        "Machac"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Sakamoto",
+        "Rublev"
+      ],
+      "winner_reading": "Rublev",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Berrettini",
+        "Nakashima"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Khachanov",
+        "Fery"
+      ],
+      "winner_reading": "Khachanov",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Kecmanovic",
+        "Mensik"
+      ],
+      "winner_reading": "Mensik",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Gea",
+        "Humbert"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Halys",
+        "Blockx"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Davidovich",
+        "Brooksby"
+      ],
+      "winner_reading": "Davidovich",
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    },
+    {
+      "players": [
+        "Cerúndolo",
+        "Safiullin"
+      ],
+      "winner_reading": null,
+      "total_decision": "NO APUESTA",
+      "total_probability": null,
+      "reason": "current comparable season hold/break rates and exact threshold logs unavailable; no calibrated scoring model",
+      "ratings": {
+        "attack": [
+          null,
+          null
+        ],
+        "defense": [
+          null,
+          null
+        ],
+        "serve": [
+          null,
+          null
+        ],
+        "return": [
+          null,
+          null
+        ],
+        "volley": [
+          null,
+          null
+        ],
+        "consistency": [
+          null,
+          null
+        ],
+        "form": [
+          null,
+          null
+        ],
+        "hard_court_fit": [
+          null,
+          null
+        ]
+      },
+      "surface": "hard",
+      "status": "NO APUESTA; winner_reading qualitative only"
+    }
+  ],
+  "limitations": [
+    "NHL provider supplied 55 current-season finished games; only 3-4 per team today",
+    "Season regulation inferred from goalie TOI; not officially period-verified",
+    "Independent Poisson exploratory, not calibrated; no fitted goalie/PP/PK/rest adjustments",
+    "Tennis quantitative assessment incomplete; no simulation or numeric ratings fabricated"
+  ],
+  "rules_saved": [
+    "knowledge/markets/market_review_protocol.md",
+    "knowledge/markets/research_completion_loop.md"
+  ],
+  "status": "NHL provisional scenario analysis; tennis all fixtures reviewed but quantitative inputs incomplete"
+}

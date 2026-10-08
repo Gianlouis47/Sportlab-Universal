@@ -24,3 +24,9 @@ Neon `core.framework_rules` conserva este protocolo activo con `rule_key = 'cros
 El usuario prioriza qué resultado es más probable y la línea exacta que lo representa. No condicionar la conclusión deportiva a disponer de cuotas ni solicitarlas por defecto. Considerar líneas alternativas y las propuestas por el usuario; la foto es evidencia del mercado visible, no de su probabilidad. Mostrar frecuencia histórica, estimación calibrada cuando exista, incertidumbre y rutas de derrota. PRINCIPAL y SECUNDARIO describen aquí solidez predictiva, no valor económico certificado. No prometer qué ocurrirá con certeza.
 
 La captura de ejemplo muestra totales MLB «incl. extra innings», con líneas de 5 a 10 en incrementos de 0.5. No identifica el partido: no atribuirle equipos o fecha. Respetar el alcance del mercado; separar victorias, derrotas y pushes en líneas enteras conforme a sus reglas. No trasladar la inclusión de entradas extra a hockey o tenis.
+
+## Escala de la libreta: ataque y defensa de 1 a 10
+
+Mostrar ataque y defensa por separado en L5/L10/L20/L30 y temporada cuando haya datos comparables. Dentro de la misma liga, temporada, ventana y corte, calcular ataque = 1 + 9 × rango percentil de la tasa ofensiva; defensa = 1 + 9 × rango percentil de la tasa permitida invertida. Usar rango medio para empates y unidades normalizadas por deporte. 10 significa mejor ataque o mejor prevención; 5.5 es el centro. Si falta muestra o referencia, NO DISPONIBLE; no inventar puntuaciones.
+
+Conservar tasas originales, tamaño muestral, procedencia y corte junto a las notas. Las notas son descriptivas y no probabilidades. No sumar ataque y defensa para declarar automáticamente un ganador: cruzar tasas con el rival, frecuencia exacta, titulares, localía, descanso y contradicciones. La defensa fuerte resta al ataque rival; no restarla dos veces. La conclusión de Over/Under debe indicar umbral exacto y alcance reglamentario/prórroga, independientemente de la cuota.

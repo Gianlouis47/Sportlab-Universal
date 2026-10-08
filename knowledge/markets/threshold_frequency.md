@@ -6,6 +6,28 @@ Usar resultados históricos para investigar **el evento exacto que liquida un me
 
 Este es un filtro de **investigación y contraste**, no un motor de probabilidades por sí solo. Nunca interpretar 6/7 como 85,7 % de probabilidad futura ni elevarlo automáticamente a PRINCIPAL.
 
+## Calculadora y tamaño de muestra
+
+`sportlab threshold` calcula `aciertos/partidos` para el sujeto y para el evento **idéntico** permitido por el rival. Exige una tasa de referencia de la misma liga, temporada, mercado y período. La versión exploratoria `exploratory_beta_frequency_v1` suaviza cada tasa con una referencia beta de `prior_games` partidos equivalentes:
+
+`tasa_suavizada = (aciertos + prior_games × tasa_liga) / (partidos + prior_games)`.
+
+La lectura del enfrentamiento es el promedio de las dos tasas suavizadas; si la defensa rival permite el evento menos a menudo, reduce esa lectura sin restar un porcentaje fijo inventado. Este **promedio heurístico no está calibrado ni sustituye un modelo por posesión, turno al bate, punto de tenis o marcador**. `prior_games=20` es un parámetro ilustrativo configurable, no un peso aprendido. Ajustarlo y validar su calibración con pruebas cronológicas antes de usar el número como probabilidad de apuesta. Si falta la referencia de liga o la frecuencia equivalente permitida por el rival, no generar la lectura del enfrentamiento.
+
+Con 50/70, el porcentaje observado es **71,4 %**; con 40/50, **80 %**. Ninguno representa automáticamente la probabilidad del próximo evento. El comando ejecuta por defecto 10 000 extracciones beta y Bernoulli con una semilla fija para ilustrar incertidumbre y verificar coherencia; informa el intervalo de incertidumbre **del parámetro heurístico**, separado de la variación de resultados. No es simulación calibrada de un partido ni cambia el número de partidos históricos. Con 70 observaciones se pueden hacer 10 000 corridas rápidas; hacer solo 70 corridas introduciría además más error de Monte Carlo sin aumentar la información histórica. Para una sola probabilidad binaria, el valor suavizado también se obtiene de forma exacta sin simulación.
+
+Ejemplo reproducible de entrada hipotética (las tasas y los 70/50 juegos **no son datos reales**):
+
+```bash
+sportlab threshold --event 'MLB: equipo más de 3.5 carreras, juego completo, 2026' \
+  --opponent-event 'MLB: equipo más de 3.5 carreras, juego completo, 2026' \
+  --subject-hits 50 --subject-games 70 \
+  --opponent-allowed-hits 40 --opponent-games 50 \
+  --league-rate 0.5 --prior-games 20 --sims 10000 --seed 20261008
+```
+
+No existe un máximo universal de 100/200 juegos: **NFL 17**, **WNBA 44 (2026)**, **NBA 82 (2026–27)**, **NHL 84 (2026–27)** y **MLB 162 (2026)** juegos de temporada regular por equipo; las salidas de un lanzador son menos que los juegos del equipo, y el tenis depende de torneos y participaciones. Registrar siempre el número real de eventos **anteriores al partido analizado**. Fuentes oficiales: [NFL](https://www.nfl.com/news/what-you-need-to-know-nfl-schedule-17-regular-season-games), [WNBA](https://www.wnba.com/webview/news/2026-schedule-release), [NBA](https://www.nba.com/news/2026-27-nba-regular-season-schedule), [NHL](https://www.nhl.com/news/nhl-releases-2026-27-regular-season-schedule), [MLB](https://www.mlb.com/press-release/colorado-rockies-announce-2026-regular-season-schedule).
+
 ## Procedimiento por partido y mercado
 
 1. Definir deporte, torneo, temporada, evento, mercado, participante, período y regla de liquidación: línea, over/under o hándicap, prórroga/tiebreak/extra innings, y tratamiento de push o anulación. Ejemplo: más de 1,5 goles del partido en 90 minutos equivale a **dos goles o más**; «el local recibe un gol» es otro evento.

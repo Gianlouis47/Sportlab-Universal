@@ -24,7 +24,7 @@ No Vercel deployment is required.
 Codex workflow:
 1. ingest screenshot/text/market lines;
 2. normalize teams, players and market names;
-3. query Neon SportLab;
+3. query Neon SportLab for current event data and, for MLB historical gaps, read Supabase StrikeoutLab with the same pregame cutoff;
 4. fetch/verify fresh public data when required;
 5. build a typed game input;
 6. run the local Python engine;
@@ -37,6 +37,7 @@ Codex workflow:
 ## Data boundary
 
 Neon = dynamic structured facts.
+Supabase StrikeoutLab = complementary historical MLB evidence, read-only; see `docs/data_sources.md`.
 GitHub = code, model definitions, mappings, methodology, small reference datasets, calibration reports and versioned knowledge.
 
 Never store secrets in GitHub.

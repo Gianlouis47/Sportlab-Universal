@@ -35,6 +35,10 @@ Database: `sportlab`
 
 Use Neon for events, teams, athletes, live/current snapshots, odds/lines, simulations, results, postmortems, calibration tables and active learned rules.
 
+### Supabase StrikeoutLab — historical MLB evidence
+
+Project: `xuebtkafypivqygyqgcv`. Read-only historical pitcher game logs, opponent strikeout rates and legacy MLB splits can complement Neon when verified for the right season and pregame cutoff. Follow [`docs/data_sources.md`](docs/data_sources.md) for the two-database workflow and provenance; new SportLab predictions and active rules remain in Neon.
+
 ### GitHub — code + durable knowledge
 
 Use this repository for model code, simulation engines, weights/configuration, tests, mappings, research notes, methodology, small reference datasets, calibration reports and archived legacy assets.

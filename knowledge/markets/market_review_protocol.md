@@ -30,3 +30,7 @@ La captura de ejemplo muestra totales MLB «incl. extra innings», con líneas d
 Mostrar ataque y defensa por separado en L5/L10/L20/L30 y temporada cuando haya datos comparables. Dentro de la misma liga, temporada, ventana y corte, calcular ataque = 1 + 9 × rango percentil de la tasa ofensiva; defensa = 1 + 9 × rango percentil de la tasa permitida invertida. Usar rango medio para empates y unidades normalizadas por deporte. 10 significa mejor ataque o mejor prevención; 5.5 es el centro. Si falta muestra o referencia, NO DISPONIBLE; no inventar puntuaciones.
 
 Conservar tasas originales, tamaño muestral, procedencia y corte junto a las notas. Las notas son descriptivas y no probabilidades. No sumar ataque y defensa para declarar automáticamente un ganador: cruzar tasas con el rival, frecuencia exacta, titulares, localía, descanso y contradicciones. La defensa fuerte resta al ataque rival; no restarla dos veces. La conclusión de Over/Under debe indicar umbral exacto y alcance reglamentario/prórroga, independientemente de la cuota.
+
+## Finalización obligatoria
+
+Aplicar el [bucle de investigación y finalización](research_completion_loop.md) en toda cartelera: completar cada evento o documentar un bloqueo observado. Una tabla vacía exige buscar fuentes externas; un análisis pendiente no equivale a NO APUESTA. Loop-engineering se aplica al software, no a garantizar pronósticos.

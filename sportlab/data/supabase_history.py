@@ -40,20 +40,25 @@ def pitcher_strikeout_frequency(
         raise RuntimeError("Install psycopg[binary] to read Supabase history") from exc
 
     query = """
-    WITH eligible AS (
-        SELECT pitcher, rival, k
+    WITH tagged AS (
+        SELECT pitcher, rival, k, game_pk,
+               count(*) OVER (PARTITION BY game_pk, rival) AS rows_per_game_and_rival
         FROM public.game_logs
         WHERE fecha >= make_date(%s, 1, 1) AND fecha < %s
           AND k IS NOT NULL
+    ), eligible AS (
+        SELECT pitcher, rival, k FROM tagged
+        WHERE game_pk IS NOT NULL AND rows_per_game_and_rival = 1
     )
     SELECT
-        count(*) FILTER (WHERE pitcher = %s) AS pitcher_games,
-        count(*) FILTER (WHERE pitcher = %s AND k > %s) AS pitcher_hits,
-        count(*) FILTER (WHERE rival = normalizar_equipo(%s)) AS opponent_games,
-        count(*) FILTER (WHERE rival = normalizar_equipo(%s) AND k > %s) AS opponent_hits,
-        count(*) AS league_games,
-        count(*) FILTER (WHERE k > %s) AS league_hits
-    FROM eligible
+        (SELECT count(*) FROM eligible WHERE pitcher = %s) AS pitcher_games,
+        (SELECT count(*) FROM eligible WHERE pitcher = %s AND k > %s) AS pitcher_hits,
+        (SELECT count(*) FROM eligible WHERE rival = normalizar_equipo(%s)) AS opponent_games,
+        (SELECT count(*) FROM eligible WHERE rival = normalizar_equipo(%s) AND k > %s) AS opponent_hits,
+        (SELECT count(*) FROM eligible) AS league_games,
+        (SELECT count(*) FROM eligible WHERE k > %s) AS league_hits,
+        (SELECT count(*) FROM tagged WHERE game_pk IS NOT NULL AND rows_per_game_and_rival > 1) AS ambiguous_rows_excluded,
+        (SELECT count(*) FROM tagged WHERE game_pk IS NULL) AS missing_game_id_rows_excluded
     """
     with psycopg.connect(url) as conn:
         with conn.cursor(row_factory=dict_row) as cur:
@@ -78,4 +83,6 @@ def pitcher_strikeout_frequency(
         "as_of_exclusive": as_of.isoformat(),
         "source": "Supabase StrikeoutLab public.game_logs (historical MLB only)",
         "league_games": counts["league_games"],
+        "ambiguous_rows_excluded": counts["ambiguous_rows_excluded"],
+        "missing_game_id_rows_excluded": counts["missing_game_id_rows_excluded"],
     }

@@ -114,3 +114,21 @@ dos pruebas de regresión aprobaron y la corrección se publicó.
 La consulta real `sofascore_schedule(ice-hockey, 2026-10-15)` llegó al proveedor
 pero recibió HTTP 403. La conexión ChatGPT → plugin funciona; el acceso
 plugin → SofaScore está rechazado. No hay datos deportivos reales importados.
+
+## Fuente alternativa operativa: ESPN (2026-10-16 02:58 UTC)
+
+Publicación 7597624d756f5f4fd0aab676f260683f2ab0bab9 del Site confirmada.
+Consulta REAL a través del MCP existente: sofascore_schedule(ice-hockey,
+2026-10-15) devolvió provider=ESPN y 11 eventos, incluido Buffalo Sabres at
+Toronto Maple Leafs. El nombre legacy no indica que los datos sean SofaScore:
+la fuente se identifica en cada respuesta. SofaScore sigue bloqueado.
+Nuevas herramientas publicadas: sports_schedule, sports_team_history,
+sports_event_statistics. Los IDs de ESPN no se mezclan con los de SofaScore.
+HTTP directo también verificó calendarios MLB/NFL/NBA/ATP/soccer, histórico
+NHL (84 eventos de temporada) y summary con boxscore. Soccer requiere una liga
+soportada; tenis devuelve torneos/rondas anidados y su histórico de jugador
+no está implementado. No afirmar cobertura completa mundial ni L30 automático.
+Repositorios MCP adicionales investigados: WalrusQuant/sports-leader-mcp,
+lacausecrypto/mcp-sports-hub y balldontlie-api/mcp. No están instalados por esta
+actualización. El último requiere API key; los dos primeros ofrecen fuentes
+sin clave según su documentación, no una garantía de disponibilidad.

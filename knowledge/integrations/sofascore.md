@@ -77,3 +77,30 @@ Una frecuencia 8/10 es un hecho histórico, no una probabilidad futura ni un pic
 
 Neon sigue siendo el destino de datos dinámicos cuando la conexión real se
 valide. GitHub conserva este adaptador, configuración, pruebas y documentación.
+
+## Plugin MCP publicado (2026-10-16 UTC)
+
+Se publicó un Site privado MCP llamado SportLab SofaScore:
+https://sportlab-sofascore-plugin.snug-comet-5125.chatgpt.site
+Endpoint: https://sportlab-sofascore-plugin.snug-comet-5125.chatgpt.site/mcp
+Proyecto: appgprj_6ad18d1723cc8191a2a271c18900896d
+Plugin devuelto por Sites: plugin_asdk_app_sites_88540c2614a081919eb64f29f37982f9
+Commit fuente Sites: 39fdb698ce71ecb72e4d6826e47280f12d791c47
+Despliegue: appgdep_6ad18d857ca08191be222f9b2074ec9b (succeeded, has_mcp=true).
+La gestión de plugins confirmó already_installed. Esto no confirma que la
+sesión de autenticación o el origen deportivo funcionen. Las herramientas aún
+no aparecían en la sesión actual y la comprobación HTTP externa devolvió 401.
+Abrir un chat nuevo con el plugin para verificar una llamada real.
+
+Herramientas: sofascore_schedule, sofascore_history, sofascore_statistics,
+historical_threshold. El Worker implementa JSON-RPC MCP server/discover,
+tools/list y tools/call; 7 comprobaciones locales aprobadas. El Worker es un
+adaptador nuevo, NO una ejecución del scraper Python completo: usa las rutas
+no oficiales investigadas; no incorpora su navegador ni evasión de desafíos.
+Su disponibilidad de datos no está verificada y cualquier 403/429 debe quedar
+como error. El motor de frecuencia calcula datos aportados con procedencia;
+no inventa ni descarga automáticamente muestras de L30.
+
+La fuente desplegada está versionada en el repositorio del Site y copiada en
+integrations/sofascore-mcp/worker.js en este repositorio para revisión.
+No se ha conectado aún al servicio Python autohospedado ni a Neon.

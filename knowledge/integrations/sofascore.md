@@ -104,3 +104,13 @@ no inventa ni descarga automáticamente muestras de L30.
 La fuente desplegada está versionada en el repositorio del Site y copiada en
 integrations/sofascore-mcp/worker.js en este repositorio para revisión.
 No se ha conectado aún al servicio Python autohospedado ni a Neon.
+
+## Comprobación real tras conectar (2026-10-16 02:51 UTC)
+
+Las cuatro herramientas ya aparecen en la sesión. `historical_threshold`
+respondió correctamente a una prueba vacía (sin datos deportivos, tasa null).
+Se corrigió redirect:error, no soportado por Workers, por redirect:manual;
+dos pruebas de regresión aprobaron y la corrección se publicó.
+La consulta real `sofascore_schedule(ice-hockey, 2026-10-15)` llegó al proveedor
+pero recibió HTTP 403. La conexión ChatGPT → plugin funciona; el acceso
+plugin → SofaScore está rechazado. No hay datos deportivos reales importados.

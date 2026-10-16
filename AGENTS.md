@@ -41,3 +41,14 @@ GOAL → DATA → ANALYSIS → SIMULATION → CONTRADICTION → RECHECK → VALI
 ## Código y almacenamiento
 
 Neon es la fuente de registros dinámicos estructurados. GitHub es la fuente de código, modelos, pesos, pruebas, metodología y conocimiento durable. No guardar secretos, credenciales ni grandes dumps. Si una tarea modifica el motor, verificar pruebas y documentar limitaciones reales.
+
+## Fuentes y tendencias persistentes
+
+- Aplicar `knowledge/integrations/source_sync.md` al recolectar datos: fuentes
+  gratuitas verificadas, Linemate/SofaScore como referencias prioritarias cuando
+  sean accesibles, sin suponer acceso automático por una portada HTTP 200.
+- Conservar versiones y procedencia en `core.source_snapshots`. No depender del
+  plugin declinado ni reactivar BALLDONTLIE sin solicitud nueva.
+- Para fracciones como 8/10 usar `sportlab/models/historical_trends.py`: mercado
+  exacto, L5/L10/L20/L30, pushes, faltantes y corte de conocimiento. Ataque/defensa
+  1–10 resume métricas; el efecto probabilístico pasa por tasas y modelo validado.

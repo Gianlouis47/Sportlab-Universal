@@ -28,7 +28,7 @@ export function frequency(a){
 }
 async function source(path){
  const url='https://www.sofascore.com/api/v1/'+path;
- const response=await fetch(url,{headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(15000)});
+ const response=await fetch(url,{headers:{Accept:'application/json'},redirect:'manual',signal:AbortSignal.timeout(15000)});
  if(!response.ok)throw new Error('SofaScore HTTP '+response.status+'. No data returned; do not treat as zero or retry to bypass refusal.');
  const data=await response.json();
  return {source:url,fetched_at:new Date().toISOString(),unofficial:true,data};

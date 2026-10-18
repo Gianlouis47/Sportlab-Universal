@@ -30,3 +30,7 @@ La frecuencia histórica no es probabilidad futura. Un promedio no determina la 
 ## Cobertura y decisión
 Para una cartelera solicitada, analizar todos los eventos prepartido. En NFL el usuario prioriza totales y pide además inclinación matemática al ganador. Esto no obliga a apostar todos los partidos ni a una única combinada.
 Las alternativas no observadas en la banca se presentan como umbrales analíticos condicionados. Sin precio vigente no afirmar rentabilidad. Clasificar PRINCIPAL, SECUNDARIO o NO APUESTA; conservar PROVISIONAL cuando la evidencia o el contexto lo requieran. Una baja crítica afecta el mercado correspondiente; continuar el resto del análisis.
+
+## Prioridad del historial individual sobre H2H — 2026-10-18
+La fuente principal para calcular estadísticas es el historial individual de cada equipo o jugador contra distintos oponentes: temporada, L5/L10/L20/L30, producción a favor y permitida, oportunidades y contexto comparable. Las frecuencias de una línea se calculan primero por separado sobre ese historial individual; no exigir enfrentamientos directos para poder analizar un mercado.
+El H2H es evidencia secundaria de apoyo. Mostrarlo por separado, con muestra, fechas y comparabilidad de plantillas, roles y superficie; reducir su relevancia si es antiguo, escaso o incompatible con el contexto actual. No sustituir el historial individual por H2H, no duplicar partidos presentes en ambos y no darle pesos arbitrarios. Considerar calidad de los rivales y splits pertinentes sin filtrar toda la muestra al rival de hoy.

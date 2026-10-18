@@ -69,3 +69,7 @@ Esta política desarrolla el bucle de investigación y finalización. Es obligat
 ## Base primordial universal de ataque y defensa — 2026-10-18
 
 Aplicar obligatoriamente `knowledge/markets/universal_offense_defense_baseline.md` antes de cada análisis de equipos o jugadores. Calcular por separado producción a favor y permitida, cruzar ataque con defensa contraria en unidades comparables, sumar ambas proyecciones para total base y mostrar margen descriptivo para ganador. Adaptar por deporte, período y estadística exacta del mercado; tenis y props necesitan oportunidades y modelos específicos, no una suma ciega. Mostrar temporada, L5/L10/L20/L30 con denominadores reales, fuentes y corte. En carteleras NFL, cubrir todos los partidos solicitados, priorizar totales y añadir inclinación al ganador; no asumir que todos integran una sola combinada. La base no sustituye contexto, validación, simulación defendible ni análisis del precio.
+
+## Historial individual como fuente principal; H2H secundario — 2026-10-18
+
+Para todos los deportes, equipos y jugadores, obtener promedios y frecuencias principalmente del historial individual frente a distintos oponentes, con temporada, L5/L10/L20/L30 y contexto comparable. H2H solo apoya: presentarlo por separado y no exigir enfrentamientos directos, sustituir la muestra individual, duplicar partidos ni asignar pesos arbitrarios. Aplicar la sección correspondiente de `knowledge/markets/universal_offense_defense_baseline.md`.

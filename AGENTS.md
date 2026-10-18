@@ -73,3 +73,7 @@ Aplicar obligatoriamente `knowledge/markets/universal_offense_defense_baseline.m
 ## Historial individual como fuente principal; H2H secundario — 2026-10-18
 
 Para todos los deportes, equipos y jugadores, obtener promedios y frecuencias principalmente del historial individual frente a distintos oponentes, con temporada, L5/L10/L20/L30 y contexto comparable. H2H solo apoya: presentarlo por separado y no exigir enfrentamientos directos, sustituir la muestra individual, duplicar partidos ni asignar pesos arbitrarios. Aplicar la sección correspondiente de `knowledge/markets/universal_offense_defense_baseline.md`.
+
+## Presentación de nombres de equipos — 2026-10-18
+
+En todos los deportes, mostrar primero el nombre completo distintivo del equipo o club y en segundo plano su ciudad o país, preferentemente `Equipo (Ciudad/País)`: `Ravens (Baltimore)`, `Maple Leafs (Toronto)`, `Red Sox (Boston)`. No usar solo ciudad ni abreviaturas como etiqueta principal. En NHL conservar el nombre distintivo completo (por ejemplo, `Golden Knights (Vegas)`), sin recortarlo. No inventar apodos ni ciudades; si el nombre oficial del club incluye una ciudad o país inseparable, conservarlo y añadir contexto geográfico solo cuando ayude a identificarlo. Las selecciones nacionales mantienen su nombre de país, sin apodo inventado. Esta preferencia es de presentación; no cambia IDs, nombres canónicos ni mappings de proveedores.

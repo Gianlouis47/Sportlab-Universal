@@ -95,3 +95,7 @@ Aplicar `knowledge/markets/postmortem_storage_and_market_availability.md` y cons
 ## NBA: prioridad de props de jugadores — 2026-10-19
 
 Aplicar `knowledge/markets/nba_player_props.md`: priorizar puntos, rebotes, asistencias, triples, robos, tapones y combinaciones con mercado exacto, minutos/rol, rival, temporada y L5/L10/L20/L30. No rellenar DNP con cero, mezclar fases de temporada ni convertir frecuencia en certeza; presentar alternativas no observadas como umbrales analíticos y cerrar con tabla específica de props.
+
+## Fútbol: ganador, tiros de esquina y tarjetas — 2026-10-19
+
+Aplicar `knowledge/markets/football_priority_markets.md`: en cada análisis investigar ganador 1X2, corners y tarjetas, además de goles; totales del partido/por equipo y alternativas exactas cuando haya datos. Usar producción a favor y permitida propia de cada estadística, historial individual y temporada/L5/L10/L20/L30 con denominadores y corte; H2H secundario. En tarjetas contrastar árbitro y reglas de cómputo; distinguir 90 minutos más añadido de prórroga y clasificación. No sustituir corners/tarjetas por estadísticas de goles, convertir faltantes en cero ni forzar selecciones sin evidencia. Guardar registros dinámicos compactos en Neon y cerrar con tablas por mercado y clasificación.

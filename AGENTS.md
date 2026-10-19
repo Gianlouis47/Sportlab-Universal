@@ -91,3 +91,7 @@ Para cada extremo mostrar línea exacta, período, frecuencia y denominador, pus
 ## Postmortem, líneas ejecutables y almacenamiento compacto — 2026-10-19
 
 Aplicar `knowledge/markets/postmortem_storage_and_market_availability.md` y consultar la regla activa `sportlab_postmortem_storage_and_market_availability` en Neon. Liquidar cada versión publicada sin borrar fallos originales; distinguir umbrales analíticos de líneas reales observadas y evaluar cualquier sustitución exacta antes de recomendarla. Guardar resultados canónicos, métricas compactas y revisiones idempotentes en Neon; recalcular temporada/L5/L10/L20/L30 sin borrar el histórico que sale de la ventana. Registrar el portero/QB real y la liquidación con prórroga; poner en cuarentena métricas discrepantes. El boleto personal/ROI requiere línea, cuota y monto ejecutados. GitHub conserva método y síntesis; una jornada no recalibra el predictor ni valida una regla de siempre Over/Under.
+
+## NBA: prioridad de props de jugadores — 2026-10-19
+
+Aplicar `knowledge/markets/nba_player_props.md`: priorizar puntos, rebotes, asistencias, triples, robos, tapones y combinaciones con mercado exacto, minutos/rol, rival, temporada y L5/L10/L20/L30. No rellenar DNP con cero, mezclar fases de temporada ni convertir frecuencia en certeza; presentar alternativas no observadas como umbrales analíticos y cerrar con tabla específica de props.

@@ -52,3 +52,18 @@ Preferencia expresa del usuario: limitar las recomendaciones de props NBA a los 
 - Para cada jugador elegible conservar ataque individual, defensa rival comparable, minutos/rol actuales, mercado y línea fija exactos, denominadores, corte y estado de la alineación. La titularidad es un filtro de selección; la dirección Más/Menos requiere el análisis completo y no es automática.
 - Guardar en Neon la evidencia de titularidad, fuente/corte, minutos disponibles y motivo de cada excepción de banca, junto con las estadísticas compactas. GitHub conserva esta política. Revisar las recomendaciones afectadas cuando cambie el quinteto o la rotación, sin borrar versiones anteriores.
 - Mantener el máximo de 10 selecciones totales por SGP de un mismo partido, sumando mercados de equipos y jugadores. No completar diez por obligación.
+
+## Evidencia amplia para selecciones: L30, L50 y temporada — 2026-10-21
+
+Actualización expresa del usuario: L10 por sí solo es una muestra demasiado pequeña para filtrar selecciones. Usar la regla activa `sportlab_nba_broad_history_filter` en Neon.
+
+- Para valorar la estabilidad de una línea exacta, contrastar L30, L50 y la temporada regular recuperada. L5/L10 siguen como diagnóstico reciente; no son la única base. Mantener historial individual contra diversos rivales, H2H secundario, ataque/defensa comparable, localía, minutos y rol actuales.
+- El objetivo solicitado de 80–100% se interpreta como **frecuencia histórica observada**. No etiquetarla como probabilidad futura ni prometer resultados. Hasta un 100% histórico tiene incertidumbre. Las ventanas se superponen: no sumarlas como muestras independientes ni multiplicarlas para un SGP.
+- Fijar el filtro antes de revisar resultados. En esta revisión: alta frecuencia amplia requiere al menos 50 registros de temporada, L30 completo, L50 completo y frecuencia >=80% en las tres muestras. Esto es un filtro descriptivo, no un predictor calibrado ni una categoría PRINCIPAL automática.
+- Si existen de 30 a 49 partidos elegibles, mostrar el denominador real y, si cumple >=80% en L30 y temporada, describirlo como respaldo amplio parcial. No inventar un L50. Con menos de 30, señalar muestra corta aunque el porcentaje sea alto.
+- No forzar cuatro recomendaciones por partido cuando el filtro solicitado deje menos. Se pueden mostrar líneas descartadas con su motivo, sin presentarlas como aprobadas. No cambiar la línea después de ver los resultados ni buscar hasta conseguir un porcentaje alto.
+- Excluir DNP, pretemporada, play-in, playoffs y final NBA Cup. Preservar ceros observados; contar faltantes y pushes por separado. Identificar temporada y rango de fechas, cobertura recuperada y truncamiento del proveedor. No mezclar temporadas o roles sin indicarlo.
+- Separar frecuencia de temporada y comparabilidad actual: una muestra larga con otro equipo, rol, minutos o salud no demuestra la misma tasa hoy. Contrastar proyección y defensa rival; registrar contradicciones.
+- Comparar el precio observado después del análisis. Una cuota negativa muy alta puede requerir casi tanta frecuencia como la observada y no prueba valor esperado positivo.
+- Conservar en Neon conteos, denominadores, medias, procedencia y cortes. Mantener una sola media visible por categoría cuando se solicite, identificando claramente su ventana. No volver a usar dos promedios en una misma casilla.
+- Este documento establece un protocolo de revisión; no instala un recolector continuo ni ejecuta simulaciones por sí mismo. Guardar resultados y revisiones sin borrar las 44 referencias anteriores.

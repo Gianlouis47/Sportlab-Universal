@@ -112,3 +112,7 @@ Aplicar la sección de presentación aprobada de `knowledge/markets/nba_player_p
 ## NBA: evidencia amplia antes de priorizar líneas — 2026-10-21
 
 Aplicar la sección vigente de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_nba_broad_history_filter` en Neon. L10 no basta: contrastar L30, L50 y temporada regular recuperada, con denominadores, faltantes, fase, fechas y cambios de equipo/rol. El objetivo 80–100% es frecuencia histórica, no probabilidad futura ni garantía. Identificar ventanas incompletas; no forzar cuatro selecciones por partido ni clasificar PRINCIPAL por superar ese filtro. Conservar una sola media visible por categoría, y revisar contexto y precio de la línea exacta.
+
+## Appuesta: conservar y comparar líneas observadas — 2026-10-21
+
+Aplicar `knowledge/integrations/appuesta.md`, `config/appuesta_tracking.json` y la regla `sportlab_appuesta_line_history` en Neon. Capturar y fechar líneas/cuotas reales, comparar cambios del mismo evento y separar otros partidos; conservar versiones y fallos sin sobrescribir originales. Extender la comprobación a NBA, NHL, NFL, fútbol, ATP/WTA, MLB y LIDOM sin afirmar acceso no verificado. Usar datos dinámicos en Neon y método/fixture pequeño en GitHub, sin secretos. En búsquedas amplias de props revisar todos los titulares elegibles y mercados, no solo una lista anterior de picks, y conservar denominadores, fase, rival y rol.

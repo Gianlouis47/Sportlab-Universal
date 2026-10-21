@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "bookmaker": "appuesta.do",
+  "publicUrl": "https://www.appuesta.do/sportsbook/prelive",
+  "timezone": "America/La_Paz",
+  "mode": "Crear Apuesta",
+  "sports": [
+    {
+      "code": "NBA",
+      "sportId": 67,
+      "verified": "player_markets_and_team_totals"
+    },
+    {
+      "code": "NHL",
+      "sportId": 70,
+      "verified": "match_and_team_totals_previous_capture"
+    },
+    {
+      "code": "NFL",
+      "sportId": null,
+      "verified": false
+    },
+    {
+      "code": "SOCCER",
+      "sportId": null,
+      "verified": false
+    },
+    {
+      "code": "ATP",
+      "sportId": null,
+      "verified": false
+    },
+    {
+      "code": "WTA",
+      "sportId": null,
+      "verified": false
+    },
+    {
+      "code": "MLB",
+      "sportId": null,
+      "verified": false
+    },
+    {
+      "code": "LIDOM",
+      "sportId": null,
+      "verified": false
+    }
+  ],
+  "maxSelectionsPerEvent": 10,
+  "doNotFillToLimit": true,
+  "nbaFixedLinesOnly": true,
+  "doNotPlaceBets": true,
+  "doNotExportCredentials": true,
+  "snapshotProvider": "SportLab_Appuesta",
+  "snapshotKeyTemplate": "{league}:{bookEventId}:pregame:sgp:player-lines:v1",
+  "compareWithinEvent": true,
+  "compareDifferentEventsSeparately": true,
+  "history": "retain_versions_and_original_picks",
+  "deduplicateConsecutiveContent": true,
+  "keepFailedReadsSeparate": true,
+  "futureProbabilityFromFrequency": false
+}

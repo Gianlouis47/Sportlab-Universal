@@ -62,3 +62,7 @@ La actualización periódica detecta cambios al consultar: no hay webhook verifi
 de Linemate/SofaScore. En cada ejecución informar cobertura, nuevos registros,
 fallos y recursos truncados; nunca marcar una fuente como sincronizada sin lectura
 y escritura verificadas. El plugin que el usuario declinó no se utiliza ni se sugiere.
+
+## Líneas observadas de Appuesta.do — 2026-10-21
+
+Aplicar [la integración de Appuesta](appuesta.md). El detalle público NBA y los totales NHL sí fueron leídos; la cobertura de otros deportes se verifica por separado. Conservar líneas, cuotas, períodos, horas y versiones en Neon; comparar cada nueva consulta con la anterior. El fixture pequeño de NBA y el contrato están en el repositorio a petición expresa del usuario. No confundir una regla/documentación o una tarea periódica con un recolector permanente ni afirmar acceso universal.

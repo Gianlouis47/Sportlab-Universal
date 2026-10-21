@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SportLab observed bookmaker markets",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "captured_at_utc",
+    "timezone",
+    "events_expected",
+    "events_read",
+    "records"
+  ],
+  "properties": {
+    "captured_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "timezone": {
+      "const": "America/Santo_Domingo"
+    },
+    "events_expected": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "events_read": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "captured_at_utc",
+          "source_url",
+          "sport",
+          "league",
+          "book_event_id",
+          "espn_event_id",
+          "event_start_utc",
+          "away_team",
+          "home_team",
+          "subject_name",
+          "subject_type",
+          "market",
+          "period",
+          "includes_overtime",
+          "includes_shootout",
+          "direction",
+          "line",
+          "odds",
+          "odds_format",
+          "availability",
+          "evidence_path",
+          "lineup_status",
+          "notes"
+        ],
+        "properties": {
+          "captured_at_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sport": {
+            "enum": [
+              "basketball",
+              "ice-hockey"
+            ]
+          },
+          "league": {
+            "enum": [
+              "NBA",
+              "NHL"
+            ]
+          },
+          "book_event_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "espn_event_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_start_utc": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "away_team": {
+            "type": "string"
+          },
+          "home_team": {
+            "type": "string"
+          },
+          "subject_name": {
+            "type": "string"
+          },
+          "subject_type": {
+            "enum": [
+              "match",
+              "team",
+              "player"
+            ]
+          },
+          "market": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "includes_overtime": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "includes_shootout": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "direction": {
+            "enum": [
+              "over",
+              "under",
+              null
+            ]
+          },
+          "line": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "odds": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "odds_format": {
+            "enum": [
+              "american",
+              "decimal",
+              null
+            ]
+          },
+          "availability": {
+            "enum": [
+              "OBSERVED",
+              "COLLAPSED_NOT_READ",
+              "CLOSED",
+              "NOT_OFFERED",
+              "LOGIN_REQUIRED",
+              "ACCESS_ERROR"
+            ]
+          },
+          "evidence_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lineup_status": {
+            "enum": [
+              "CONFIRMED_STARTER",
+              "PROJECTED_STARTER",
+              "BENCH",
+              "NOT_APPLICABLE",
+              "UNKNOWN"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "availability": {
+                  "const": "OBSERVED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "line": {
+                  "type": "number"
+                },
+                "direction": {
+                  "enum": [
+                    "over",
+                    "under"
+                  ]
+                },
+                "book_event_id": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

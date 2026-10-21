@@ -108,3 +108,7 @@ Aplicar la sección vigente de `knowledge/markets/nba_player_props.md` y la regl
 ## NBA: un solo promedio visible por jugador y categoría — 2026-10-20
 
 Aplicar la sección de presentación aprobada de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_nba_single_l10_average_display` en Neon. Por defecto, mostrar solo la media L10 de puntos, asistencias, rebotes, triples anotados, robos, tapones, pérdidas y minutos, con una cifra por casilla y tablas por equipo actual. No volver a presentar `temporada / L10` ni limitar jugadores/categorías a una captura. Identificar temporada, denominadores reales, fuente/corte y cambios de equipo; no mezclar fases ni convertir faltantes en cero. Conservar datos de jugadores y otras ventanas en Neon, método en GitHub. Esta preferencia simplifica la presentación, no sustituye ataque/defensa, contexto ni validación de las selecciones contra líneas exactas.
+
+## NBA: evidencia amplia antes de priorizar líneas — 2026-10-21
+
+Aplicar la sección vigente de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_nba_broad_history_filter` en Neon. L10 no basta: contrastar L30, L50 y temporada regular recuperada, con denominadores, faltantes, fase, fechas y cambios de equipo/rol. El objetivo 80–100% es frecuencia histórica, no probabilidad futura ni garantía. Identificar ventanas incompletas; no forzar cuatro selecciones por partido ni clasificar PRINCIPAL por superar ese filtro. Conservar una sola media visible por categoría, y revisar contexto y precio de la línea exacta.

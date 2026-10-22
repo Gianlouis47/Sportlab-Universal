@@ -27,7 +27,33 @@
       "code": "SOCCER",
       "sportId": 66,
       "verified": "europa_league_one_event_standard_and_sgp",
-      "verifiedOn": "2026-10-22"
+      "verifiedOn": "2026-10-22",
+      "competitionScope": {
+        "policy": "allowlist_only",
+        "domesticLeagues": [
+          {
+            "name": "LaLiga",
+            "country": "España"
+          },
+          {
+            "name": "Bundesliga",
+            "country": "Alemania"
+          },
+          {
+            "name": "Premier League",
+            "country": "Inglaterra"
+          },
+          {
+            "name": "Serie A",
+            "country": "Italia"
+          }
+        ],
+        "uefaCompetitions": "all_competitions_organized_by_UEFA",
+        "excludeOtherSoccerCompetitions": true,
+        "requireVerifiedCompetitionIdentity": true,
+        "effectiveDate": "2026-10-22",
+        "authority": "explicit_user_instruction"
+      }
     },
     {
       "code": "ATP",

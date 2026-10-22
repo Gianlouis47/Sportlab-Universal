@@ -8,37 +8,44 @@
     {
       "code": "NBA",
       "sportId": 67,
-      "verified": "player_markets_and_team_totals"
+      "verified": "player_markets_both_teams_more_players",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "NHL",
       "sportId": 70,
-      "verified": "match_and_team_totals_previous_capture"
+      "verified": "match_team_totals_and_visible_player_markets",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "NFL",
-      "sportId": null,
-      "verified": false
+      "sportId": 75,
+      "verified": "standard_and_sgp_visible_markets",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "SOCCER",
-      "sportId": null,
-      "verified": false
+      "sportId": 66,
+      "verified": "europa_league_one_event_standard_and_sgp",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "ATP",
-      "sportId": null,
-      "verified": false
+      "sportId": 68,
+      "verified": "one_event_standard_markets_no_sgp_observed",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "WTA",
-      "sportId": null,
-      "verified": false
+      "sportId": 68,
+      "verified": "osaka_two_events_standard_markets_no_sgp_observed",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "MLB",
-      "sportId": null,
-      "verified": false
+      "sportId": 76,
+      "verified": "one_future_event_standard_and_sgp",
+      "verifiedOn": "2026-10-22"
     },
     {
       "code": "LIDOM",

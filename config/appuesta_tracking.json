@@ -91,5 +91,63 @@
   "history": "retain_versions_and_original_picks",
   "deduplicateConsecutiveContent": true,
   "keepFailedReadsSeparate": true,
-  "futureProbabilityFromFrequency": false
+  "futureProbabilityFromFrequency": false,
+  "verifiedChampionshipMappings": {
+    "verifiedOn": "2026-10-23",
+    "evidence": "Public championship navigation; bookmaker IDs only, not ESPN/SofaScore IDs",
+    "NBA": {
+      "championshipId": 2980,
+      "sportId": 67,
+      "country": "Estados Unidos"
+    },
+    "NHL": {
+      "championshipId": 3232,
+      "sportId": 70,
+      "country": "Estados Unidos"
+    },
+    "NFL": {
+      "championshipId": 3281,
+      "sportId": 75,
+      "country": "Estados Unidos"
+    },
+    "MLB": {
+      "championshipId": 3286,
+      "sportId": 76,
+      "country": "Estados Unidos"
+    },
+    "SOCCER": [
+      {
+        "name": "LaLiga",
+        "country": "España",
+        "championshipId": 2941,
+        "sportId": 66
+      },
+      {
+        "name": "Premier League",
+        "country": "Inglaterra",
+        "championshipId": 2936,
+        "sportId": 66
+      },
+      {
+        "name": "Bundesliga",
+        "country": "Alemania",
+        "championshipId": 2950,
+        "sportId": 66
+      },
+      {
+        "name": "Serie A",
+        "country": "Italia",
+        "championshipId": 2942,
+        "sportId": 66
+      },
+      {
+        "name": "Champions League",
+        "region": "Europa",
+        "organizer": "UEFA",
+        "championshipId": 16808,
+        "sportId": 66
+      }
+    ],
+    "coverageLimit": "Mappings confirm inspected competitions only; other UEFA competitions and LIDOM require fresh discovery. A championship page does not prove event/player market access."
+  }
 }

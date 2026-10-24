@@ -2,7 +2,8 @@
   "version": 1,
   "bookmaker": "appuesta.do",
   "publicUrl": "https://www.appuesta.do/sportsbook/prelive",
-  "timezone": "America/La_Paz",
+  "timezone": "America/Santo_Domingo",
+  "timezoneVerifiedOn": "2026-10-24",
   "mode": "Crear Apuesta",
   "sports": [
     {

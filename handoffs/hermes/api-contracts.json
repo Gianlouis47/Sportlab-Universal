@@ -1,0 +1,39 @@
+{
+  "captured_date": "2026-10-21",
+  "origin": "ChatGPT tool metadata; re-enumerate tools on Hermes before use",
+  "authentication": "Client managed; no credentials exported",
+  "tools": [
+    {
+      "name": "mcp__codex_apps__optimal_sports_projections_get_game_projections",
+      "description": "Stats & fantasy projections\n\nUse for game projections and matchup analysis: projected score distributions, means, and homeWinProbability. Projection types are spread (home-team scoring margin: positive means home projected ahead), total, homeScore, and awayScore. Defaults to all available percentiles. Label projections as estimates; the projected margin equals home score minus away score.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__optimal_sports_projections_get_game_projections(args: {\n  // Event UUID (use get_events to find)\n  event_id: string;\n  // Which percentiles to return. Defaults to all.\n  percentiles?: Array<\"p1\" | \"p5\" | \"p10\" | \"p25\" | \"p50\" | \"p75\" | \"p90\" | \"p95\" | \"p99\">;\n  // Filter to specific projection type: spread, total, homeScore, awayScore\n  projection_type?: string;\n}): Promise<CallToolResult<{ results: Array<{ [key: string]: unknown; }>; }>>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__optimal_sports_projections_get_player_gamelogs",
+      "description": "Stats & fantasy projections\n\nUse for sports stats, recent player performance, and historical context for fantasy sports comparisons. Returns a player's game-by-game stats, opponents, dates, and scores, newest first. Optionally filter by season. First resolve player_id with search_players. Defaults to 20 games; maximum 100.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__optimal_sports_projections_get_player_gamelogs(args: {\n  // Max results, 1–100 (default 20)\n  limit?: number;\n  // Player UUID (use search_players to find)\n  player_id: string;\n  // Season filter, e.g. \"2025\"\n  season?: string;\n}): Promise<CallToolResult<{ results: Array<{ [key: string]: unknown; }>; }>>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__optimal_sports_projections_get_player_projections",
+      "description": "Stats & fantasy projections\n\nUse for player projections, fantasy sports research, and comparisons of projected player performance and upside. Without player_id, returns all players (up to 100), defaulting to p50. With player_id, returns one player's full available projections. Select percentiles to control detail. Omit prop_type to discover available statistic types in the projections. Label the returned projections as estimates.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__optimal_sports_projections_get_player_projections(args: {\n  // Event UUID (use get_events to find)\n  event_id: string;\n  // Which percentiles to return. Defaults to [\"p50\"] without player_id, all with player_id.\n  percentiles?: Array<\"p1\" | \"p5\" | \"p10\" | \"p25\" | \"p50\" | \"p75\" | \"p90\" | \"p95\" | \"p99\">;\n  // Player UUID — omit to get all players in the game\n  player_id?: string;\n  // Filter to a statistic type; omit to discover available types in the projections\n  prop_type?: string;\n}): Promise<CallToolResult<{ results: Array<{ [key: string]: unknown; }>; }>>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__optimal_sports_projections_search_players",
+      "description": "Stats & fantasy projections\n\nFind players by name, league, team, or position. Returns player IDs, team IDs, and injury status. Use before retrieving player stats or projections. Defaults to 25 results; maximum 100.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__optimal_sports_projections_search_players(args: {\n  // League code, e.g. \"nba\", \"nfl\"\n  league?: string;\n  // Max results, 1–100 (default 25)\n  limit?: number;\n  // Position filter\n  position?: string;\n  // Partial name match\n  query?: string;\n  // Team abbreviation, e.g. \"bos\"\n  team?: string;\n}): Promise<CallToolResult<{ results: Array<{ [key: string]: unknown; }>; }>>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__sportlab_sports_hub_historical_threshold",
+      "description": "Herramientas privadas de datos deportivos y tendencias históricas. Integración no oficial con SofaScore.\n\nCalculate L5/L10/L20/L30 historical over/under frequency from explicitly mapped observations of ONE exact market, period and settlement. Not a prediction. Filter surface/home/away/opponent before calling. Deduplicates IDs; excludes future and unfinished events; missing observations remain visible.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__sportlab_sports_hub_historical_threshold(args: { as_of: string; direction: \"over\" | \"under\"; event_key: string; line: number; rows: Array<{ event_id: number; source: string; start_utc: string; status: string; value: number | null; }>; window: 5 | 10 | 20 | 30; }): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__sportlab_sports_hub_sports_event_statistics",
+      "description": "Herramientas privadas de datos deportivos y tendencias históricas. Integración no oficial con SofaScore.\n\nRead ESPN event summary and box score for verified ESPN event ID. Available fields differ by sport. Inspect periods, player stats and settlement before mapping an exact market. Do not use SofaScore IDs.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__sportlab_sports_hub_sports_event_statistics(args: { event_id: number; league?: \"eng.1\" | \"esp.1\" | \"ger.1\" | \"ita.1\" | \"fra.1\" | \"usa.1\" | \"mex.1\" | \"uefa.champions\" | \"uefa.europa\"; sport: \"baseball\" | \"ice-hockey\" | \"american-football\" | \"football\" | \"tennis\" | \"basketball\"; }): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__sportlab_sports_hub_sports_schedule",
+      "description": "Herramientas privadas de datos deportivos y tendencias históricas. Integración no oficial con SofaScore.\n\nWorking ESPN sports calendar for MLB, NHL, NFL, NBA, ATP tennis and selected soccer competitions. Source and fetch time explicit. Tennis events can contain nested tournament rounds and matches; do not assume each event is one match. Soccer requires a league. No claim of complete worldwide coverage.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__sportlab_sports_hub_sports_schedule(args: { date: string; league?: \"eng.1\" | \"esp.1\" | \"ger.1\" | \"ita.1\" | \"fra.1\" | \"usa.1\" | \"mex.1\" | \"uefa.champions\" | \"uefa.europa\"; sport: \"baseball\" | \"ice-hockey\" | \"american-football\" | \"football\" | \"tennis\" | \"basketball\"; }): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__codex_apps__sportlab_sports_hub_sports_team_history",
+      "description": "Herramientas privadas de datos deportivos y tendencias históricas. Integración no oficial con SofaScore.\n\nRead ESPN team season schedule with completed games filtered before cutoff; includes opponents and scores. ESPN team IDs only, not SofaScore IDs. Season year follows ESPN convention (e.g. NHL 2026-27 = 2027). Not available for tennis; missing history is not zero.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__codex_apps__sportlab_sports_hub_sports_team_history(args: { as_of: string; league?: \"eng.1\" | \"esp.1\" | \"ger.1\" | \"ita.1\" | \"fra.1\" | \"usa.1\" | \"mex.1\" | \"uefa.champions\" | \"uefa.europa\"; season: number; sport: \"baseball\" | \"ice-hockey\" | \"american-football\" | \"football\" | \"tennis\" | \"basketball\"; team_id: number; window: 5 | 10 | 20 | 30; }): Promise<CallToolResult>; };\n```"
+    }
+  ]
+}

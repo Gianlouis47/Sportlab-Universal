@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "bookmaker": "appuesta.do",
+  "publicUrl": "https://www.appuesta.do/sportsbook/prelive",
+  "timezone": "America/Santo_Domingo",
+  "timezoneVerifiedOn": "2026-10-24",
+  "mode": "Crear Apuesta",
+  "sports": [
+    {
+      "code": "NBA",
+      "sportId": 67,
+      "verified": "player_markets_both_teams_more_players",
+      "verifiedOn": "2026-10-22"
+    },
+    {
+      "code": "NHL",
+      "sportId": 70,
+      "verified": "match_team_totals_and_visible_player_markets",
+      "verifiedOn": "2026-10-22"
+    },
+    {
+      "code": "NFL",
+      "sportId": 75,
+      "verified": "standard_and_sgp_visible_markets",
+      "verifiedOn": "2026-10-22"
+    },
+    {
+      "code": "SOCCER",
+      "sportId": 66,
+      "verified": "europa_league_one_event_standard_and_sgp",
+      "verifiedOn": "2026-10-22",
+      "competitionScope": {
+        "policy": "allowlist_only",
+        "domesticLeagues": [
+          {
+            "name": "LaLiga",
+            "country": "España"
+          },
+          {
+            "name": "Bundesliga",
+            "country": "Alemania"
+          },
+          {
+            "name": "Premier League",
+            "country": "Inglaterra"
+          },
+          {
+            "name": "Serie A",
+            "country": "Italia"
+          }
+        ],
+        "uefaCompetitions": "all_competitions_organized_by_UEFA",
+        "excludeOtherSoccerCompetitions": true,
+        "requireVerifiedCompetitionIdentity": true,
+        "effectiveDate": "2026-10-22",
+        "authority": "explicit_user_instruction"
+      }
+    },
+    {
+      "code": "ATP",
+      "sportId": 68,
+      "verified": "one_event_standard_markets_no_sgp_observed",
+      "verifiedOn": "2026-10-22"
+    },
+    {
+      "code": "WTA",
+      "sportId": 68,
+      "verified": "osaka_two_events_standard_markets_no_sgp_observed",
+      "verifiedOn": "2026-10-22"
+    },
+    {
+      "code": "MLB",
+      "sportId": 76,
+      "verified": "one_future_event_standard_and_sgp",
+      "verifiedOn": "2026-10-22"
+    },
+    {
+      "code": "LIDOM",
+      "sportId": null,
+      "verified": false
+    }
+  ],
+  "maxSelectionsPerEvent": 10,
+  "doNotFillToLimit": true,
+  "nbaFixedLinesOnly": true,
+  "doNotPlaceBets": true,
+  "doNotExportCredentials": true,
+  "snapshotProvider": "SportLab_Appuesta",
+  "snapshotKeyTemplate": "{league}:{bookEventId}:pregame:sgp:player-lines:v1",
+  "compareWithinEvent": true,
+  "compareDifferentEventsSeparately": true,
+  "history": "retain_versions_and_original_picks",
+  "deduplicateConsecutiveContent": true,
+  "keepFailedReadsSeparate": true,
+  "futureProbabilityFromFrequency": false,
+  "verifiedChampionshipMappings": {
+    "verifiedOn": "2026-10-23",
+    "evidence": "Public championship navigation; bookmaker IDs only, not ESPN/SofaScore IDs",
+    "NBA": {
+      "championshipId": 2980,
+      "sportId": 67,
+      "country": "Estados Unidos"
+    },
+    "NHL": {
+      "championshipId": 3232,
+      "sportId": 70,
+      "country": "Estados Unidos"
+    },
+    "NFL": {
+      "championshipId": 3281,
+      "sportId": 75,
+      "country": "Estados Unidos"
+    },
+    "MLB": {
+      "championshipId": 3286,
+      "sportId": 76,
+      "country": "Estados Unidos"
+    },
+    "SOCCER": [
+      {
+        "name": "LaLiga",
+        "country": "España",
+        "championshipId": 2941,
+        "sportId": 66
+      },
+      {
+        "name": "Premier League",
+        "country": "Inglaterra",
+        "championshipId": 2936,
+        "sportId": 66
+      },
+      {
+        "name": "Bundesliga",
+        "country": "Alemania",
+        "championshipId": 2950,
+        "sportId": 66
+      },
+      {
+        "name": "Serie A",
+        "country": "Italia",
+        "championshipId": 2942,
+        "sportId": 66
+      },
+      {
+        "name": "Champions League",
+        "region": "Europa",
+        "organizer": "UEFA",
+        "championshipId": 16808,
+        "sportId": 66
+      }
+    ],
+    "coverageLimit": "Mappings confirm inspected competitions only; other UEFA competitions and LIDOM require fresh discovery. A championship page does not prove event/player market access."
+  }
+}

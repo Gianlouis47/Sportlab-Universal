@@ -1,22 +1,122 @@
-# SportLab Universal — Codex operating rules
+# SportLab Universal — reglas operativas para Codex
 
-Do not recreate SportLab from scratch. Reuse and extend this repository.
+No reconstruir SportLab desde cero. Trabajar sobre la rama actual y reutilizar el código, la metodología y los datos existentes.
 
-## Mandatory workflow
-GOAL -> DATA -> ANALYSIS -> SIMULATION -> CONTRADICTION -> RECHECK -> VALIDATION -> DECISION -> RESULT -> POSTMORTEM
+## Flujo obligatorio
 
-## Data hierarchy
-current confirmed data > recent Neon > historical auxiliary data > old baseline
+GOAL → DATA → ANALYSIS → SIMULATION → CONTRADICTION → RECHECK → VALIDATION → DECISION → RESULT → POSTMORTEM
 
-Preserve as-of cutoffs. Never treat NULL as zero. Tag critical inputs as CONFIRMED / PROJECTED / UNAVAILABLE.
+## Antes de analizar una cartelera
 
-## Screenshot rule
-A screenshot or creator ticket is a market-discovery input, not the analysis boundary. For every detected game, evaluate all relevant markets supported by data: side, game totals, team totals, both starters/goalies, relevant player props, matchup context, bullpen/rotation/special teams, venue/weather/rest/travel/injuries.
+1. Resolver fecha y zona horaria del usuario, partidos, estado en vivo, equipos, localía, abridores y mercados visibles. Excluir del análisis prepartido los juegos ya iniciados.
+2. Leer primero la metodología versionada y la configuración activa: `knowledge/mlb/methods/mlb_notebook_method.md`, `config/defaults.yaml`, `sportlab/models/recent_form.py`, `sportlab/sports/mlb/runs.py`, `sportlab/sports/mlb/strikeouts.py` y el motor de simulación. Consultar la configuración y los snapshots de Neon. No elegir pesos de memoria ni inventar otra fórmula.
+3. Buscar autónomamente en fuentes públicas actuales los datos que falten: calendario oficial, titulares, alineaciones, lesiones, descanso y uso del bullpen, datos de temporada y forma reciente, casa/visita, rival, parque/clima y líneas disponibles. Contrastar fuentes y fecha de corte. No pedir al usuario estadísticas públicas que se puedan consultar; las capturas sirven para reconocer mercados y cuotas observadas.
+4. Etiquetar cada variable crítica CONFIRMADA, PROYECTADA o NO DISPONIBLE. Distinguir una cuota de captura de una cuota vigente. No convertir NULL en cero ni reutilizar estadísticas antiguas como si fueran actuales.
+5. Para totales, hándicaps y props, aplicar `knowledge/markets/threshold_frequency.md`: comprobar en fuentes oficiales la frecuencia reciente **del evento exacto** en ambos lados del enfrentamiento, con denominador, fecha y split pertinente. Usarla como contraste de la proyección, nunca como probabilidad futura directa ni evidencia suficiente para declarar PRINCIPAL.
 
-## MLB minimum
-Use L5/L10/L20/L30/season without double-counting nested windows. Evaluate starters, expected IP/BF, K%, BB%, K-BB%, whiff/CSW when available, pitch mix, handedness, opponent contact/K profile, pitcher-vs-team history, lineup/BvP with shrinkage, bullpen, park/weather and team offense/run prevention.
+## Método de la libreta y MLB
 
-## Repository vs database
-Neon is the source of truth for dynamic structured records. GitHub is the source of truth for code, model definitions, tests, durable methodology, small reference datasets, mappings, research notes and archived legacy assets.
+- Calcular primero ataque y defensa por carreras anotadas/permitidas por juego. Para cada equipo, cruzar su ataque con las carreras permitidas por el rival; obtener las dos carreras esperadas y su suma. Usar la fórmula, los pesos y la dispersión versionados en el repositorio.
+- Considerar temporada, L5/L10/L20/L30, casa/visita y H2H. Descomponer L10/L20/L30 en bandas no superpuestas; reducir o retirar H2H si una muestra pequeña o un marcador extremo sesga el promedio.
+- Ajustar por ambos abridores, carga esperada de IP/BF y pitcheos, K%, BB%, K-BB%, whiff/CSW, repertorio, mano, contacto/K del rival, alineación, BvP ponderado por PA, bullpen, defensa, velocidad en bases y parque/clima cuando haya datos verificables. Una calificación 1–100 resume métricas; no reemplaza las tasas reales.
+- Evaluar ML del juego completo, F5/H1 cuando existan datos, total en varias líneas, totales de ambos equipos y K de los DOS abridores, incluso si la captura o un analista muestran un solo prop. Para líneas enteras separar ganar, perder y push.
+- Contrastar cada probabilidad de K simulada con salidas reales de temporada, últimas 5/10, local/visita y carga reciente. Si discrepan materialmente, investigar muestra, lesión, pitch count, alineación y distribución; corregir entradas y repetir. No declarar automáticamente un Over por K/9 alto.
+- Una alineación confirmada sustituye la proyectada. Si falta, continuar con la mejor proyección publicada, marcar el resultado provisional y actualizar al confirmarse; no detener todo el análisis ni afirmar que está confirmada.
 
-Never commit secrets or credentials. Never use certainty language.
+## Simulación y decisión
+
+- Ejecutar realmente 10,000 corridas con seed, versión de modelo, entradas, corte temporal y supuestos reproducibles. Diferenciar una corrida del repositorio de una reproducción externa y de una simulación guardada previamente. No atribuir al motor resultados calculados con otros pesos.
+- Reportar carreras esperadas, ML, probabilidades de cada línea relevante, team totals, K de los dos abridores, pushes, contradicciones y clasificación. No presentar porcentajes más precisos que los datos.
+- Comparar con la probabilidad implícita y el valor a la cuota disponible solo DESPUÉS de estimar el evento. Sin precio vigente, expresar una inclinación condicionada y evitar llamarla ventaja confirmada.
+- Cerrar con PRINCIPAL, SECUNDARIO o NO APUESTA y motivo concreto. Si faltan datos críticos o existe una contradicción sin resolver, no usar PRINCIPAL. Una captura de otro analista identifica juegos/mercados, pero jamás limita el universo de investigación ni valida sus picks.
+- Comunicar primero la decisión en una tabla compacta. Explicar después las 2–3 variables que más la sostienen o la pueden refutar. Corregir explícitamente cualquier resultado anterior afectado por datos nuevos.
+
+## Tenis
+
+- Presentar siempre ataque, defensa, servicio, devolución, volea, consistencia, forma reciente y adaptación a la cancha de ambos jugadores en una tabla. Consultar `knowledge/tennis/ratings_method.md` y registrar superficie, fecha y fuente. Mostrar NO DISPONIBLE si una faceta no está medida; la cancha preferida es una categoría, no una nota 1–10.
+- Investigar de forma autónoma estadísticas públicas actuales de cada jugador y superficie antes de completar las casillas. Una estimación 1–10 debe mostrar los datos, la muestra, la fuente y la regla de conversión; separar siempre las notas editoriales de las estimaciones propias. Si la evidencia es insuficiente, identificar la nota editorial como tal.
+- Diferenciar calificaciones editoriales 1–10 de estadísticas observadas. No convertir la diferencia de notas en probabilidad ML, marcador 2–0, total de juegos ni selección apostable sin modelo de saque/devolución calibrado y datos actuales.
+- Ante una cartelera solicitada, verificar el cuadro y el estado de TODOS los partidos; evaluar los favoritos relevantes antes de reducir a un ticket. No proponer a alguien ya eliminado. Consultar `knowledge/tennis/market_rules.md` para calcular y presentar por separado ML, juegos individuales de cada jugador y juegos conjuntos del partido. Las cuotas negativas pueden multiplicarse en un parlay, pero añadir selecciones reduce la probabilidad conjunta; no llamar asegurado a ningún partido.
+
+## Código y almacenamiento
+
+Neon es la fuente de registros dinámicos estructurados. GitHub es la fuente de código, modelos, pesos, pruebas, metodología y conocimiento durable. No guardar secretos, credenciales ni grandes dumps. Si una tarea modifica el motor, verificar pruebas y documentar limitaciones reales.
+
+## Fuentes y tendencias persistentes
+
+- Aplicar `knowledge/integrations/source_sync.md` al recolectar datos: fuentes
+  gratuitas verificadas, Linemate/SofaScore como referencias prioritarias cuando
+  sean accesibles, sin suponer acceso automático por una portada HTTP 200.
+- Conservar versiones y procedencia en `core.source_snapshots`. No depender del
+  plugin declinado ni reactivar BALLDONTLIE sin solicitud nueva.
+- Para fracciones como 8/10 usar `sportlab/models/historical_trends.py`: mercado
+  exacto, L5/L10/L20/L30, pushes, faltantes y corte de conocimiento. Ataque/defensa
+  1–10 resume métricas; el efecto probabilístico pasa por tasas y modelo validado.
+
+## Búsqueda obligatoria y continuidad con titulares proyectados — 2026-10-16
+
+Esta política desarrolla el bucle de investigación y finalización. Es obligatoria para todos los deportes y para cada mercado solicitado.
+
+1. **Buscar antes de declarar ausencia.** Consultar Neon y comprobar su corte; ante datos ausentes o antiguos, buscar fuentes actuales: liga/equipo oficial, proveedor deportivo conectado y fuentes públicas alternativas pertinentes. Continuar por vías útiles si una falla. No pedir al usuario estadísticas públicas recuperables ni cerrar por una tabla vacía, una herramienta ausente o el fallo de un solo proveedor. No evadir bloqueos ni reintentar indefinidamente la misma petición.
+2. **Evidencia de búsqueda.** Registrar proveedor o URL, hora UTC, evento/temporada, dato buscado, resultado y error observado cuando exista. NO DISPONIBLE requiere intentos documentados y una explicación concreta. Distinguir herramienta no expuesta, fallo de autenticación, fallo de transporte, bloqueo del origen y campo ausente; no atribuir un 401/403 al origen sin observarlo. Si existe una vía alternativa útil, el estado sigue PENDIENTE, no se cierra por falta de datos.
+3. **Continuar con una proyección trazable.** Usar el titular, portero, abridor, orden de bateo o rotación probable de una fuente actual identificada. Si solo hay alineaciones recientes, elaborar y etiquetar una proyección propia con su evidencia, lesiones, descanso y participación esperada. Plantilla habitual no equivale a alineación confirmada. No detener toda la cartelera por una confirmación pendiente; actualizar al conocerse el titular real.
+4. **Resolver incertidumbre por mercado.** Evaluar escenarios plausibles de titular/suplente o variación de carga con datos disponibles. Si la conclusión resiste los escenarios, continuar con estado PROVISIONAL y límites visibles. Si cambia materialmente, limitar únicamente los mercados afectados hasta resolverla; continuar investigando el resto. No exigir portero confirmado como puerta universal para NHL. Su identidad afecta directamente la prevención de goles; tiros a puerta dependen principalmente de rol, minutos y volumen. Paradas del portero necesitan identidad/participación; K de pitcher necesitan abridor y carga esperada; hits de bateador requieren participación y PA/AB esperadas. No inventar porcentajes de ajuste ni escenarios sin evidencia.
+5. **Explorar Over y Under y alternativas.** Investigar ganador, totales alternativos, ambos team totals y props pertinentes con cobertura. Evaluar ambos abridores MLB y bateadores relevantes, aunque la captura muestre un solo jugador. Mostrar línea exacta, período y liquidación; separar push. Si la línea alternativa no está verificada en la banca, identificarla como umbral analítico y no afirmar que se ofrece. La falta de cuota no impide una conclusión deportiva condicionada; sin precio no certificar rentabilidad.
+6. **Conservar el método.** Cruzar ataque de cada equipo con producción permitida por su rival; revisar temporada, L5/L10/L20/L30, localía, calidad del rival y superficie cuando aplique. Mostrar denominadores reales, faltantes y corte. No completar artificialmente ventanas cortas ni usar ventanas superpuestas como muestras independientes. Frecuencia histórica, AVG por AB y probabilidad de 1+ hit por partido son cantidades distintas.
+7. **Cerrar con evidencia, no con una espera genérica.** Completar cada evento con conclusión y clasificación sustentadas o bloqueo observado que detalle dato crítico, búsquedas y mercados afectados. PENDIENTE no equivale a NO APUESTA; una incertidumbre crítica no resuelta impide PRINCIPAL. Simular realmente cuando datos y modelo lo permitan; si no, dar análisis descriptivo/provisional sin fabricar probabilidades. Nunca buscar hasta forzar una apuesta.
+8. **Persistencia y alcance.** Consultar la regla activa `sportlab_research_completion_loop` en Neon antes de analizar y aplicar este protocolo. Guardar snapshots, intentos relevantes, escenarios y cambios de estado con procedencia cuando haya acceso y esquema adecuados; confirmar escrituras. Estas son instrucciones operativas para agentes, no una garantía de cumplimiento automático de software ni de acierto deportivo.
+
+## Base primordial universal de ataque y defensa — 2026-10-18
+
+Aplicar obligatoriamente `knowledge/markets/universal_offense_defense_baseline.md` antes de cada análisis de equipos o jugadores. Calcular por separado producción a favor y permitida, cruzar ataque con defensa contraria en unidades comparables, sumar ambas proyecciones para total base y mostrar margen descriptivo para ganador. Adaptar por deporte, período y estadística exacta del mercado; tenis y props necesitan oportunidades y modelos específicos, no una suma ciega. Mostrar temporada, L5/L10/L20/L30 con denominadores reales, fuentes y corte. En carteleras NFL, cubrir todos los partidos solicitados, priorizar totales y añadir inclinación al ganador; no asumir que todos integran una sola combinada. La base no sustituye contexto, validación, simulación defendible ni análisis del precio.
+
+## Historial individual como fuente principal; H2H secundario — 2026-10-18
+
+Para todos los deportes, equipos y jugadores, obtener promedios y frecuencias principalmente del historial individual frente a distintos oponentes, con temporada, L5/L10/L20/L30 y contexto comparable. H2H solo apoya: presentarlo por separado y no exigir enfrentamientos directos, sustituir la muestra individual, duplicar partidos ni asignar pesos arbitrarios. Aplicar la sección correspondiente de `knowledge/markets/universal_offense_defense_baseline.md`.
+
+## Presentación de nombres de equipos — 2026-10-18
+
+En todos los deportes, mostrar primero el nombre completo distintivo del equipo o club y en segundo plano su ciudad o país, preferentemente `Equipo (Ciudad/País)`: `Ravens (Baltimore)`, `Maple Leafs (Toronto)`, `Red Sox (Boston)`. No usar solo ciudad ni abreviaturas como etiqueta principal. En NHL conservar el nombre distintivo completo (por ejemplo, `Golden Knights (Vegas)`), sin recortarlo. No inventar apodos ni ciudades; si el nombre oficial del club incluye una ciudad o país inseparable, conservarlo y añadir contexto geográfico solo cuando ayude a identificarlo. Las selecciones nacionales mantienen su nombre de país, sin apodo inventado. Esta preferencia es de presentación; no cambia IDs, nombres canónicos ni mappings de proveedores.
+
+## Cierre con tabla final de selecciones — 2026-10-18
+
+En análisis deportivos, conservar el análisis completo: metodología, promedios ofensivos/permitidos por participante, cruce, fuentes, fecha de corte, frecuencias L5/L10/L20/L30, simulación ejecutada, contradicciones, condiciones y clasificación. La preferencia de cierre NO significa eliminar ni sustituir este análisis por una respuesta de solo selecciones. Después de todas las explicaciones, terminar únicamente con las tablas de las selecciones a jugar o revisar, separadas por deporte. Cada tabla usa las columnas `Partido`, `Total base`, `Alternativa que buscaría`, `Inclinación al ganador`. No añadir explicaciones, notas, advertencias, fuentes, ofrecimientos ni texto después de la última tabla; ubicarlos antes del bloque final. Usar nombres de equipo primero y ciudad/país secundario. Si no se calculó un total base defendible, mostrar NO DISPONIBLE; no inventarlo. Identificar alternativas no verificadas, precios faltantes y carácter provisional antes de las tablas. Esta precisión del usuario se confirmó el 2026-10-18.
+En ganador, usar lenguaje claro y sustentado: favorito con ventaja clara cuando lo avalen datos/modelo/contexto; ventaja pequeña — partido difícil; sin ganador claro; provisional/condicionado cuando aplique. Un margen esperado amplio no garantiza victoria ni es sinónimo de apuesta segura; no imponer umbrales arbitrarios universales ni llamar seguro a ningún resultado. Separar margen proyectado de confianza/probabilidad, y mantener clasificación PRINCIPAL/SECUNDARIO/NO APUESTA según evidencia. No convertir el cambio de formato en nuevos cálculos o picks sin revalidación.
+
+## Totales alternativos por ambos extremos — 2026-10-18
+
+Por preferencia explícita del usuario, evaluar para cada partido tanto un umbral bajo de total para `Más de X` como un umbral alto para `Menos de Y`, en vez de limitar el análisis a la línea central o a una sola dirección. Son alternativas analíticas de menor exigencia, no un mínimo/máximo garantizado del marcador. Elegir umbrales contrastando distribución observada, temporada y L5/L10/L20/L30 de cada participante frente a distintos oponentes, contexto actual y modelo defendible; no elegir retrospectivamente una línea que habría salvado una apuesta perdida ni ajustar reglas por un solo resultado.
+Para cada extremo mostrar línea exacta, período, frecuencia y denominador, pushes/faltantes y fecha de corte; comprobar prórroga/shootout y condiciones de liquidación. Comparar precio después: una alternativa con mayor frecuencia puede pagar demasiado poco. No afirmar disponibilidad en la banca sin observarla. Si no hay evidencia suficiente para un extremo, explicarlo antes de las tablas finales sin fabricar una selección. En la columna final `Alternativa que buscaría`, mostrar ambos umbrales cuando estén sustentados y señalar cuál se prioriza. Son opciones separadas; no asumir que el usuario apuesta ambos extremos ni proponerlos como cobertura garantizada.
+
+## Postmortem, líneas ejecutables y almacenamiento compacto — 2026-10-19
+
+Aplicar `knowledge/markets/postmortem_storage_and_market_availability.md` y consultar la regla activa `sportlab_postmortem_storage_and_market_availability` en Neon. Liquidar cada versión publicada sin borrar fallos originales; distinguir umbrales analíticos de líneas reales observadas y evaluar cualquier sustitución exacta antes de recomendarla. Guardar resultados canónicos, métricas compactas y revisiones idempotentes en Neon; recalcular temporada/L5/L10/L20/L30 sin borrar el histórico que sale de la ventana. Registrar el portero/QB real y la liquidación con prórroga; poner en cuarentena métricas discrepantes. El boleto personal/ROI requiere línea, cuota y monto ejecutados. GitHub conserva método y síntesis; una jornada no recalibra el predictor ni valida una regla de siempre Over/Under.
+
+## NBA: prioridad de props de jugadores — 2026-10-19
+
+Aplicar `knowledge/markets/nba_player_props.md`: priorizar puntos, rebotes, asistencias, triples, robos, tapones y combinaciones con mercado exacto, minutos/rol, rival, temporada y L5/L10/L20/L30. No rellenar DNP con cero, mezclar fases de temporada ni convertir frecuencia en certeza; presentar alternativas no observadas como umbrales analíticos y cerrar con tabla específica de props.
+
+## Fútbol: ganador, tiros de esquina y tarjetas — 2026-10-19
+
+Aplicar `knowledge/markets/football_priority_markets.md`: en cada análisis investigar ganador 1X2, corners y tarjetas, además de goles; totales del partido/por equipo y alternativas exactas cuando haya datos. Usar producción a favor y permitida propia de cada estadística, historial individual y temporada/L5/L10/L20/L30 con denominadores y corte; H2H secundario. En tarjetas contrastar árbitro y reglas de cómputo; distinguir 90 minutos más añadido de prórroga y clasificación. No sustituir corners/tarjetas por estadísticas de goles, convertir faltantes en cero ni forzar selecciones sin evidencia. Guardar registros dinámicos compactos en Neon y cerrar con tablas por mercado y clasificación.
+
+## Appuesta.do: líneas fijas y Crear apuesta — 2026-10-20
+
+Aplicar la sección vigente de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_appuesta_fixed_lines_and_bet_builder` en Neon. En NBA usar la línea fija observada hasta aviso expreso del usuario; los antiguos umbrales alternativos quedan como referencia histórica, no selección ejecutable. Mostrar un solo promedio L10 por jugador/categoría según la preferencia aprobada abajo; calcular y conservar temporada y demás ventanas para análisis. Mantener proyección separada cuando corresponda, línea/cuota/período observados, inclinación Más/Menos y frecuencias L5/L10/L20/L30 contra esa línea exacta. No derivar la dirección solo del promedio ni fabricar líneas de categorías cerradas. Buscar datos públicos sin exigir capturas de todas las categorías. El usuario reporta un máximo de 10 selecciones en total por partido en Crear apuesta, para todos los deportes: respetar el límite sin rellenarlo por obligación ni tratar mercados correlacionados como independientes. Reactivar alternativas modificables en NBA solo cuando el usuario lo comunique.
+
+
+## NBA: un solo promedio visible por jugador y categoría — 2026-10-20
+
+Aplicar la sección de presentación aprobada de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_nba_single_l10_average_display` en Neon. Por defecto, mostrar solo la media L10 de puntos, asistencias, rebotes, triples anotados, robos, tapones, pérdidas y minutos, con una cifra por casilla y tablas por equipo actual. No volver a presentar `temporada / L10` ni limitar jugadores/categorías a una captura. Identificar temporada, denominadores reales, fuente/corte y cambios de equipo; no mezclar fases ni convertir faltantes en cero. Conservar datos de jugadores y otras ventanas en Neon, método en GitHub. Esta preferencia simplifica la presentación, no sustituye ataque/defensa, contexto ni validación de las selecciones contra líneas exactas.
+
+## NBA: evidencia amplia antes de priorizar líneas — 2026-10-21
+
+Aplicar la sección vigente de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_nba_broad_history_filter` en Neon. L10 no basta: contrastar L30, L50 y temporada regular recuperada, con denominadores, faltantes, fase, fechas y cambios de equipo/rol. El objetivo 80–100% es frecuencia histórica, no probabilidad futura ni garantía. Identificar ventanas incompletas; no forzar cuatro selecciones por partido ni clasificar PRINCIPAL por superar ese filtro. Conservar una sola media visible por categoría, y revisar contexto y precio de la línea exacta.
+
+## Appuesta: conservar y comparar líneas observadas — 2026-10-21
+
+Aplicar `knowledge/integrations/appuesta.md`, `config/appuesta_tracking.json` y la regla `sportlab_appuesta_line_history` en Neon. Capturar y fechar líneas/cuotas reales, comparar cambios del mismo evento y separar otros partidos; conservar versiones y fallos sin sobrescribir originales. Extender la comprobación a NBA, NHL, NFL, fútbol, ATP/WTA, MLB y LIDOM sin afirmar acceso no verificado. Usar datos dinámicos en Neon y método/fixture pequeño en GitHub, sin secretos. En búsquedas amplias de props revisar todos los titulares elegibles y mercados, no solo una lista anterior de picks, y conservar denominadores, fase, rival y rol.
+
+## Cobertura NBA y alcance de Crear Apuesta — 2026-10-22
+
+Aplicar la sección de cobertura completa de `knowledge/markets/nba_player_props.md` y la regla activa `sportlab_nba_exhaustive_props_sgp_selection` en Neon. Revisar todos los mercados observados de ambos quintetos y las excepciones de banca justificadas; conservar cobertura y exclusiones, evaluar ambas direcciones y presentar las candidatas sustentadas por partido. Crear Apuesta es el SGP de un solo evento: máximo diez selecciones totales por boleto, sumando jugadores y equipos, con un límite propio por partido. Este máximo no limita la investigación ni obliga a llenar el boleto. Revisar minutos/rol, ataque/defensa comparable, muestras amplias, contradicciones, precio y dependencia. Evaluar totales del partido y de cada equipo por separado; un acierto conjunto no valida un team total.

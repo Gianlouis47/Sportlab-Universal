@@ -47,6 +47,10 @@ MLB durable knowledge lives in `knowledge/mlb/`.
 
 Do not store API keys, database passwords, authentication tokens, personal data or large raw dumps in Git.
 
+## Mandatory player-first modeling foundation
+
+- **Fundamento primordial universal:** [proyección desde el jugador hacia unidades, equipo, matchup y probabilidad](knowledge/universal/player_first_projection_foundation.md) (regla activa en Neon `universal_player_first_projection_foundation`).
+
 ## Design rules
 
 - Sporting reality comes before odds.
